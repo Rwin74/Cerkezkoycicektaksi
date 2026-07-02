@@ -96,7 +96,7 @@ export default async function FiyatDetay({ params }) {
                     </div>
 
                     <div className="cta-box reveal" style={{textAlign: 'center', marginTop: '48px'}}>
-                        <a href="tel:+902827260000" className="btn btn--primary btn--lg">☎ Net Fiyat Almak İçin Arayın</a>
+                        <a href="tel:+905464014751" className="btn btn--primary btn--lg">☎ Net Fiyat Almak İçin Arayın</a>
                     </div>
                 </div>
             </section>

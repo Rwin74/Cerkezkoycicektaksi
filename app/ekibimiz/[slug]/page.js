@@ -88,7 +88,7 @@ export default async function EkipDetay({ params }) {
                         <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>{personel.name} ile Güvenli Yolculuk</h3>
                         <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>Güleryüzlü hizmet ve ileri sürüş teknikleri ile 7/24 hizmetinizdeyiz.</p>
                         <div style={{display: 'flex', gap: '12px', justifyContent: 'center'}}>
-                            <a href="tel:+902827260000" className="btn btn--dark btn--lg">📞 Taksiyi Çağır</a>
+                            <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 Taksiyi Çağır</a>
                         </div>
                     </div>
                 </div>

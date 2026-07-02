@@ -97,7 +97,7 @@ export default async function BlogDetay({ params }) {
                         <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>Ulaşıma mı ihtiyacınız var?</h3>
                         <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>Yazımızdaki lokasyonlara veya havalimanına gitmek için bizi hemen arayın.</p>
                         <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
-                            <a href="tel:+902827260000" className="btn btn--dark btn--lg">📞 0282 726 00 00</a>
+                            <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                             <a href="https://wa.me/902827260000" className="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
                         </div>
                     </div>

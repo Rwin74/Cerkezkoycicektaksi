@@ -55,7 +55,7 @@ export default function Hizmetler() {
                     <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen Bizi <em>Arayın</em> 📞</h2>
                     <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Hangi hizmete ihtiyacınız varsa, bir telefon uzağınızdayız.</p>
                     <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: '0'}} data-delay="100">
-                        <a href="tel:+902827260000" className="btn btn--dark btn--lg">📞 0282 726 00 00</a>
+                        <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                     </div>
                 </div>
             </section>

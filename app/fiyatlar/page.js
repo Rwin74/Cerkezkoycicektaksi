@@ -129,7 +129,7 @@ export default function Fiyatlar() {
                 <div className="container">
                     <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Fiyat mı <em>Alacaksın?</em> 💬</h2>
                     <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: '0'}} data-delay="100">
-                        <a href="tel:+902827260000" className="btn btn--dark btn--lg">📞 Hemen Ara</a>
+                        <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 Hemen Ara</a>
                         <a href="https://wa.me/902827260000" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Sor</a>
                     </div>
                 </div>

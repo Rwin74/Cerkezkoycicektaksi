@@ -151,7 +151,7 @@ export default async function HizmetDetay({ params }) {
                         <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>Hemen Taksi Çağırın!</h3>
                         <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>7/24 hizmetinizdeyiz. Bir telefon uzağınızdayız.</p>
                         <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
-                            <a href="tel:+902827260000" className="btn btn--dark btn--lg">📞 0282 726 00 00</a>
+                            <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                             <a href="https://wa.me/902827260000" className="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ export default async function HizmetDetay({ params }) {
                         <ul style={{paddingLeft: '20px', margin: 0, color: 'var(--text-muted)'}}>
                             <li style={{marginBottom: '8px'}}>Çiçek Taksi, Çerkezköy bölgesinde profesyonel <strong>{hizmet.title}</strong> sunmaktadır.</li>
                             <li style={{marginBottom: '8px'}}>Araçların tamamında kredi kartı / temassız ödeme geçerlidir.</li>
-                            <li>Tüm araçlarımız 7/24 hizmetinizdedir. 0282 726 00 00 numarasından ulaşabilirsiniz.</li>
+                            <li>Tüm araçlarımız 7/24 hizmetinizdedir. 0546 401 47 51 numarasından ulaşabilirsiniz.</li>
                         </ul>
                     </div>
 
