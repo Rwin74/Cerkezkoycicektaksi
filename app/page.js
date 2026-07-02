@@ -45,7 +45,7 @@ export default function Home() {
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
-                    Gideceğin yere geç kalma! <strong>Çiçek Taksi</strong> ile güvenli, konforlu ve samimi bir yolculuk seni bekliyor. Nakit derdi yok, kredi kartı geçerli! 🚕💨
+                    Gideceğin yere geç kalma! <strong>Çiçek Taksi</strong> ile güvenli ve konforlu bir yolculuk seni bekliyor. Çerkezköy'de kredi kartından <strong>komisyon almayan tek taksi</strong> durağıyız! 💳✨
                 </p>
                 
                 <div className="home-hero__actions reveal" data-delay="300">
@@ -74,8 +74,8 @@ export default function Home() {
                         })()}
                     </div>
                     <div className="floating-card__text">
-                        <span>Tüm Araçlarımızda</span>
-                        <strong>Kredi Kartı Geçerlidir</strong>
+                        <span style={{color: 'var(--taxi-yellow)', fontWeight: '800', letterSpacing: '0.5px'}}>KREDİ KARTI GEÇERLİ</span>
+                        <strong style={{lineHeight: '1.4'}}>Çerkezköy'de <span style={{color: '#44bd32', padding: '2px 6px', background: 'rgba(68,189,50,0.1)', borderRadius: '4px'}}>%0 Komisyon</span><br/>Alan Tek Taksi Durağı!</strong>
                     </div>
                 </div>
                 <Image 
