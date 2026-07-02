@@ -46,9 +46,8 @@ export default function Iletisim() {
                             </div>
 
                             <div className="contact-item" style={{padding: '24px', background: '#fff', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 10px 30px rgba(0,0,0,0.03)'}}>
-                                <h3 style={{fontSize: '1.4rem', marginBottom: '10px'}}>📧 Diğer İletişim</h3>
-                                <p><strong>E-posta:</strong> <a href="mailto:info@cicektaksi.com" style={{color: 'var(--taxi-yellow)', fontWeight: 'bold'}}>info@cicektaksi.com</a></p>
-                                <p><strong>Çalışma Saatleri:</strong> 7 Gün 24 Saat (Nöbetçi Taksi Mevcut)</p>
+                                <h3 style={{fontSize: '1.4rem', marginBottom: '10px'}}>🕒 Çalışma Saatleri</h3>
+                                <p><strong>Durum:</strong> 7 Gün 24 Saat Açık (Nöbetçi Taksi Mevcut)</p>
                             </div>
                         </div>
                         

@@ -152,7 +152,7 @@ export default async function HizmetDetay({ params }) {
                         <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>7/24 hizmetinizdeyiz. Bir telefon uzağınızdayız.</p>
                         <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
                             <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
-                            <a href="https://wa.me/902827260000" className="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
+                            <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
                         </div>
                     </div>
 

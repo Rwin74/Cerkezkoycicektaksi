@@ -66,8 +66,8 @@ export default function Home() {
             </div>
             
             <div className="home-hero__visual reveal reveal--right" data-delay="500">
-                <div className="floating-card">
-                    <div className="floating-card__icon-wrapper">
+                <div className="floating-card" style={{background: 'rgba(15, 15, 15, 0.95)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', backdropFilter: 'blur(10px)'}}>
+                    <div className="floating-card__icon-wrapper" style={{background: 'var(--taxi-yellow)', color: '#111'}}>
                         {(() => {
                             const CreditCardIcon = getIcon('CreditCard');
                             return <CreditCardIcon size={28} className="floating-card__icon" />;
@@ -75,7 +75,7 @@ export default function Home() {
                     </div>
                     <div className="floating-card__text">
                         <span style={{color: 'var(--taxi-yellow)', fontWeight: '800', letterSpacing: '0.5px'}}>KREDİ KARTI GEÇERLİ</span>
-                        <strong style={{lineHeight: '1.4'}}>Çerkezköy'de <span style={{color: '#44bd32', padding: '2px 6px', background: 'rgba(68,189,50,0.1)', borderRadius: '4px'}}>%0 Komisyon</span><br/>Alan Tek Taksi Durağı!</strong>
+                        <strong style={{lineHeight: '1.4', fontWeight: '600', color: '#fff'}}>Çerkezköy'de <span style={{color: '#fff', padding: '2px 6px', background: '#44bd32', borderRadius: '4px', fontWeight: '800'}}>%0 KOMİSYON</span><br/>Alan Tek Taksi Durağı!</strong>
                     </div>
                 </div>
                 <Image 
