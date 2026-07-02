@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Çerkezköy Taksi Fiyatları",
+    "slug": "cerkezkoy-taksi-fiyatlari",
+    "description": "Çerkezköy Taksi Fiyatları detayları, km bazlı hesaplamalar ve 2026 güncel tarife bilgileri.",
+    "content": "\n            <h2>Çerkezköy Taksi Fiyatları ve 2026 Tarifeleri</h2>\n            <p>Taksi kullanırken sürpriz ücretlerle karşılaşmamak için şeffaf fiyatlandırma politikamızı sunuyoruz. kredi kartı geçerli taksi, havaalanı transferi, 7/24 ulaşım özelliklerimizle verdiğiniz ücretin tam karşılığını alırsınız.</p>\n        ",
+    "pricingData": {
+      "title": "Çerkezköy Taksi Fiyatları",
+      "base": 30,
+      "perKm": 25
+    }
+  },
+  {
+    "id": 2,
+    "title": "İstanbul Havalimanı Transfer Ücretleri",
+    "slug": "istanbul-havalimani-transfer-ucretleri",
+    "description": "İstanbul Havalimanı Transfer Ücretleri detayları, km bazlı hesaplamalar ve 2026 güncel tarife bilgileri.",
+    "content": "\n            <h2>İstanbul Havalimanı Transfer Ücretleri ve 2026 Tarifeleri</h2>\n            <p>Taksi kullanırken sürpriz ücretlerle karşılaşmamak için şeffaf fiyatlandırma politikamızı sunuyoruz. ticari taksi, konforlu araç, en yakın taksi özelliklerimizle verdiğiniz ücretin tam karşılığını alırsınız.</p>\n        ",
+    "pricingData": {
+      "title": "İstanbul Havalimanı Transfer Ücretleri",
+      "min": 1500,
+      "max": 2500
+    }
+  },
+  {
+    "id": 3,
+    "title": "Sabiha Gökçen Transfer Fiyatları",
+    "slug": "sabiha-gokcen-transfer-fiyatlari",
+    "description": "Sabiha Gökçen Transfer Fiyatları detayları, km bazlı hesaplamalar ve 2026 güncel tarife bilgileri.",
+    "content": "\n            <h2>Sabiha Gökçen Transfer Fiyatları ve 2026 Tarifeleri</h2>\n            <p>Taksi kullanırken sürpriz ücretlerle karşılaşmamak için şeffaf fiyatlandırma politikamızı sunuyoruz. bagajlı araç, en yakın taksi, taksi çağır özelliklerimizle verdiğiniz ücretin tam karşılığını alırsınız.</p>\n        ",
+    "pricingData": {
+      "title": "Sabiha Gökçen Transfer Fiyatları",
+      "min": 2000,
+      "max": 3500
+    }
+  },
+  {
+    "id": 4,
+    "title": "Şehirler Arası Taksi Ücret Hesaplama",
+    "slug": "sehirler-arasi-taksi-ucret-hesaplama",
+    "description": "Şehirler Arası Taksi Ücret Hesaplama detayları, km bazlı hesaplamalar ve 2026 güncel tarife bilgileri.",
+    "content": "\n            <h2>Şehirler Arası Taksi Ücret Hesaplama ve 2026 Tarifeleri</h2>\n            <p>Taksi kullanırken sürpriz ücretlerle karşılaşmamak için şeffaf fiyatlandırma politikamızı sunuyoruz. 7/24 ulaşım, ticari taksi, taksi çağır özelliklerimizle verdiğiniz ücretin tam karşılığını alırsınız.</p>\n        ",
+    "pricingData": {
+      "title": "Şehirler Arası Taksi Ücret Hesaplama",
+      "base": 50,
+      "perKm": 22
+    }
+  }
+]

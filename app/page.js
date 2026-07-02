@@ -1,65 +1,199 @@
 import Image from "next/image";
+import Link from "next/link";
+import hizmetlerData from '@/data/hizmetler.json';
+import bloglarData from '@/data/bloglar.json';
+import { getIcon } from '@/components/IconMap';
+import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
+import Branches from '@/components/Branches';
 
 export default function Home() {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.cicektaksi.com",
+    "name": "Çiçek Taksi Çerkezköy",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.cicektaksi.com/arama?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <header className="home-hero">
+        <div className="home-hero__bg"></div>
+        <div className="home-hero__particles" id="heroParticles"></div>
+        
+        <div className="container home-hero__inner">
+            <div className="home-hero__content">
+                <div className="home-hero__badge reveal">
+                    <span className="home-hero__badge-dot"></span>7/24 Açık ve Yollardayız!
+                </div>
+                
+                <h1 className="home-hero__title reveal" data-delay="100">
+                    Çerkezköy'ün<br/>
+                    <span>En Hızlı</span> Taksi<br/>
+                    Hizmeti
+                </h1>
+                
+                <p className="home-hero__desc reveal" data-delay="200">
+                    Gideceğin yere geç kalma! <strong>Çiçek Taksi</strong> ile güvenli, konforlu ve samimi bir yolculuk seni bekliyor. Nakit derdi yok, kredi kartı geçerli! 🚕💨
+                </p>
+                
+                <div className="home-hero__actions reveal" data-delay="300">
+                    <a href="tel:+905464014751" className="btn btn--primary btn--lg">📞 0546 401 47 51</a>
+                    <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Çağır</a>
+                </div>
+                
+                <div className="home-hero__stats reveal stagger" data-delay="400">
+                    <div className="stat-box">
+                        <span className="stat-num" data-count="10000">10.000+</span>
+                        <span className="stat-label">Mutlu Yolcu</span>
+                    </div>
+                    <div className="stat-box">
+                        <span className="stat-num" data-count="10">10+</span>
+                        <span className="stat-label">Araç Filosu</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="home-hero__visual reveal reveal--right" data-delay="500">
+                <div className="floating-card">
+                    <div className="floating-card__icon-wrapper">
+                        {(() => {
+                            const CreditCardIcon = getIcon('CreditCard');
+                            return <CreditCardIcon size={28} className="floating-card__icon" />;
+                        })()}
+                    </div>
+                    <div className="floating-card__text">
+                        <span>Tüm Araçlarımızda</span>
+                        <strong>Kredi Kartı Geçerlidir</strong>
+                    </div>
+                </div>
+                <Image 
+                    src="/images/hero-taxi-59.png" 
+                    alt="Çiçek Taksi Çerkezköy" 
+                    width={800} 
+                    height={450} 
+                    className="home-hero__car-img"
+                    style={{
+                        width: '100%', 
+                        height: 'auto', 
+                        borderRadius: '24px',
+                        boxShadow: '0 30px 60px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.1)',
+                        border: '1px solid rgba(255,255,255,0.4)',
+                        objectFit: 'cover'
+                    }}
+                    priority
+                />
+            </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      <Branches />
+
+      <section className="section">
+        <div className="container">
+            <div className="sh sh--center reveal">
+                <span className="sh__overtitle">Hizmetlerimiz</span>
+                <h2 className="sh__title">Nereye <em>Gidiyoruz?</em> 🚕</h2>
+            </div>
+            
+            <div className="grid grid--3 stagger">
+                {hizmetlerData.slice(0, 3).map((hizmet, index) => {
+                    const IconComponent = getIcon(hizmet.icon);
+                    return (
+                        <article className="card card--service reveal" key={hizmet.id} data-delay={(index % 3) * 100}>
+                            <div className="card__icon"><IconComponent size={32} /></div>
+                            <h3 className="card__title">{hizmet.title}</h3>
+                            <p className="card__text">{hizmet.description}</p>
+                            {hizmet.tag && <span className="card__tag">{hizmet.tag}</span>}
+                        </article>
+                    );
+                })}
+            </div>
+            
+            <div style={{textAlign: 'center', marginTop: '40px'}} className="reveal" data-delay="300">
+                <a href="/hizmetler" className="btn btn--outline">Tüm Hizmetlerimize Göz At 🚀</a>
+            </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Blog Bölümü */}
+      <section className="section section--gray">
+        <div className="container">
+            <div className="sh sh--center reveal">
+                <span className="sh__overtitle">Çerkezköy Rehberi</span>
+                <h2 className="sh__title">Son <em>Yazılarımız</em> 📖</h2>
+            </div>
+            <p className="reveal" data-delay="100" style={{textAlign: 'center', maxWidth: '600px', margin: '-20px auto 48px', color: 'var(--text-muted)', fontSize: '1.1rem'}}>
+                Çerkezköy ve çevresindeki ulaşım, gezi ve yaşam rehberimizden faydalı bilgiler edinin.
+            </p>
+
+            <div className="blog-home-grid">
+                {/* Sol: Featured (büyük kart) */}
+                <article className="blog-home-featured reveal">
+                    <div className="blog-home-featured__gradient"></div>
+                    <div className="blog-home-featured__content">
+                        <span className="blog-home-featured__cat">
+                            <Tag size={14} /> {bloglarData[0].category}
+                        </span>
+                        <h3 className="blog-home-featured__title">{bloglarData[0].title}</h3>
+                        <p className="blog-home-featured__excerpt">{bloglarData[0].excerpt}</p>
+                        <div className="blog-home-featured__meta">
+                            <span><Clock size={14} /> {bloglarData[0].readTime}</span>
+                            <Link href={`/blog/${bloglarData[0].slug}`} className="blog-home-featured__link">
+                                Devamını Oku <ArrowRight size={16} />
+                            </Link>
+                        </div>
+                    </div>
+                </article>
+
+                {/* Sağ: 3 küçük kart */}
+                <div className="blog-home-list">
+                    {bloglarData.slice(1, 4).map((blog, index) => (
+                        <Link href={`/blog/${blog.slug}`} className="blog-home-item reveal" key={blog.id} data-delay={(index + 1) * 100}>
+                            <div className="blog-home-item__icon">
+                                <BookOpen size={22} />
+                            </div>
+                            <div className="blog-home-item__body">
+                                <span className="blog-home-item__cat">{blog.category}</span>
+                                <h4 className="blog-home-item__title">{blog.title}</h4>
+                                <div className="blog-home-item__meta">
+                                    <span><Clock size={12} /> {blog.readTime}</span>
+                                    <span>📅 {blog.date}</span>
+                                </div>
+                            </div>
+                            <ArrowRight size={18} className="blog-home-item__arrow" />
+                        </Link>
+                    ))}
+                </div>
+            </div>
+
+            <div style={{textAlign: 'center', marginTop: '48px'}} className="reveal" data-delay="400">
+                <Link href="/blog" className="btn btn--outline">Tüm Yazıları Keşfet 📖</Link>
+            </div>
+        </div>
+      </section>
+
+      <section className="section section--yellow" style={{textAlign: 'center'}}>
+        <div className="container">
+            <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Taksi mi <em>Lazım?</em> 🚕</h2>
+            <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Hiç bekleme, tek tıkla kapında!</p>
+            <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: 0}} data-delay="100">
+                <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
+                <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Çağır</a>
+            </div>
+        </div>
+      </section>
+    </>
   );
 }

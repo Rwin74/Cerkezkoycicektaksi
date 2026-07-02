@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmet Yılmaz",
+    "slug": "ahmet-yilmaz",
+    "experience": "15 Yıl",
+    "specialties": [
+      "VIP Şoför",
+      "İleri Sürüş"
+    ],
+    "description": "Ahmet Yılmaz - Çiçek Taksi profesyonel şoför profili. 15 Yıl tecrübe.",
+    "bio": "Ahmet Yılmaz, Çiçek Taksi ailesinin en değerli üyelerinden biridir. 15 Yıl boyunca trafik kurallarına harfiyen uyan, müşteri memnuniyetini ön planda tutan bir anlayışla çalışmaktadır. Uzmanlık alanları: VIP Şoför, İleri Sürüş."
+  },
+  {
+    "id": 2,
+    "name": "Mehmet Kaya",
+    "slug": "mehmet-kaya",
+    "experience": "8 Yıl",
+    "specialties": [
+      "Şehir İçi Uzmanı",
+      "İngilizce Bilen"
+    ],
+    "description": "Mehmet Kaya - Çiçek Taksi profesyonel şoför profili. 8 Yıl tecrübe.",
+    "bio": "Mehmet Kaya, Çiçek Taksi ailesinin en değerli üyelerinden biridir. 8 Yıl boyunca trafik kurallarına harfiyen uyan, müşteri memnuniyetini ön planda tutan bir anlayışla çalışmaktadır. Uzmanlık alanları: Şehir İçi Uzmanı, İngilizce Bilen."
+  },
+  {
+    "id": 3,
+    "name": "Hasan Demir",
+    "slug": "hasan-demir",
+    "experience": "20 Yıl",
+    "specialties": [
+      "Uzun Yol Kaptanı",
+      "Güvenli Sürüş"
+    ],
+    "description": "Hasan Demir - Çiçek Taksi profesyonel şoför profili. 20 Yıl tecrübe.",
+    "bio": "Hasan Demir, Çiçek Taksi ailesinin en değerli üyelerinden biridir. 20 Yıl boyunca trafik kurallarına harfiyen uyan, müşteri memnuniyetini ön planda tutan bir anlayışla çalışmaktadır. Uzmanlık alanları: Uzun Yol Kaptanı, Güvenli Sürüş."
+  },
+  {
+    "id": 4,
+    "name": "Ali Çelik",
+    "slug": "ali-celik",
+    "experience": "12 Yıl",
+    "specialties": [
+      "Havalimanı Transfer Uzmanı",
+      "Rehber"
+    ],
+    "description": "Ali Çelik - Çiçek Taksi profesyonel şoför profili. 12 Yıl tecrübe.",
+    "bio": "Ali Çelik, Çiçek Taksi ailesinin en değerli üyelerinden biridir. 12 Yıl boyunca trafik kurallarına harfiyen uyan, müşteri memnuniyetini ön planda tutan bir anlayışla çalışmaktadır. Uzmanlık alanları: Havalimanı Transfer Uzmanı, Rehber."
+  }
+]
