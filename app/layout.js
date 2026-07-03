@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import ScrollObserver from "@/components/ScrollObserver";
+import AiOverview from "@/components/AiOverview";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="HTML_DOGRULAMA_KODUNUZU_BURAYA_EKLEYIN" />
       </head>
       <body className={outfit.className}>
+        <AiOverview />
         <Preloader />
         <ScrollObserver />
         <Navbar />

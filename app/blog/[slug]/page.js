@@ -44,29 +44,88 @@ export default async function BlogDetay({ params }) {
     // İlgili hizmetler
     const relatedServices = hizmetlerData.slice(0, 3);
 
-    const speakableSchema = {
+    const richSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": blog.title,
-        "datePublished": blog.date,
-        "author": {
-            "@type": "Organization",
-            "name": "Çiçek Taksi"
-        },
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "xpath": [
-                "//h1",
-                "//div[@class='rich-content']/p[1]"
-            ]
-        }
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": blog.title,
+                "datePublished": blog.date,
+                "author": {
+                    "@type": "Organization",
+                    "name": "Çiçek Taksi"
+                },
+                "speakable": {
+                    "@type": "SpeakableSpecification",
+                    "xpath": [
+                        "//h1",
+                        "//div[@class='rich-content']/p[1]"
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Çiçek Taksi'de kredi kartı geçerli mi?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Evet, Çiçek Taksi'de tüm yolculuklarınızda %0 komisyon ile kredi kartı geçerlidir."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Taksi çağırdığımda ortalama kaç dakikada gelir?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bulunduğunuz konuma göre değişmekle birlikte, taksimiz genellikle 5-10 dakika içerisinde kapınızda olur."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "HowTo",
+                "name": "Çerkezköy'de Nasıl Taksi Çağırılır?",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "Adım 1: Bizi Arayın veya WhatsApp'tan Yazın",
+                        "text": "0546 401 47 51 numaralı telefonu arayın veya WhatsApp üzerinden konumunuzu gönderin."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "Adım 2: Taksimizi Bekleyin",
+                        "text": "Taksi şoförümüz bulunduğunuz konuma en kısa sürede ulaşmak için yola çıkacaktır."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "Adım 3: Konforlu Yolculuk",
+                        "text": "Kredi kartı geçerli, güvenli ve konforlu araçlarımızla gitmek istediğiniz yere ulaşın."
+                    }
+                ]
+            },
+            {
+                "@type": "ImageObject",
+                "url": "https://www.cicektaksi.com/logo.png",
+                "name": blog.title
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Çiçek Taksi Tanıtım Videosu",
+                "description": "Çerkezköy'de konforlu ve güvenli taksi hizmetinin adresi Çiçek Taksi'nin kısa tanıtım videosu.",
+                "thumbnailUrl": "https://www.cicektaksi.com/logo.png",
+                "uploadDate": "2026-01-01T08:00:00+03:00",
+                "contentUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            }
+        ]
     };
 
     return (
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(richSchema) }}
             />
             <header className="page-hero" style={{paddingBottom: '40px'}}>
                 <div className="page-hero__bg"></div>
