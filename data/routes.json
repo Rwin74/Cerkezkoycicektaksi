@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "cerkezkoy-istanbul-havalimani",
+    "from": "Çerkezköy",
+    "to": "İstanbul Havalimanı",
+    "distance": 104,
+    "duration": "1 saat 20 dk",
+    "type": "airport",
+    "icon": "✈️"
+  },
+  {
+    "slug": "cerkezkoy-sabiha-gokcen-havalimani",
+    "from": "Çerkezköy",
+    "to": "Sabiha Gökçen Havalimanı",
+    "distance": 146,
+    "duration": "2 saat",
+    "type": "airport",
+    "icon": "✈️"
+  },
+  {
+    "slug": "cerkezkoy-corlu-havalimani",
+    "from": "Çerkezköy",
+    "to": "Çorlu Havalimanı",
+    "distance": 39,
+    "duration": "40 dk",
+    "type": "airport",
+    "icon": "✈️"
+  },
+  {
+    "slug": "cerkezkoy-tekirdag-merkez",
+    "from": "Çerkezköy",
+    "to": "Tekirdağ Merkez",
+    "distance": 62,
+    "duration": "55 dk",
+    "type": "road",
+    "icon": "🛣️"
+  },
+  {
+    "slug": "cerkezkoy-istanbul-avrupa",
+    "from": "Çerkezköy",
+    "to": "İstanbul (Avrupa)",
+    "distance": 112,
+    "duration": "1 saat 30 dk",
+    "type": "road",
+    "icon": "🛣️"
+  },
+  {
+    "slug": "cerkezkoy-istanbul-anadolu",
+    "from": "Çerkezköy",
+    "to": "İstanbul (Anadolu)",
+    "distance": 141,
+    "duration": "1 saat 50 dk",
+    "type": "road",
+    "icon": "🛣️"
+  },
+  {
+    "slug": "cerkezkoy-edirne-merkez",
+    "from": "Çerkezköy",
+    "to": "Edirne Merkez",
+    "distance": 130,
+    "duration": "1 saat 40 dk",
+    "type": "road",
+    "icon": "🛣️"
+  },
+  {
+    "slug": "cerkezkoy-corlu-merkez",
+    "from": "Çerkezköy",
+    "to": "Çorlu Merkez",
+    "distance": 37,
+    "duration": "40 dk",
+    "type": "road",
+    "icon": "🛣️"
+  }
+]

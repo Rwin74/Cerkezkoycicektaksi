@@ -1,3 +1,5 @@
+import routesData from '@/data/routes.json';
+
 export const metadata = {
     title: 'Çerkezköy Transfer Fiyatları | Çiçek Taksi',
     description: "Çerkezköy'den havalimanlarına, İstanbul ve Edirne gibi şehirlere sabit fiyatlı, sürprizsiz taksi fiyatlarımız."
@@ -29,94 +31,19 @@ export default function Fiyatlar() {
                     </div>
                     
                     <div className="grid stagger">
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">✈️</span>
-                                <span className="card__route-to">İstanbul Havalimanı</span>
+                        {routesData.map((route, index) => (
+                            <div className="card card--price reveal" key={route.slug || index}>
+                                <div className="card__route">
+                                    <span className="card__route-from">{route.from}</span>
+                                    <span className="card__route-arrow">{route.icon}</span>
+                                    <span className="card__route-to">{route.to}</span>
+                                </div>
+                                <div className="card__price-info">
+                                    <span className="card__distance">{route.distance} km</span>
+                                    <span className="card__price-badge">Sabit Fiyat</span>
+                                </div>
                             </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~180 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">✈️</span>
-                                <span className="card__route-to">Sabiha Gökçen Havalimanı</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~150 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">✈️</span>
-                                <span className="card__route-to">Çorlu Havalimanı</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~35 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">🛣️</span>
-                                <span className="card__route-to">Tekirdağ Merkez</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~45 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">🛣️</span>
-                                <span className="card__route-to">İstanbul (Avrupa)</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~130 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">🛣️</span>
-                                <span className="card__route-to">İstanbul (Anadolu)</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~160 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">🛣️</span>
-                                <span className="card__route-to">Edirne Merkez</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~130 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
-                        <div className="card card--price reveal">
-                            <div className="card__route">
-                                <span className="card__route-from">Çerkezköy</span>
-                                <span className="card__route-arrow">🛣️</span>
-                                <span className="card__route-to">Çorlu Merkez</span>
-                            </div>
-                            <div className="card__price-info">
-                                <span className="card__distance">~25 km</span>
-                                <span className="card__price-badge">Sabit Fiyat</span>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                     
                     <p className="reveal" style={{textAlign: 'center', marginTop: '40px', fontWeight: '500', color: 'var(--text-muted)', background: 'var(--bg-gray)', padding: '15px', borderRadius: '12px'}}>
