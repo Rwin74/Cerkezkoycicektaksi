@@ -8,7 +8,7 @@ import ekibimizData from '@/data/ekibimiz.json';
 import subelerData from '@/data/subeler.json';
 
 export default function sitemap() {
-    const baseUrl = 'https://www.cicektaksi.com';
+    const baseUrl = 'https://www.cerkezkoycicektaksi.com';
 
     // Static pages
     const routes = [

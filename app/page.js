@@ -10,13 +10,13 @@ export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://www.cicektaksi.com",
+    "url": "https://www.cerkezkoycicektaksi.com",
     "name": "Çiçek Taksi Çerkezköy",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.cicektaksi.com/arama?q={search_term_string}"
+        "urlTemplate": "https://www.cerkezkoycicektaksi.com/arama?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

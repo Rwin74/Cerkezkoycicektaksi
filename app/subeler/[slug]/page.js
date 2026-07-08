@@ -39,7 +39,7 @@ export default async function SubeDetay({ params }) {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": sube.title,
-        "image": "https://www.cicektaksi.com/images/hero-taxi-59.png",
+        "image": "https://www.cerkezkoycicektaksi.com/images/hero-taxi-59.png",
         "telephone": sube.phoneLink,
         "address": {
             "@type": "PostalAddress",
@@ -53,7 +53,7 @@ export default async function SubeDetay({ params }) {
             "latitude": sube.lat,
             "longitude": sube.lng
         },
-        "url": `https://www.cicektaksi.com/subeler/${sube.slug}`,
+        "url": `https://www.cerkezkoycicektaksi.com/subeler/${sube.slug}`,
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

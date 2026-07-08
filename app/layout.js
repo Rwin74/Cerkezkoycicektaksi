@@ -16,14 +16,14 @@ const outfit = Outfit({
 export const metadata = {
   title: "Çiçek Taksi Çerkezköy | 7/24 Taksi Hizmeti",
   description: "Çerkezköy'de 7/24 güvenilir taksi hizmeti. Kredi kartı geçerli, temiz araçlar, profesyonel şoförler. Hemen arayın, kapınıza gelelim.",
-  metadataBase: new URL("https://www.cicektaksi.com"),
+  metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Çiçek Taksi Çerkezköy | 7/24 Taksi Hizmeti",
     description: "Çerkezköy'de 7/24 güvenilir taksi hizmeti. Kredi kartı geçerli, temiz araçlar. Hemen arayın!",
-    url: "https://www.cicektaksi.com",
+    url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
     type: "website",
@@ -46,9 +46,9 @@ export default function RootLayout({ children }) {
       {
         "@type": "TaxiService",
         "name": "Çiçek Taksi Çerkezköy",
-        "image": "https://www.cicektaksi.com/logo.png",
-        "@id": "https://www.cicektaksi.com/#localbusiness",
-        "url": "https://www.cicektaksi.com",
+        "image": "https://www.cerkezkoycicektaksi.com/logo.png",
+        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness",
+        "url": "https://www.cerkezkoycicektaksi.com",
         "telephone": "+905464014751",
         "address": {
           "@type": "PostalAddress",
@@ -74,8 +74,8 @@ export default function RootLayout({ children }) {
       {
         "@type": "Organization",
         "name": "Çiçek Taksi",
-        "url": "https://www.cicektaksi.com",
-        "logo": "https://www.cicektaksi.com/logo.png",
+        "url": "https://www.cerkezkoycicektaksi.com",
+        "logo": "https://www.cerkezkoycicektaksi.com/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+905464014751",

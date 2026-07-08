@@ -35,7 +35,7 @@ export default function Breadcrumb({ customItems }) {
     "@type": "ListItem",
     "position": index + 1,
     "name": item.label,
-    "item": `https://www.cicektaksi.com${item.url}`
+    "item": `https://www.cerkezkoycicektaksi.com${item.url}`
   }));
 
   const jsonLd = {
