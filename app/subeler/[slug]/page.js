@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import LazyMap from '@/components/LazyMap';
 import subelerData from '@/data/subeler.json';
 import Breadcrumb from '@/components/Breadcrumb';
 import SpiderWeb from '@/components/SpiderWeb';

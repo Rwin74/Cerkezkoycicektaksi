@@ -1,6 +1,7 @@
 import transferlerData from '@/data/transferler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import LazyMap from '@/components/LazyMap';
 import { getIcon } from '@/components/IconMap';
 import Breadcrumb from '@/components/Breadcrumb';
 import SpiderWeb from '@/components/SpiderWeb';

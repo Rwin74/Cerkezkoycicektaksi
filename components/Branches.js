@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import subelerData from '@/data/subeler.json';
+import LazyMap from '@/components/LazyMap';
 
 // Haversine formula to calculate distance in km
 const calculateDistance = (lat1, lon1, lat2, lon2) => {
@@ -100,15 +101,8 @@ export default function Branches() {
                                 )}
 
                                 {/* Harita Embed */}
-                                <div style={{height: '250px', width: '100%', background: '#eee'}}>
-                                    <iframe 
-                                        width="100%" 
-                                        height="100%" 
-                                        style={{border:0, display: 'block'}} 
-                                        loading="lazy" 
-                                        allowFullScreen 
-                                        src={branch.embedSrc}>
-                                    </iframe>
+                                <div style={{height: '250px', width: '100%', background: '#eee', position: 'relative'}}>
+                                    <LazyMap src={branch.embedSrc} title={branch.title} />
                                 </div>
 
                                 <div style={{padding: '32px', flex: 1, display: 'flex', flexDirection: 'column'}}>

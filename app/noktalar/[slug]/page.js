@@ -1,6 +1,7 @@
 import noktalarData from '@/data/noktalar.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import LazyMap from '@/components/LazyMap';
 import Breadcrumb from '@/components/Breadcrumb';
 import { MapPin } from 'lucide-react';
 import SpiderWeb from '@/components/SpiderWeb';

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LazyMap from '@/components/LazyMap';
 
 export const metadata = {
     title: 'İletişim | Çiçek Taksi Çerkezköy',
@@ -54,27 +55,15 @@ export default function Iletisim() {
                         <div className="contact-map reveal" data-delay="100" style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
                             <div style={{borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.05)', background: '#fff'}}>
                                 <h4 style={{padding: '16px 20px', margin: 0, borderBottom: '1px solid rgba(0,0,0,0.05)'}}>🗺️ Gazi MKP Şubesi Konumu</h4>
-                                <iframe 
-                                    src="https://maps.google.com/maps?q=41.302861,28.001444&z=15&output=embed" 
-                                    width="100%" 
-                                    height="300" 
-                                    style={{border:0, display: 'block'}} 
-                                    allowFullScreen 
-                                    loading="lazy" 
-                                    title="Gazi MKP Şubesi Konumu"
-                                ></iframe>
+                                <div style={{height: '300px', width: '100%', position: 'relative'}}>
+                                    <LazyMap src="https://maps.google.com/maps?q=41.302861,28.001444&z=15&output=embed" title="Gazi MKP Şubesi Konumu" />
+                                </div>
                             </div>
                             <div style={{borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.05)', background: '#fff'}}>
                                 <h4 style={{padding: '16px 20px', margin: 0, borderBottom: '1px solid rgba(0,0,0,0.05)'}}>🗺️ Bağlık Şubesi Konumu</h4>
-                                <iframe 
-                                    src="https://maps.google.com/maps?q=41.286712,28.002467&z=15&output=embed" 
-                                    width="100%" 
-                                    height="300" 
-                                    style={{border:0, display: 'block'}} 
-                                    allowFullScreen 
-                                    loading="lazy" 
-                                    title="Bağlık Şubesi Konumu"
-                                ></iframe>
+                                <div style={{height: '300px', width: '100%', position: 'relative'}}>
+                                    <LazyMap src="https://maps.google.com/maps?q=41.286712,28.002467&z=15&output=embed" title="Bağlık Şubesi Konumu" />
+                                </div>
                             </div>
                         </div>
                     </div>

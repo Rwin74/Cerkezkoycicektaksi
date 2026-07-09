@@ -2,6 +2,7 @@ import bolgelerData from '@/data/bolgeler.json';
 import hizmetlerData from '@/data/hizmetler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import LazyMap from '@/components/LazyMap';
 import Breadcrumb from '@/components/Breadcrumb';
 import SpiderWeb from '@/components/SpiderWeb';
 
@@ -106,14 +107,7 @@ export default async function BolgeDetay({ params }) {
                     {bolge.lat && bolge.lng && (
                         <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
                             <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Bölge Konumu</h3>
-                            <iframe 
-                                width="100%" 
-                                height="400" 
-                                style={{border:0, display: 'block'}} 
-                                loading="lazy" 
-                                allowFullScreen 
-                                src={`https://maps.google.com/maps?q=${bolge.lat},${bolge.lng}&z=14&output=embed`}>
-                            </iframe>
+                            <div style={{height: "400px", width: "100%", position: "relative"}}><LazyMap src={`https://maps.google.com/maps?q=${bolge.lat},${bolge.lng}&z=14&output=embed`} title="Harita" /></div>
                         </div>
                     )}
 
