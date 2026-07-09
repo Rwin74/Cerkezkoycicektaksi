@@ -68,8 +68,16 @@ export default async function HizmetDetay({ params }) {
         },
         {
             "@context": "https://schema.org",
-            "@type": "TaxiService",
+            "@type": "LocalBusiness",
             "name": `${hizmet.title} | Çiçek Taksi`,
+            "image": "https://cerkezkoycicektaksi.com/icon.svg",
+            "telephone": "0546 401 47 51",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Çerkezköy",
+                "addressRegion": "Tekirdağ",
+                "addressCountry": "TR"
+            },
             "description": hizmet.description,
             "provider": {
                 "@type": "LocalBusiness",
