@@ -14,15 +14,15 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Çiçek Taksi Çerkezköy | 7/24 Taksi Hizmeti",
-  description: "Çerkezköy'de 7/24 güvenilir taksi hizmeti. Kredi kartı geçerli, temiz araçlar, profesyonel şoförler. Hemen arayın, kapınıza gelelim.",
+  title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
+  description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi, uygun fiyatlar ve güvenilir ulaşım için hemen arayın.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Çiçek Taksi Çerkezköy | 7/24 Taksi Hizmeti",
-    description: "Çerkezköy'de 7/24 güvenilir taksi hizmeti. Kredi kartı geçerli, temiz araçlar. Hemen arayın!",
+    title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
+    description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi, uygun fiyatlar ve güvenilir ulaşım için hemen arayın.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -30,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çiçek Taksi Çerkezköy | 7/24 Taksi Hizmeti",
-    description: "Çerkezköy'de 7/24 güvenilir taksi hizmeti. Kredi kartı geçerli!",
+    title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
+    description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi ve güvenilir ulaşım için hemen arayın.",
   },
   other: {
     "theme-color": "#FFCC00",

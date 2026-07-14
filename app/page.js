@@ -39,8 +39,8 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    Çerkezköy'ün<br/>
-                    <span>En Hızlı</span> Taksi<br/>
+                    En Yakın<br/>
+                    <span>Çerkezköy Taksi</span><br/>
                     Hizmeti
                 </h1>
                 
@@ -186,7 +186,7 @@ export default function Home() {
 
       <section className="section section--yellow" style={{textAlign: 'center'}}>
         <div className="container">
-            <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Taksi mi <em>Lazım?</em> 🚕</h2>
+            <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen <em>Çerkezköy Taksi</em> Çağır 🚕</h2>
             <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Hiç bekleme, tek tıkla kapında!</p>
             <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: 0}} data-delay="100">
                 <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
