@@ -122,7 +122,7 @@ export default function Home() {
             </div>
             
             <div style={{textAlign: 'center', marginTop: '40px'}} className="reveal" data-delay="300">
-                <a href="/hizmetler" className="btn btn--outline">Tüm Hizmetlerimize Göz At 🚀</a>
+                <a href="/hizmetler" className="btn btn--outline" title="Tüm Çerkezköy Taksi Hizmetleri">Tüm Çerkezköy Taksi Hizmetlerimizi İncele 🚀</a>
             </div>
         </div>
       </section>
@@ -150,8 +150,8 @@ export default function Home() {
                         <p className="blog-home-featured__excerpt">{bloglarData[0].excerpt}</p>
                         <div className="blog-home-featured__meta">
                             <span><Clock size={14} /> {bloglarData[0].readTime}</span>
-                            <Link href={`/blog/${bloglarData[0].slug}`} className="blog-home-featured__link">
-                                Devamını Oku <ArrowRight size={16} />
+                            <Link href={`/blog/${bloglarData[0].slug}`} className="blog-home-featured__link" title={bloglarData[0].title}>
+                                {bloglarData[0].title} Hakkında Oku <ArrowRight size={16} />
                             </Link>
                         </div>
                     </div>
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
 
             <div style={{textAlign: 'center', marginTop: '48px'}} className="reveal" data-delay="400">
-                <Link href="/blog" className="btn btn--outline">Tüm Yazıları Keşfet 📖</Link>
+                <Link href="/blog" className="btn btn--outline" title="Çerkezköy Taksi Blog">Çerkezköy Taksi Ulaşım Rehberini Keşfet 📖</Link>
             </div>
         </div>
       </section>

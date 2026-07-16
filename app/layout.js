@@ -44,12 +44,42 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://www.cerkezkoycicektaksi.com/#website",
+        "url": "https://www.cerkezkoycicektaksi.com",
+        "name": "Çiçek Taksi Çerkezköy",
+        "publisher": {
+          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
+        },
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.cerkezkoycicektaksi.com/#organization",
+        "name": "Çiçek Taksi",
+        "url": "https://www.cerkezkoycicektaksi.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.cerkezkoycicektaksi.com/logo.png"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+905464014751",
+          "contactType": "customer service",
+          "areaServed": "TR",
+          "availableLanguage": "Turkish"
+        }
+      },
+      {
         "@type": "TaxiService",
+        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness",
         "name": "Çiçek Taksi Çerkezköy",
         "image": "https://www.cerkezkoycicektaksi.com/logo.png",
-        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness",
         "url": "https://www.cerkezkoycicektaksi.com",
         "telephone": "+905464014751",
+        "parentOrganization": {
+          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Çerkezköy Merkez",
@@ -70,17 +100,6 @@ export default function RootLayout({ children }) {
           "closes": "23:59"
         },
         "priceRange": "$$"
-      },
-      {
-        "@type": "Organization",
-        "name": "Çiçek Taksi",
-        "url": "https://www.cerkezkoycicektaksi.com",
-        "logo": "https://www.cerkezkoycicektaksi.com/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+905464014751",
-          "contactType": "customer service"
-        }
       }
     ]
   };
@@ -92,8 +111,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Placeholder for Search Console and GA4 */}
-        <meta name="google-site-verification" content="HTML_DOGRULAMA_KODUNUZU_BURAYA_EKLEYIN" />
+        {/* Google Site Verification HTML dosyası ile yapıldı */}
       </head>
       <body className={outfit.className}>
         <AiOverview />
