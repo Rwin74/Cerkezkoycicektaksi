@@ -184,6 +184,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section" style={{backgroundColor: '#fff', padding: '60px 0', borderTop: '1px solid #eee'}}>
+        <div className="container reveal">
+            <h2 style={{fontSize: '1.8rem', marginBottom: '20px', color: '#333'}}>Çerkezköy Taksi ve Çevresi İçin Tek Adresiniz</h2>
+            <div style={{color: '#555', lineHeight: '1.8', fontSize: '1.05rem'}}>
+                <p style={{marginBottom: '15px'}}>Tekirdağ'ın kalbi Çerkezköy ve çevresinde, ulaşım ihtiyaçlarınız için güvenilir bir çözüm arıyorsanız doğru yerdesiniz. <strong>Çerkezköy Taksi</strong> durağı olarak, günün 24 saati kesintisiz ulaşım hizmeti veriyoruz. Amacımız, müşterilerimize konforlu, temiz araçlarımızla ve tecrübeli şoför kadromuzla eşsiz bir deneyim yaşatmaktır. İhtiyacınız olan an, bize ulaşmanız yeterli; size <strong>en yakın taksi</strong> anında kapınızda olacak.</p>
+                <p style={{marginBottom: '15px'}}>Hizmet ağımız sadece merkezle sınırlı değildir. <strong>Kapaklı taksi</strong>, <strong>Kızılpınar taksi</strong> ve <strong>Veliköy taksi</strong> arayışlarınızda da ilk tercih edilen adres olmanın gururunu yaşıyoruz. Organize Sanayi Bölgeleri (OSB) ulaşımından, hastane ve otogar transferlerine kadar her alanda profesyonel destek sağlıyoruz. Çerkezköy ve çevresindeki yoğun tempoda, zaman kaybı yaşamamanız adına alternatif rotaları kullanarak gideceğiniz yere sizi hızlıca ve güvenle ulaştırıyoruz.</p>
+                <p>Acil bir durum olduğunda <strong>Çerkezköy nöbetçi taksi</strong> hizmetimiz sayesinde gecenin bir yarısı bile yollarda mağdur olmazsınız. Üstelik araçlarımızda kredi kartı geçerli olup, bütçenizi zorlamayan uygun ve sabit fiyat garantisiyle ödemelerinizi kolayca yapabilirsiniz. "Hızlı, Güvenli ve Güleryüzlü" hizmet anlayışımızla; siz nereye isterseniz, biz oraya götürüyoruz.</p>
+            </div>
+        </div>
+      </section>
+
       <section className="section section--yellow" style={{textAlign: 'center'}}>
         <div className="container">
             <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen <em>Çerkezköy Taksi</em> Çağır 🚕</h2>

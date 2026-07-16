@@ -8,6 +8,8 @@ if (!fs.existsSync(dataDir)) {
 
 // NLP & Semantic Keywords
 const nlpKeywords = [
+    "Çerkezköy taksi", "en yakın taksi", "Kapaklı taksi", "Veliköy taksi", "Kızılpınar taksi", 
+    "Çerkezköy nöbetçi taksi", "Çerkezköy taksi durağı", "Çerkezköy ucuz taksi",
     "taksi durağı", "7/24 ulaşım", "şehir içi ulaşım", "ticari taksi", 
     "güvenli ulaşım", "kredi kartı geçerli taksi", "hızlı ulaşım", 
     "VIP transfer", "havaalanı transferi", "çocuk koltuğu", 
@@ -237,11 +239,18 @@ blogCategories.forEach(category => {
 
 // Ayrıca manuel belirtilen CTR odaklı özel bloglar ekleyelim
 const customBlogs = [
+    { title: "Çerkezköy Taksi Çağırırken Dikkat Edilmesi Gerekenler", category: "Taksi" },
+    { title: "Çerkezköy'de Güvenilir ve Hızlı Taksi Bulmanın Yolları", category: "Taksi" },
+    { title: "Çerkezköy'den Havalimanlarına VIP ve Sabit Fiyatlı Transfer", category: "Taksi" },
+    { title: "Gece Ulaşımında Çiçek Taksi: 7/24 Kesintisiz Hizmet", category: "Taksi" },
+    { title: "Çerkezköy Taksi Ücretleri 2026: Sürprizsiz Yolculuk Deneyimi", category: "Taksi" },
     { title: "Çerkezköy'de Taksi Nasıl Çağırılır?", category: "Taksi" },
     { title: "Gece Taksi Bulmanın En Kolay Yolu", category: "Taksi" },
     { title: "Çerkezköy OSB Ulaşım Rehberi", category: "OSB" },
     { title: "Kapaklı'dan İstanbul Havalimanına Kaç Dakika?", category: "Havalimanı" },
     { title: "Çerkezköy Taksi Telefonları", category: "Taksi" },
+    { title: "Kızılpınar Taksi Durağı ve Ulaşım", category: "Taksi" },
+    { title: "Veliköy En Yakın Taksi", category: "Taksi" },
     { title: "VIP Taksi Nedir?", category: "VIP" },
     { title: "Taksi mi Transfer mi?", category: "Ulaşım" }
 ];
