@@ -6,6 +6,8 @@ import noktalarData from '@/data/noktalar.json';
 import fiyatlarData from '@/data/fiyatlar.json';
 import ekibimizData from '@/data/ekibimiz.json';
 import subelerData from '@/data/subeler.json';
+import landingPagesData from '@/data/landingPages.json';
+
 
 export default function sitemap() {
     const baseUrl = 'https://www.cerkezkoycicektaksi.com';
@@ -88,5 +90,13 @@ export default function sitemap() {
         priority: 0.7,
     }));
 
-    return [...routes, ...services, ...neighborhoods, ...transfers, ...noktalar, ...fiyatlar, ...ekip, ...subeler, ...blogs];
+    // Dynamic landing pages
+    const landingPages = landingPagesData.map((page) => ({
+        url: `${baseUrl}/${page.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'weekly',
+        priority: 0.9,
+    }));
+
+    return [...routes, ...services, ...neighborhoods, ...transfers, ...noktalar, ...fiyatlar, ...ekip, ...subeler, ...blogs, ...landingPages];
 }

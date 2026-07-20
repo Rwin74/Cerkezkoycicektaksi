@@ -9,17 +9,110 @@ import Branches from '@/components/Branches';
 export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://www.cerkezkoycicektaksi.com",
-    "name": "Çiçek Taksi Çerkezköy",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.cerkezkoycicektaksi.com/arama?q={search_term_string}"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://www.cerkezkoycicektaksi.com",
+        "name": "Çiçek Taksi Çerkezköy",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.cerkezkoycicektaksi.com/arama?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
-      "query-input": "required name=search_term_string"
-    }
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Çerkezköy Taksi",
+          "item": "https://www.cerkezkoycicektaksi.com"
+        }]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Çerkezköy Taksi kaç dakika sürer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Bulunduğunuz konuma göre değişmekle birlikte, çağrı merkezimize ulaştıktan sonra ortalama 3 ile 5 dakika içerisinde size en yakın aracımız kapınızda olmaktadır." }
+          },
+          {
+            "@type": "Question",
+            "name": "Gece taksi var mı?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Çiçek Taksi olarak 7 gün 24 saat kesintisiz nöbetçi taksi hizmeti sunuyoruz. Gecenin her saatinde bize ulaşabilirsiniz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Araçlarda kredi kartı geçiyor mu?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Tüm araçlarımızda pos cihazı bulunmaktadır. Kredi kartı veya banka kartı ile %0 komisyon avantajıyla ödeme yapabilirsiniz." }
+          },
+          {
+            "@type": "Question",
+            "name": "İstanbul Havalimanı kaç TL?",
+            "acceptedAnswer": { "@type": "Answer", "text": "İstanbul Havalimanı transfer ücretlerimiz sabit fiyat garantisi altındadır. Güncel fiyatlar için lütfen iletişim numaramızdan bilgi alınız." }
+          },
+          {
+            "@type": "Question",
+            "name": "Sabiha Gökçen transferi var mı?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Çerkezköy'den Sabiha Gökçen Havalimanı'na VIP ve standart araç seçeneklerimizle doğrudan transfer hizmeti sağlıyoruz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Rezervasyon gerekiyor mu?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Anlık çağrılar için rezervasyon gerekmemektedir. Ancak havalimanı transferleri veya VIP hizmetler için önceden rezervasyon yaptırmanızı öneririz." }
+          },
+          {
+            "@type": "Question",
+            "name": "VIP taksi fiyatları farklı mı?",
+            "acceptedAnswer": { "@type": "Answer", "text": "VIP transfer hizmetlerimiz standart taksimetre ücretlendirmesinden farklıdır. Mesafe ve araç tercihine göre özel fiyatlandırma yapılır." }
+          },
+          {
+            "@type": "Question",
+            "name": "Büyük bagajlı araç isteyebilir miyim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Kesinlikle. Geniş bagaj hacmine sahip hafif ticari taksi (Doblo vb.) araç seçeneklerimizle kalabalık eşyalarınızı kolayca taşıyabilirsiniz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Şehirlerarası taksi hizmetiniz var mı?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Edirne, Tekirdağ merkez, İstanbul, Bursa başta olmak üzere Türkiye'nin tüm illerine konforlu şehirlerarası yolculuk imkanı sunuyoruz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Kapaklı veya Kızılpınar'a taksi çağırabilir miyim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Elbette. Sadece merkezde değil, Kapaklı, Kızılpınar, Veliköy ve Çerkezköy OSB dahil tüm çevre bölgelere hizmet veriyoruz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Araçta unutulan eşyalar için ne yapmalıyım?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Tüm araçlarımız merkezden kayıtlıdır. Unutulan eşyalarınız için durağımızı arayarak aracın plakasını veya saati belirtmeniz durumunda anında yardımcı oluyoruz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Çocuk koltuğu temin ediyor musunuz?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Önceden belirtmeniz durumunda, havalimanı veya şehirlerarası transferleriniz için aracımıza çocuk/bebek koltuğu monte edebiliyoruz." }
+          },
+          {
+            "@type": "Question",
+            "name": "Taksiye evcil hayvanımla binebilir miyim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Kafesinde olduğu sürece evcil hayvan dostlarımızla birlikte seyahat etmenizde hiçbir sakınca yoktur." }
+          },
+          {
+            "@type": "Question",
+            "name": "Kurumsal fatura kesiyor musunuz?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Evet, şirketiniz veya şahsınız adına taksi fişi veya kurumsal fatura düzenleyebiliyoruz. Kurumsal taşıma anlaşmaları yapmaktayız." }
+          },
+          {
+            "@type": "Question",
+            "name": "Havalimanında bizi karşılıyor musunuz?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dönüş yolculuklarınız için havalimanı yolcu karşılama (meet and greet) hizmetimiz bulunmaktadır. Şoförümüz terminal çıkışında sizi bekliyor olacaktır." }
+          }
+        ]
+      }
+    ]
   };
 
   return (
@@ -79,8 +172,9 @@ export default function Home() {
                     </div>
                 </div>
                 <Image 
-                    src="/images/hero-taxi-59.png" 
-                    alt="Çiçek Taksi Çerkezköy" 
+                    src="/images/cerkezkoy-taksi.png" 
+                    alt="Çerkezköy Taksi" 
+                    title="Çerkezköy Taksi 7/24 Ulaşım"
                     width={800} 
                     height={450} 
                     className="home-hero__car-img"
@@ -184,17 +278,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" style={{backgroundColor: '#fff', padding: '60px 0', borderTop: '1px solid #eee'}}>
-        <div className="container reveal">
-            <h2 style={{fontSize: '1.8rem', marginBottom: '20px', color: '#333'}}>Çerkezköy Taksi ve Çevresi İçin Tek Adresiniz</h2>
-            <div style={{color: '#555', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                <p style={{marginBottom: '15px'}}>Tekirdağ'ın kalbi Çerkezköy ve çevresinde, ulaşım ihtiyaçlarınız için güvenilir bir çözüm arıyorsanız doğru yerdesiniz. <strong>Çerkezköy Taksi</strong> durağı olarak, günün 24 saati kesintisiz ulaşım hizmeti veriyoruz. Amacımız, müşterilerimize konforlu, temiz araçlarımızla ve tecrübeli şoför kadromuzla eşsiz bir deneyim yaşatmaktır. İhtiyacınız olan an, bize ulaşmanız yeterli; size <strong>en yakın taksi</strong> anında kapınızda olacak.</p>
-                <p style={{marginBottom: '15px'}}>Hizmet ağımız sadece merkezle sınırlı değildir. <strong>Kapaklı taksi</strong>, <strong>Kızılpınar taksi</strong> ve <strong>Veliköy taksi</strong> arayışlarınızda da ilk tercih edilen adres olmanın gururunu yaşıyoruz. Organize Sanayi Bölgeleri (OSB) ulaşımından, hastane ve otogar transferlerine kadar her alanda profesyonel destek sağlıyoruz. Çerkezköy ve çevresindeki yoğun tempoda, zaman kaybı yaşamamanız adına alternatif rotaları kullanarak gideceğiniz yere sizi hızlıca ve güvenle ulaştırıyoruz.</p>
-                <p>Acil bir durum olduğunda <strong>Çerkezköy nöbetçi taksi</strong> hizmetimiz sayesinde gecenin bir yarısı bile yollarda mağdur olmazsınız. Üstelik araçlarımızda kredi kartı geçerli olup, bütçenizi zorlamayan uygun ve sabit fiyat garantisiyle ödemelerinizi kolayca yapabilirsiniz. "Hızlı, Güvenli ve Güleryüzlü" hizmet anlayışımızla; siz nereye isterseniz, biz oraya götürüyoruz.</p>
-            </div>
+      {/* Sık Sorulan Sorular (FAQ) */}
+      <section className="section" style={{backgroundColor: '#fff', padding: '60px 0'}}>
+        <div className="container">
+          <div className="sh sh--center reveal">
+              <span className="sh__overtitle">Müşteri Destek</span>
+              <h2 className="sh__title">Sık Sorulan <em>Sorular</em> ❓</h2>
+          </div>
+          <div className="faq-grid reveal" style={{display: 'flex', flexDirection: 'column', gap: '15px', maxWidth: '800px', margin: '0 auto'}}>
+            {[
+              { q: "Ulaşım için ne kadar süre beklemem gerekir?", a: "Bulunduğunuz noktaya en yakın aracımız, çağrınızdan hemen sonra yola çıkar. Genellikle şehir içi transferlerde ortalama 3 ile 5 dakika içerisinde size ulaşıyoruz." },
+              { q: "Gece saatlerinde ticari taksi bulabilir miyim?", a: "Kesinlikle. 7/24 kesintisiz hizmet veriyoruz. Gece rezervasyon gerekmeksizin ulaşım ihtiyacınızı karşılıyoruz." },
+              { q: "Havaalanı transferi için rezervasyon şart mı?", a: "Şart değil ancak uçuş saatinizi riske atmamak adına, havalimanı rotaları için en az birkaç saat önceden haber vermeniz konforlu bir yolculuk planlaması sağlar." },
+              { q: "Araçlarda kredi kartı ile ödeme yapabilir miyim?", a: "Evet, tüm araçlarımızda pos cihazı bulunur ve kredi kartınızla komisyonsuz olarak ödeme yapabilirsiniz." }
+            ].map((faq, index) => (
+              <details key={index} style={{ padding: '15px', background: '#f9f9f9', borderRadius: '8px', cursor: 'pointer', border: '1px solid #eaeaea' }}>
+                <summary style={{ fontWeight: '600', fontSize: '1.1rem', color: '#333' }}>{faq.q}</summary>
+                <p style={{ marginTop: '10px', color: '#555', lineHeight: '1.6' }}>{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
+      {/* Yorumlar / Sosyal Kanıt */}
+      <section className="section section--gray">
+        <div className="container">
+          <div className="sh sh--center reveal">
+              <span className="sh__overtitle">Müşteri Yorumları</span>
+              <h2 className="sh__title">Bizi Tercih Edenlerin <em>Deneyimleri</em> ⭐</h2>
+          </div>
+          <div className="grid grid--3 stagger" style={{marginTop: '40px'}}>
+            {[
+              { name: "Ahmet Y.", comment: "Havaalanı transferi için tercih ettim. Tam vaktinde geldiler, araç çok temizdi. Kesinlikle tavsiye ederim." },
+              { name: "Ayşe K.", comment: "Gece geç saatte taksi çağırdım, 3 dakikada kapıdaydılar. Şoför bey çok kibar ve ilgiliydi. Kredi kartı geçmesi de büyük avantaj." },
+              { name: "Mehmet D.", comment: "Çerkezköy içi ulaşımda her zaman ilk tercihim. Hızlı, güvenilir ve uygun fiyatlı. Teşekkürler Çiçek Taksi!" }
+            ].map((review, idx) => (
+              <div key={idx} className="card reveal" data-delay={idx * 100} style={{padding: '20px', background: '#fff', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)'}}>
+                <div style={{color: '#f1c40f', marginBottom: '10px'}}>★★★★★</div>
+                <p style={{fontStyle: 'italic', color: '#555', marginBottom: '15px'}}>"{review.comment}"</p>
+                <strong style={{color: '#333'}}>- {review.name}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="section section--yellow" style={{textAlign: 'center'}}>
         <div className="container">
             <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen <em>Çerkezköy Taksi</em> Çağır 🚕</h2>

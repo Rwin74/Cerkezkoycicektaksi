@@ -14,15 +14,15 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
-  description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi, uygun fiyatlar ve güvenilir ulaşım için hemen arayın.",
+  title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
+  description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
-    description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi, uygun fiyatlar ve güvenilir ulaşım için hemen arayın.",
+    title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
+    description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -30,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi | Çiçek Taksi - 7/24 Hızlı ve Güvenilir",
-    description: "Çerkezköy Taksi arıyorsanız Çiçek Taksi 7/24 hizmetinizde. En yakın taksi ve güvenilir ulaşım için hemen arayın.",
+    title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
+    description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
   },
   other: {
     "theme-color": "#FFCC00",
@@ -99,7 +99,15 @@ export default function RootLayout({ children }) {
           "opens": "00:00",
           "closes": "23:59"
         },
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "areaServed": [
+          "Çerkezköy",
+          "Bağlık",
+          "Gazi Mustafa Kemalpaşa",
+          "Kızılpınar",
+          "Veliköy",
+          "Kapaklı"
+        ]
       }
     ]
   };
