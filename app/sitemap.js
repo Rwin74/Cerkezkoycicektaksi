@@ -22,7 +22,8 @@ export default function sitemap() {
         '/yorumlar',
         '/iletisim',
         '/subeler',
-        '/ekibimiz'
+        '/ekibimiz',
+        '/en/istanbul-airport-cerkezkoy-taxi'
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString(),
