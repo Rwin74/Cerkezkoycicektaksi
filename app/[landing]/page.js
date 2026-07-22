@@ -2,8 +2,9 @@ import { notFound } from 'next/navigation';
 import landingPages from '@/data/landingPages.json';
 import Link from 'next/link';
 
-export function generateMetadata({ params }) {
-  const page = landingPages.find(p => p.slug === params.landing);
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const page = landingPages.find(p => p.slug === resolvedParams.landing);
   if (!page) return {};
   
   return {
@@ -21,8 +22,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function LandingPage({ params }) {
-  const page = landingPages.find(p => p.slug === params.landing);
+export default async function LandingPage({ params }) {
+  const resolvedParams = await params;
+  const page = landingPages.find(p => p.slug === resolvedParams.landing);
   if (!page) return notFound();
 
   const articleSchema = {
