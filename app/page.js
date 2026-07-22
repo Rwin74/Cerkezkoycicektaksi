@@ -132,9 +132,7 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    En Yakın<br/>
-                    <span>Çerkezköy Taksi</span><br/>
-                    Hizmeti
+                    <span>Çerkezköy Taksi</span>
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
