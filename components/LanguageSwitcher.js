@@ -35,42 +35,59 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="lang-switcher" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', background: 'rgba(255,255,255,0.12)', borderRadius: '20px', padding: '3px 8px', border: '1px solid rgba(255,255,255,0.2)' }}>
+    <div 
+      className="lang-switcher" 
+      style={{ 
+        display: 'inline-flex', 
+        alignItems: 'center', 
+        gap: '2px', 
+        background: '#111111', 
+        borderRadius: '20px', 
+        padding: '3px', 
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+        marginLeft: '10px'
+      }}
+    >
       <button 
         type="button" 
         onClick={switchToTr}
         style={{ 
           background: !isEnglish ? 'var(--taxi-yellow)' : 'transparent', 
-          color: !isEnglish ? '#111' : '#fff', 
+          color: !isEnglish ? '#111111' : '#ffffff', 
           border: 'none', 
-          borderRadius: '12px', 
-          padding: '2px 8px', 
-          fontWeight: '700', 
-          fontSize: '0.8rem',
+          borderRadius: '16px', 
+          padding: '4px 10px', 
+          fontWeight: '800', 
+          fontSize: '0.75rem',
+          letterSpacing: '0.5px',
           cursor: 'pointer',
-          transition: 'all 0.2s ease'
+          transition: 'all 0.2s ease',
+          outline: 'none'
         }}
         title="Türkçe Sürüme Geç"
       >
-        🇹🇷 TR
+        TR
       </button>
       <button 
         type="button" 
         onClick={switchToEn}
         style={{ 
           background: isEnglish ? 'var(--taxi-yellow)' : 'transparent', 
-          color: isEnglish ? '#111' : '#fff', 
+          color: isEnglish ? '#111111' : '#ffffff', 
           border: 'none', 
-          borderRadius: '12px', 
-          padding: '2px 8px', 
-          fontWeight: '700', 
-          fontSize: '0.8rem',
+          borderRadius: '16px', 
+          padding: '4px 10px', 
+          fontWeight: '800', 
+          fontSize: '0.75rem',
+          letterSpacing: '0.5px',
           cursor: 'pointer',
-          transition: 'all 0.2s ease'
+          transition: 'all 0.2s ease',
+          outline: 'none'
         }}
         title="Switch to English Version"
       >
-        🇬🇧 EN
+        EN
       </button>
     </div>
   );
