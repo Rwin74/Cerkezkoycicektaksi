@@ -115,11 +115,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={outfit.variable} data-scroll-behavior="smooth">
       <head>
+        <link rel="alternate" hrefLang="tr" href="https://www.cerkezkoycicektaksi.com" />
+        <link rel="alternate" hrefLang="en" href="https://www.cerkezkoycicektaksi.com/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.cerkezkoycicektaksi.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Google Site Verification HTML dosyası ile yapıldı */}
       </head>
       <body className={outfit.className}>
         <AiOverview />

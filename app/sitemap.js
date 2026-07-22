@@ -23,6 +23,11 @@ export default function sitemap() {
         '/iletisim',
         '/subeler',
         '/ekibimiz',
+        '/en',
+        '/en/services',
+        '/en/rates',
+        '/en/contact',
+        '/en/about-us',
         '/en/istanbul-airport-cerkezkoy-taxi'
     ].map((route) => ({
         url: `${baseUrl}${route}`,
