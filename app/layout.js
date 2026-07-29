@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import ScrollObserver from "@/components/ScrollObserver";
 import AiOverview from "@/components/AiOverview";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -123,8 +124,13 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16495430463"></script>
-        <script
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16495430463"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -148,13 +154,17 @@ export default function RootLayout({ children }) {
           <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span className="phone-float__tip">Hemen Bizi Ara</span>
         </a>
-        <script
+        <Script
+          id="conversion-tracking"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               document.addEventListener('click', function(e) {
                 var target = e.target.closest('a');
                 if (target && (target.href.includes('tel:') || target.href.includes('wa.me'))) {
-                  gtag('event', 'conversion', {'send_to': 'AW-16495430463/igYYCMvS39UcEL-W0bk9'});
+                  if (typeof gtag === 'function') {
+                    gtag('event', 'conversion', {'send_to': 'AW-16495430463/igYYCMvS39UcEL-W0bk9'});
+                  }
                 }
               });
             `
