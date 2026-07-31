@@ -132,11 +132,11 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    <span>Çerkezköy Taksi</span>
+                    <span>Çerkezköy Taksi</span> Durağı
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
-                    Gideceğin yere geç kalma! <strong>Çiçek Taksi</strong> ile güvenli ve konforlu bir yolculuk seni bekliyor. Çerkezköy'de kredi kartından <strong>komisyon almayan tek taksi</strong> durağıyız! 💳✨
+                    Gideceğin yere geç kalma! <strong>Çerkezköy taksi</strong> arayanlar için en güvenilir durak olan Çiçek Taksi ile 7/24 konforlu bir yolculuk seni bekliyor. Çerkezköy'de kredi kartından <strong>komisyon almayan tek taksi</strong> durağıyız! 💳✨
                 </p>
                 
                 <div className="home-hero__actions reveal" data-delay="300">
@@ -166,7 +166,7 @@ export default function Home() {
                     </div>
                     <div className="floating-card__text">
                         <span style={{color: 'var(--taxi-yellow)', fontWeight: '800', letterSpacing: '0.5px'}}>KREDİ KARTI GEÇERLİ</span>
-                        <strong style={{lineHeight: '1.4', fontWeight: '600', color: '#fff'}}>Çerkezköy'de <span style={{color: '#fff', padding: '2px 6px', background: '#44bd32', borderRadius: '4px', fontWeight: '800'}}>%0 KOMİSYON</span><br/>Alan Tek Taksi Durağı!</strong>
+                        <strong style={{lineHeight: '1.4', fontWeight: '600', color: '#fff'}}><strong>Çerkezköy Taksi</strong> durağı olarak <span style={{color: '#fff', padding: '2px 6px', background: '#44bd32', borderRadius: '4px', fontWeight: '800'}}>%0 KOMİSYON</span><br/>Alıyoruz!</strong>
                     </div>
                 </div>
                 <Image 
@@ -223,11 +223,11 @@ export default function Home() {
       <section className="section section--gray">
         <div className="container">
             <div className="sh sh--center reveal">
-                <span className="sh__overtitle">Çerkezköy Rehberi</span>
-                <h2 className="sh__title">Son <em>Yazılarımız</em> 📖</h2>
+                <span className="sh__overtitle">Çerkezköy Taksi Rehberi</span>
+                <h2 className="sh__title">En Son <em>Taksi Yazılarımız</em> 📖</h2>
             </div>
             <p className="reveal" data-delay="100" style={{textAlign: 'center', maxWidth: '600px', margin: '-20px auto 48px', color: 'var(--text-muted)', fontSize: '1.1rem'}}>
-                Çerkezköy ve çevresindeki ulaşım, gezi ve yaşam rehberimizden faydalı bilgiler edinin.
+                <strong>Çerkezköy taksi numarası</strong>, taksi ücretleri, havaalanı transferleri ve ulaşım hakkında aradığınız tüm detaylar Çerkezköy Taksi rehberimizde.
             </p>
 
             <div className="blog-home-grid">
@@ -323,8 +323,8 @@ export default function Home() {
       </section>
       <section className="section section--yellow" style={{textAlign: 'center'}}>
         <div className="container">
-            <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen <em>Çerkezköy Taksi</em> Çağır 🚕</h2>
-            <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Hiç bekleme, tek tıkla kapında!</p>
+            <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen En Yakın <em>Çerkezköy Taksi</em> Çağır 🚕</h2>
+            <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Sizi bekletmiyoruz, <strong>Çerkezköy taksi numarası</strong> ile tek tıkla kapınızdayız!</p>
             <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: 0}} data-delay="100">
                 <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                 <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Çağır</a>

@@ -15,15 +15,15 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
-  description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
+  title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi Çerkezköy",
+  description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
-    description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
+    title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi",
+    description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -31,8 +31,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi | 7/24 Taksi Hizmeti | Çiçek Taksi",
-    description: "Çerkezköy Taksi hizmeti. 7/24 şehir içi ve şehirlerarası taksi. İstanbul Havalimanı, Sabiha Gökçen transferleri. Hızlı ulaşım ve güvenilir hizmet.",
+    title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi",
+    description: "Çerkezköy taksi arayanlar için en yakın durak Çiçek Taksi. Hemen arayın, anında kapınızdayız: 0546 401 47 51.",
   },
   other: {
     "theme-color": "#FFCC00",
