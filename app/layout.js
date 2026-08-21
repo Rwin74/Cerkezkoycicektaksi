@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         "@type": "WebSite",
         "@id": "https://www.cerkezkoycicektaksi.com/#website",
         "url": "https://www.cerkezkoycicektaksi.com",
-        "name": "Çiçek Taksi Çerkezköy",
+        "name": "Çiçek taksi Çerkezköy",
         "publisher": {
           "@id": "https://www.cerkezkoycicektaksi.com/#organization"
         },
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "Organization",
         "@id": "https://www.cerkezkoycicektaksi.com/#organization",
-        "name": "Çiçek Taksi",
+        "name": "Çiçek taksi",
         "url": "https://www.cerkezkoycicektaksi.com",
         "logo": {
           "@type": "ImageObject",
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "TaxiService",
         "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-1",
-        "name": "Çiçek Taksi Çerkezköy (Merkez Şube)",
+        "name": "Çiçek taksi Çerkezköy (Merkez Şube)",
         "image": "https://www.cerkezkoycicektaksi.com/logo.png",
         "url": "https://www.cerkezkoycicektaksi.com",
         "telephone": "+905304014751",
@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "TaxiService",
         "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-2",
-        "name": "Çiçek Taksi Çerkezköy (Anfi Tiyatro Şube)",
+        "name": "Çiçek taksi Çerkezköy (Anfi Tiyatro Şube)",
         "image": "https://www.cerkezkoycicektaksi.com/logo.png",
         "url": "https://www.cerkezkoycicektaksi.com",
         "telephone": "+905464014751",
