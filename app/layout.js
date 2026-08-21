@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
         "name": "Çiçek Taksi Çerkezköy (Merkez Şube)",
         "image": "https://www.cerkezkoycicektaksi.com/logo.png",
         "url": "https://www.cerkezkoycicektaksi.com",
-        "telephone": "+905464014751",
+        "telephone": "+905304014751",
         "parentOrganization": {
           "@id": "https://www.cerkezkoycicektaksi.com/#organization"
         },
