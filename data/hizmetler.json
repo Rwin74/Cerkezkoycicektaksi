@@ -784,5 +784,69 @@
         "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, en yakın taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
       }
     ]
+  },
+  {
+    "id": 7,
+    "title": "Kızılpınar 7/24 Taksi",
+    "slug": "kizilpinar-7-24-taksi",
+    "icon": "MapPin",
+    "tag": "Bölge",
+    "description": "Kızılpınar bölgesi için kesintisiz ve hızlı taksi.",
+    "content": "\n            <h2>Kızılpınar 7/24 Taksi Hizmeti</h2>\n            <p>Kızılpınar sakinleri için en yakın taksi durağı olarak 7/24 hizmet veriyoruz. Kızılpınar merkezden veya mahallelerinden anında taksi çağırabilir, uygun fiyatlı seyahat edebilirsiniz.</p>\n        ",
+    "faqs": [
+      {
+        "q": "Kızılpınar taksi kaç dakikada gelir?",
+        "a": "Araçlarımız bölgede aktif ring halinde olduğu için ortalama 3-5 dakika içinde adresinize ulaşır."
+      },
+      {
+        "q": "Kredi kartı geçiyor mu?",
+        "a": "Evet, tüm araçlarımızda kredi kartı geçerlidir."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Veliköy 7/24 Taksi",
+    "slug": "velikoy-7-24-taksi",
+    "icon": "MapPin",
+    "tag": "Bölge",
+    "description": "Veliköy Organize Sanayi ve merkeze hızlı ulaşım.",
+    "content": "\n            <h2>Veliköy 7/24 Taksi Hizmeti</h2>\n            <p>Veliköy OSB ve Veliköy merkez için 7/24 taksi hizmeti sunuyoruz. İş çıkış saatlerinde veya acil durumlarda Veliköy taksi numaramızdan bize hemen ulaşabilirsiniz.</p>\n        ",
+    "faqs": [
+      {
+        "q": "Veliköy Organize Sanayiye taksi çağırabilir miyim?",
+        "a": "Evet, Veliköy OSB içindeki tüm fabrikalara 7/24 hizmetimiz vardır."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Kapaklı 7/24 Taksi",
+    "slug": "kapakli-7-24-taksi",
+    "icon": "MapPin",
+    "tag": "Bölge",
+    "description": "Kapaklı geneline kesintisiz taksi hizmeti.",
+    "content": "\n            <h2>Kapaklı 7/24 Taksi Hizmeti</h2>\n            <p>Çerkezköy ile Kapaklı arasında ve Kapaklı içi ulaşımlarınızda Çiçek Taksi güvencesiyle 7 gün 24 saat seyahat edebilirsiniz.</p>\n        ",
+    "faqs": [
+      {
+        "q": "Kapaklı Merkezden Çerkezköy Otogara gidiş var mı?",
+        "a": "Evet, Kapaklı - Çerkezköy arası tüm rotalar için hizmet sunuyoruz."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Hallaçlı Taksi",
+    "slug": "hallacli-taksi",
+    "icon": "MapPin",
+    "tag": "Bölge",
+    "description": "Hallaçlı mahallesi için hızlı taksi çözümü.",
+    "content": "\n            <h2>Hallaçlı Taksi Hizmeti</h2>\n            <p>Hallaçlı mahallesine ve çevresine özel taksi hizmeti. Uzak yakın demeden Hallaçlı bölgesi için bir telefon uzağınızdayız.</p>\n        ",
+    "faqs": [
+      {
+        "q": "Hallaçlı mahallesine gece taksi geliyor mu?",
+        "a": "Evet, gece gündüz fark etmeksizin Hallaçlı mahallesine araç yönlendiriyoruz."
+      }
+    ]
   }
 ]
