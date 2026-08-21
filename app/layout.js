@@ -73,8 +73,8 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "TaxiService",
-        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness",
-        "name": "Çiçek Taksi Çerkezköy",
+        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-1",
+        "name": "Çiçek Taksi Çerkezköy (Merkez Şube)",
         "image": "https://www.cerkezkoycicektaksi.com/logo.png",
         "url": "https://www.cerkezkoycicektaksi.com",
         "telephone": "+905464014751",
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Çerkezköy Merkez",
+          "streetAddress": "Gazi Mustafa Kemalpaşa, Ladin Sk 7/3",
           "addressLocality": "Çerkezköy",
           "addressRegion": "Tekirdağ",
           "postalCode": "59500",
@@ -93,6 +93,45 @@ export default function RootLayout({ children }) {
           "@type": "GeoCoordinates",
           "latitude": 41.2858,
           "longitude": 28.0003
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "priceRange": "$$",
+        "areaServed": [
+          "Çerkezköy",
+          "Bağlık",
+          "Gazi Mustafa Kemalpaşa",
+          "Kızılpınar",
+          "Veliköy",
+          "Kapaklı"
+        ]
+      },
+      {
+        "@type": "TaxiService",
+        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-2",
+        "name": "Çiçek Taksi Çerkezköy (Anfi Tiyatro Şube)",
+        "image": "https://www.cerkezkoycicektaksi.com/logo.png",
+        "url": "https://www.cerkezkoycicektaksi.com",
+        "telephone": "+905464014751",
+        "parentOrganization": {
+          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Anfi Tiyatro Önü, Gazi Mustafa Kemalpaşa, Malkoçoğlu Cd.",
+          "addressLocality": "Çerkezköy",
+          "addressRegion": "Tekirdağ",
+          "postalCode": "59500",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.2865,
+          "longitude": 27.9985
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
