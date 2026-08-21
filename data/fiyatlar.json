@@ -46,5 +46,41 @@
       "base": 50,
       "perKm": 22
     }
+  },
+  {
+    "id": 5,
+    "title": "Çerkezköy Kapaklı Taksi Ücreti",
+    "slug": "cerkezkoy-kapakli-taksi-ucreti",
+    "description": "Çerkezköy ve Kapaklı arası 2026 yılı güncel taksi ücreti ve ulaşım detayları.",
+    "content": "\n            <h2>Çerkezköy Kapaklı Arası Taksi Ücreti (2026)</h2>\n            <p>Kapaklı ve Çerkezköy arası en sık kullanılan güzergahlardan biridir. Çiçek Taksi ile 7/24 kesintisiz hizmet alarak, sürpriz ücretlerle karşılaşmadan yolculuk yapabilirsiniz.</p>\n        ",
+    "pricingData": {
+      "title": "Çerkezköy Kapaklı Taksi Ücreti",
+      "base": 50,
+      "perKm": 25
+    }
+  },
+  {
+    "id": 6,
+    "title": "Çerkezköy Çorlu Taksi Ücreti",
+    "slug": "cerkezkoy-corlu-taksi-ucreti",
+    "description": "Çerkezköy - Çorlu arası ve Çorlu Devlet Hastanesi taksi fiyatları.",
+    "content": "\n            <h2>Çerkezköy Çorlu Taksi Fiyatları</h2>\n            <p>Çorlu merkeze veya Çorlu Havalimanına gidecekseniz, geniş bagajlı Doblo taksilerimiz veya VIP araçlarımızla en uygun fiyat garantisi sunuyoruz.</p>\n        ",
+    "pricingData": {
+      "title": "Çerkezköy Çorlu Taksi Ücreti",
+      "base": 50,
+      "perKm": 22
+    }
+  },
+  {
+    "id": 7,
+    "title": "Çerkezköy Devlet Hastanesi Taksi Ücreti",
+    "slug": "cerkezkoy-devlet-hastanesi-taksi-ucreti",
+    "description": "Çerkezköy Devlet Hastanesi taksi durağı hizmeti, nöbetçi taksi ve acil ulaşım ücretleri.",
+    "content": "\n            <h2>Çerkezköy Devlet Hastanesi Taksi Durağı</h2>\n            <p>Sağlık için beklemek olmaz. Çerkezköy Devlet Hastanesine gitmek veya hastaneden dönmek için 7/24 nöbetçi taksi hizmetimiz 5 dakika içinde kapınızda.</p>\n        ",
+    "pricingData": {
+      "title": "Çerkezköy Devlet Hastanesi Taksi",
+      "base": 40,
+      "perKm": 25
+    }
   }
 ]
