@@ -7,6 +7,20 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/transfer',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/noktalar',
+        destination: '/',
+        permanent: true,
+      }
+    ];
+  },
 };
 
 export default nextConfig;

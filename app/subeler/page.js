@@ -3,6 +3,9 @@ import subelerData from '@/data/subeler.json';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata = {
+  alternates: {
+    canonical: "/subeler",
+  },
     title: 'Şubelerimiz | Çiçek Taksi Çerkezköy',
     description: 'Çiçek Taksi şubeleri ve durak lokasyonları. Size en yakın taksi durağını bulun.',
 };

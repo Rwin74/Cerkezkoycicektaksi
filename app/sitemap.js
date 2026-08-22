@@ -31,7 +31,6 @@ export default function sitemap() {
         '/en/istanbul-airport-cerkezkoy-taxi'
     ].map((route) => ({
         url: `${baseUrl}${route}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'daily',
         priority: route === '' ? 1 : 0.8,
     }));
@@ -39,7 +38,6 @@ export default function sitemap() {
     // Dynamic services
     const services = hizmetlerData.map((hizmet) => ({
         url: `${baseUrl}/hizmetler/${hizmet.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.8,
     }));
@@ -47,7 +45,6 @@ export default function sitemap() {
     // Dynamic neighborhoods
     const neighborhoods = bolgelerData.map((bolge) => ({
         url: `${baseUrl}/bolgeler/${bolge.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.9,
     }));
@@ -55,35 +52,30 @@ export default function sitemap() {
     // Dynamic transfers
     const transfers = transferlerData.map((transfer) => ({
         url: `${baseUrl}/transfer/${transfer.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.9,
     }));
 
     const noktalar = noktalarData.map((nokta) => ({
         url: `${baseUrl}/noktalar/${nokta.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.8,
     }));
 
     const fiyatlar = fiyatlarData.map((fiyat) => ({
         url: `${baseUrl}/fiyatlar/${fiyat.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.9,
     }));
 
     const ekip = ekibimizData.map((personel) => ({
         url: `${baseUrl}/ekibimiz/${personel.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'monthly',
         priority: 0.7,
     }));
 
     const subeler = subelerData.map((sube) => ({
         url: `${baseUrl}/subeler/${sube.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.9,
     }));
@@ -91,7 +83,6 @@ export default function sitemap() {
     // Dynamic blogs
     const blogs = bloglarData.map((blog) => ({
         url: `${baseUrl}/blog/${blog.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'monthly',
         priority: 0.7,
     }));
@@ -99,7 +90,6 @@ export default function sitemap() {
     // Dynamic landing pages
     const landingPages = landingPagesData.map((page) => ({
         url: `${baseUrl}/${page.slug}`,
-        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly',
         priority: 0.9,
     }));

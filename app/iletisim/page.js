@@ -2,12 +2,25 @@ import Link from 'next/link';
 import LazyMap from '@/components/LazyMap';
 
 export const metadata = {
+  alternates: {
+    canonical: "/iletisim",
+  },
     title: 'İletişim | Çiçek Taksi Çerkezköy',
     description: "Çerkezköy Taksi durağımıza 7/24 ulaşabilirsiniz. Taksi çağırmak için hemen telefon numaralarımızdan bizi arayın."
 };
 
 export default function Iletisim() {
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "İletişim - Çiçek Taksi",
+        "url": "https://www.cerkezkoycicektaksi.com/iletisim"
+    };
+
     return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <>
             <header className="page-hero">
                 <div className="page-hero__bg"></div>

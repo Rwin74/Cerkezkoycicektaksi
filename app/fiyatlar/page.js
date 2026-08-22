@@ -1,12 +1,25 @@
 import routesData from '@/data/routes.json';
 
 export const metadata = {
+  alternates: {
+    canonical: "/fiyatlar",
+  },
     title: 'Çerkezköy Transfer Fiyatları | Çiçek Taksi',
     description: "Çerkezköy'den havalimanlarına, İstanbul ve Edirne gibi şehirlere sabit fiyatlı, sürprizsiz taksi fiyatlarımız."
 };
 
 export default function Fiyatlar() {
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Taksi Ücretleri - Çiçek Taksi",
+        "url": "https://www.cerkezkoycicektaksi.com/fiyatlar"
+    };
+    
     return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <>
             <header className="page-hero">
                 <div className="page-hero__bg"></div>

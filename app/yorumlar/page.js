@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: {
+    canonical: "/yorumlar",
+  },
     title: 'Müşteri Yorumları | Çiçek Taksi Çerkezköy',
     description: "Çerkezköy'de binlerce mutlu müşterimizin Çiçek Taksi hizmetleri hakkındaki yorumları."
 };

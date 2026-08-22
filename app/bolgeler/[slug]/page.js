@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
     if (!bolge) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${bolge.neighborhood} Taksi | 7/24 Kesintisiz | 5 Dakikada Kapınızda`,
+        title: `${bolge.neighborhood} Taksi 🚕 7/24 En Yakın`,
         description: `${bolge.neighborhood} için en hızlı ve güvenilir taksi durağı. Kredi kartı geçerlidir. Hemen arayın, 5 dakikada bulunduğunuz yere gelelim!`,
         alternates: { canonical: `/bolgeler/${bolge.slug}` },
         openGraph: {
@@ -45,7 +45,20 @@ export default async function BolgeDetay({ params }) {
     // İlgili hizmetler
     const popularServices = hizmetlerData.slice(0, 3);
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": ${bolge.neighborhood} Taksi - Çiçek Taksi,
+        "description": bolge.description,
+        "areaServed": bolge.neighborhood,
+        "telephone": "+905464014751",
+        "url": https://www.cerkezkoycicektaksi.com/bolgeler/
+    };
+
+
     return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <>
             <header className="page-hero">
                 <div className="page-hero__bg"></div>

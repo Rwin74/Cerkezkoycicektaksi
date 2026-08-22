@@ -41,8 +41,8 @@ export default function Footer() {
                         <ul>
                             <li><strong>Kategori:</strong> Taksi Durağı</li>
                             <li><Link href="/ekibimiz">Şoförlerimiz (EEAT)</Link></li>
-                            <li><Link href="/noktalar">Bölgesel Duraklar</Link></li>
                             <li><Link href="/fiyatlar">Taksi Ücretleri</Link></li>
+                            <li><Link href="/subeler">Şubelerimiz</Link></li>
                         </ul>
                     </div>
 
@@ -51,7 +51,6 @@ export default function Footer() {
                         <ul>
                             <li><Link href="/hizmetler/sehir-ici-taksi">Şehir İçi Taksi</Link></li>
                             <li><Link href="/hizmetler/havalimani-transfer">Havalimanı Transfer</Link></li>
-                            <li><Link href="/transfer">Şehirler Arası Transfer</Link></li>
                             <li><Link href="/hizmetler/vip-transfer">VIP Transfer</Link></li>
                         </ul>
                     </div>
@@ -59,7 +58,7 @@ export default function Footer() {
                 <div className="footer__bottom">
                     <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
                         <p>&copy; {new Date().getFullYear()} Çiçek Taksi Çerkezköy. Tüm hakları saklıdır.</p>
-                        <p style={{fontSize: '0.8rem'}}>Çerkezköy Taksi | Havalimanı Transfer | Şehirler Arası Taksi | Tekirdağ Taksi | Kapaklı Taksi</p>
+                        <p style={{fontSize: '0.8rem'}}>Çerkezköy Taksi | Havalimanı Transfer | Şehirler Arası Taksi | Tekirdağ Taksi | Kapaklı Taksi | <Link href="/site-haritasi" style={{color: 'inherit', textDecoration: 'underline'}}>Site Haritası</Link></p>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)'}}>
                         <span>Tasarım ve Altyapı: <a href="https://atakanyagli.com" target="_blank" rel="noopener noreferrer" style={{color: 'var(--taxi-yellow)'}}>Atakan Yağlı</a></span>

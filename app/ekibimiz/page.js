@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { User } from 'lucide-react';
 
 export const metadata = {
+  alternates: {
+    canonical: "/ekibimiz",
+  },
     title: 'Profesyonel Şoför Ekibimiz | Çiçek Taksi Çerkezköy',
     description: 'Çerkezköy Çiçek Taksi ailesi olarak, uzun yıllar tecrübesi olan, ileri sürüş teknikleri eğitimi almış profesyonel şoför kadromuzla güvenli ulaşım sunuyoruz.',
 };

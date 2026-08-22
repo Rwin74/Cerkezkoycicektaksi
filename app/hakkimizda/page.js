@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: {
+    canonical: "/hakkimizda",
+  },
     title: 'Hakkımızda | Çiçek Taksi Çerkezköy',
     description: "Çerkezköy'de yılların tecrübesiyle, 7/24 güvenli, konforlu ve müşteri memnuniyeti odaklı taksi hizmeti."
 };

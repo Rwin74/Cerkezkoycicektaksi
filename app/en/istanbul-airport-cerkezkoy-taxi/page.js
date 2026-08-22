@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Phone, MessageSquare, Clock, Shield, CreditCard, Plane, MapPin, CheckCircle, Car } from 'lucide-react';
 
 export const metadata = {
-  title: 'Istanbul Airport to Cerkezkoy Taxi & VIP Transfer | Cicek Taxi 24/7',
-  description: 'Book 24/7 reliable taxi & VIP transfer from Istanbul Airport (IST) & Sabiha Gokcen (SAW) to Cerkezkoy Industrial Zone (OSB). Fixed rates, English-speaking drivers, credit card accepted.',
+  title: 'Istanbul Airport to Cerkezkoy Taxi | Cicek Taxi',
+  description: 'Book 24/7 reliable taxi & VIP transfer from Istanbul Airport (IST) to Cerkezkoy OSB. Fixed rates, English-speaking drivers, credit card accepted.',
   keywords: ['Istanbul Airport to Cerkezkoy Taxi', 'Cerkezkoy Taxi', 'Istanbul Airport Transfer Cerkezkoy', 'Cerkezkoy OSB Taxi', 'Sabiha Gokcen to Cerkezkoy VIP Transfer'],
   alternates: {
     canonical: '/en/istanbul-airport-cerkezkoy-taxi',

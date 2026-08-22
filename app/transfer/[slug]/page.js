@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
     if (!transfer) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${transfer.title} | VIP & Ekonomik Araçlar | Rezervasyon Yapın`,
+        title: `${transfer.title} | VIP & Ekonomik`,
         description: `${transfer.origin} - ${transfer.dest} arası konforlu ve güvenilir transfer. Kredi kartı geçerli, 7/24 hizmet. Hemen fiyat alın!`,
         alternates: { canonical: `/transfer/${transfer.slug}` },
         openGraph: {
@@ -32,6 +32,18 @@ export async function generateStaticParams() {
 export default async function TransferDetay({ params }) {
     const { slug } = await params;
     const transfer = transferlerData.find(t => t.slug === slug);
+
+    
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Taxi Transfer",
+        "name": transfer.title,
+        "description": transfer.description,
+        "provider": { "@type": "TaxiService", "name": "Çiçek Taksi" },
+        "areaServed": transfer.dest,
+        "url": https://www.cerkezkoycicektaksi.com/transfer/
+    };
 
     if (!transfer) {
         notFound();
@@ -69,6 +81,8 @@ export default async function TransferDetay({ params }) {
     };
 
     return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <>
             <script
                 type="application/ld+json"
@@ -152,6 +166,8 @@ export default async function TransferDetay({ params }) {
                     <div className="grid grid--3 stagger">
                         {relatedTransfers.map((t, i) => {
                             return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
                                 <Link href={`/transfer/${t.slug}`} key={t.id} style={{textDecoration: 'none', color: 'inherit'}}>
                                     <div className="card card--service reveal" data-delay={i * 100}>
                                         <div className="card__icon"><MapPinIcon size={32} /></div>

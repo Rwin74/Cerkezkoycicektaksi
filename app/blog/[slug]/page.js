@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
     if (!blog) return { title: 'Yazı Bulunamadı' };
 
     return {
-        title: `${blog.title} | Çiçek Taksi Rehberi (2026)`,
-        description: blog.excerpt + " Tüm ulaşım sırları ve detaylı bilgiler için rehberimizi okuyun.",
+        title: blog.title.length > 50 ? blog.title.substring(0, 50) + ' | Taksi' : `${blog.title} | Çiçek Taksi`,
+        description: blog.excerpt.length > 155 ? blog.excerpt.substring(0, 155) + '...' : blog.excerpt,
         alternates: { canonical: `/blog/${blog.slug}` },
         openGraph: {
             title: blog.title,
@@ -31,6 +31,17 @@ export async function generateStaticParams() {
 export default async function BlogDetay({ params }) {
     const { slug } = await params;
     const blog = bloglarData.find(b => b.slug === slug);
+
+    
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": blog.title,
+        "description": blog.excerpt,
+        "author": { "@type": "Person", "name": "Serhat Çiçek" },
+        "datePublished": blog.date,
+        "url": https://www.cerkezkoycicektaksi.com/blog/
+    };
 
     if (!blog) {
         notFound();
@@ -122,6 +133,8 @@ export default async function BlogDetay({ params }) {
     };
 
     return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <>
             <script
                 type="application/ld+json"

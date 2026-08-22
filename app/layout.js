@@ -15,12 +15,9 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi Çerkezköy",
+  title: "Çerkezköy Taksi 🚕 7/24 En Yakın | Çiçek Taksi",
   description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi",
     description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",

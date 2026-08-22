@@ -6,6 +6,12 @@ import { getIcon } from '@/components/IconMap';
 import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
 import Branches from '@/components/Branches';
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
