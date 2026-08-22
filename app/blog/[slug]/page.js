@@ -33,6 +33,9 @@ export default async function BlogDetay({ params }) {
     const blog = bloglarData.find(b => b.slug === slug);
 
     
+    
+
+    
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -40,7 +43,7 @@ export default async function BlogDetay({ params }) {
         "description": blog.excerpt,
         "author": { "@type": "Person", "name": "Serhat Çiçek" },
         "datePublished": blog.date,
-        "url": https://www.cerkezkoycicektaksi.com/blog/
+        "url": `https://www.cerkezkoycicektaksi.com/blog/${blog.slug}`
     };
 
     if (!blog) {
@@ -135,7 +138,6 @@ export default async function BlogDetay({ params }) {
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(richSchema) }}

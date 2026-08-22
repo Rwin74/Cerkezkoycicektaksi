@@ -1,4 +1,4 @@
-﻿import bolgelerData from '@/data/bolgeler.json';
+import bolgelerData from '@/data/bolgeler.json';
 import transferlerData from '@/data/transferler.json';
 import bloglarData from '@/data/bloglar.json';
 import hizmetlerData from '@/data/hizmetler.json';
@@ -20,7 +20,7 @@ export default function SiteHaritasi() {
           <h2>Bölgeler</h2>
           <ul>
             {bolgelerData.map(m => (
-              <li key={m.slug}><Link href={\/bolgeler/\\}>{m.neighborhood} Taksi</Link></li>
+              <li key={m.slug}><Link href={`/bolgeler/${m.slug}`}>{m.neighborhood} Taksi</Link></li>
             ))}
           </ul>
         </div>
@@ -29,7 +29,7 @@ export default function SiteHaritasi() {
           <h2>Transfer Noktaları</h2>
           <ul>
             {transferlerData.map(t => (
-              <li key={t.slug}><Link href={\/transfer/\\}>{t.title}</Link></li>
+              <li key={t.slug}><Link href={`/transfer/${t.slug}`}>{t.title}</Link></li>
             ))}
           </ul>
         </div>
@@ -38,7 +38,7 @@ export default function SiteHaritasi() {
           <h2>Rehber & Blog</h2>
           <ul>
             {bloglarData.map(b => (
-              <li key={b.slug}><Link href={\/blog/\\}>{b.title}</Link></li>
+              <li key={b.slug}><Link href={`/blog/${b.slug}`}>{b.title}</Link></li>
             ))}
           </ul>
         </div>
@@ -54,7 +54,7 @@ export default function SiteHaritasi() {
             <li><Link href="/ekibimiz">Şoförlerimiz</Link></li>
             <li><Link href="/subeler">Şubelerimiz</Link></li>
             {hizmetlerData.map(h => (
-              <li key={h.slug}><Link href={\/hizmetler/\\}>{h.title}</Link></li>
+              <li key={h.slug}><Link href={`/hizmetler/${h.slug}`}>{h.title}</Link></li>
             ))}
           </ul>
         </div>

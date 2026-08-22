@@ -48,18 +48,20 @@ export default async function BolgeDetay({ params }) {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "TaxiService",
-        "name": ${bolge.neighborhood} Taksi - Çiçek Taksi,
+        "name": `${bolge.neighborhood} Taksi - Çiçek Taksi`,
         "description": bolge.description,
         "areaServed": bolge.neighborhood,
         "telephone": "+905464014751",
-        "url": https://www.cerkezkoycicektaksi.com/bolgeler/
+        "url": `https://www.cerkezkoycicektaksi.com/bolgeler/${bolge.slug}`
     };
+
+
+    
 
 
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <>
             <header className="page-hero">
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">

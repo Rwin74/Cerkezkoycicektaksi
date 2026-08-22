@@ -16,11 +16,10 @@ export default function Fiyatlar() {
         "name": "Taksi Ücretleri - Çiçek Taksi",
         "url": "https://www.cerkezkoycicektaksi.com/fiyatlar"
     };
-    
+
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <>
             <header className="page-hero">
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">

@@ -34,13 +34,16 @@ export default async function HizmetDetay({ params }) {
     const hizmet = hizmetlerData.find(h => h.slug === slug);
 
     
+    
+
+    
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": hizmet.title,
         "description": hizmet.description,
         "provider": { "@type": "TaxiService", "name": "Çiçek Taksi" },
-        "url": https://www.cerkezkoycicektaksi.com/hizmetler/
+        "url": `https://www.cerkezkoycicektaksi.com/hizmetler/${hizmet.slug}`
     };
 
     if (!hizmet) {
@@ -127,7 +130,6 @@ export default async function HizmetDetay({ params }) {
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
@@ -216,8 +218,6 @@ export default async function HizmetDetay({ params }) {
                         {relatedServices.map((s, i) => {
                             const SIcon = getIcon(s.icon);
                             return (
-        <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
                                 <Link href={`/hizmetler/${s.slug}`} key={s.id} style={{textDecoration: 'none', color: 'inherit'}}>
                                     <div className="card card--service reveal" data-delay={i * 100}>
                                         <div className="card__icon"><SIcon size={32} /></div>
