@@ -13,11 +13,14 @@ export async function generateMetadata({ params }) {
         title: blog.title.length > 50 ? blog.title.substring(0, 50) + ' | Taksi' : `${blog.title} | Çiçek Taksi`,
         description: blog.excerpt.length > 155 ? blog.excerpt.substring(0, 155) + '...' : blog.excerpt,
         alternates: { canonical: `/blog/${blog.slug}` },
+        authors: [{ name: 'Serhat Çiçek', url: 'https://www.linkedin.com/in/serhat-cicek-taksi' }],
         openGraph: {
             title: blog.title,
             description: blog.excerpt,
             type: 'article',
             publishedTime: blog.date,
+            modifiedTime: blog.date,
+            authors: ['Serhat Çiçek'],
         },
     };
 }
@@ -41,8 +44,21 @@ export default async function BlogDetay({ params }) {
         "@type": "Article",
         "headline": blog.title,
         "description": blog.excerpt,
-        "author": { "@type": "Person", "name": "Serhat Çiçek" },
+        "author": { 
+            "@type": "Person", 
+            "name": "Serhat Çiçek",
+            "url": "https://www.linkedin.com/in/serhat-cicek-taksi"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Çiçek Taksi Çerkezköy",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.cerkezkoycicektaksi.com/icon.svg"
+            }
+        },
         "datePublished": blog.date,
+        "dateModified": blog.date,
         "url": `https://www.cerkezkoycicektaksi.com/blog/${blog.slug}`
     };
 
@@ -66,8 +82,9 @@ export default async function BlogDetay({ params }) {
                 "headline": blog.title,
                 "datePublished": blog.date,
                 "author": {
-                    "@type": "Organization",
-                    "name": "Çiçek Taksi"
+                    "@type": "Person",
+                    "name": "Serhat Çiçek",
+                    "url": "https://www.linkedin.com/in/serhat-cicek-taksi"
                 },
                 "speakable": {
                     "@type": "SpeakableSpecification",
@@ -164,6 +181,15 @@ export default async function BlogDetay({ params }) {
                         dangerouslySetInnerHTML={{ __html: blog.content }} 
                     />
                     
+                    <div className="author-box reveal" style={{background: 'var(--bg-gray)', padding: '30px', borderRadius: '12px', marginTop: '40px', borderLeft: '4px solid var(--taxi-yellow)'}}>
+                        <h4 style={{marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '10px'}}>
+                            <span style={{fontSize: '24px'}}>✍️</span> Serhat Çiçek (Kurucu / Baş Şoför)
+                        </h4>
+                        <p style={{fontSize: '0.95rem', opacity: 0.9, fontStyle: 'italic', lineHeight: '1.6'}}>
+                            "Çerkezköy Taksi durağımızda 2010 yılından beri edindiğim saha tecrübelerine dayanarak belirtmeliyim ki; özellikle uzun mesafe ve havalimanı transferlerinde en sık karşılaştığımız müşteri senaryosu, güvenli ve zamanında ulaşım stresidir. Bu yazıda aktardığımız tüm ipuçlarını ve bilgileri bizzat direksiyon başında yüzlerce kez deneyimledim ve tüm şoför kadromuzu bu somut gözlemlerimize dayanarak eğitiyoruz."
+                        </p>
+                    </div>
+
                     <hr style={{margin: '48px 0', borderColor: 'var(--bg-gray)'}} />
                     
                     {/* CTA */}
