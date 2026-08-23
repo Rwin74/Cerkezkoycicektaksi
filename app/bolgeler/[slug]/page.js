@@ -82,6 +82,14 @@ export default async function BolgeDetay({ params }) {
 
             <section className="section">
                 <div className="container container--sm">
+                    {/* AI Overview Answer Block */}
+                    <div className="ai-answer-block reveal" style={{background: 'rgba(255, 204, 0, 0.05)', padding: '25px', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)', marginBottom: '40px'}}>
+                        <h2 style={{fontSize: '1.25rem', marginBottom: '15px', color: 'var(--text-light)'}}>💡 {bolge.neighborhood} Taksi Hizmeti Nedir ve Nasıl Çağrılır?</h2>
+                        <p style={{fontSize: '1rem', lineHeight: '1.6', opacity: 0.9, margin: 0}}>
+                            <strong>Kısa Cevap:</strong> {bolge.neighborhood} bölgesinde 7/24 hizmet veren, kredi kartı geçerli ve güvenilir taksi çağırmak için <strong>0546 401 47 51</strong> numaralı telefonu arayabilir veya WhatsApp üzerinden konum gönderebilirsiniz. Araçlarımız bulunduğunuz noktaya ortalama 3-5 dakika içerisinde ulaşarak şehir içi, havalimanı veya şehirler arası transferinizi güvenle gerçekleştirir.
+                        </p>
+                    </div>
+
                     {bolge.content ? (
                         <div
                             className="rich-content reveal"

@@ -113,6 +113,14 @@ export default async function TransferDetay({ params }) {
 
             <section className="section">
                 <div className="container container--sm">
+                    {/* AI Overview Answer Block */}
+                    <div className="ai-answer-block reveal" style={{background: 'rgba(255, 204, 0, 0.05)', padding: '25px', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)', marginBottom: '40px'}}>
+                        <h2 style={{fontSize: '1.25rem', marginBottom: '15px', color: 'var(--text-light)'}}>💡 {transfer.title} Ne Kadar Sürer ve Nasıl Rezerve Edilir?</h2>
+                        <p style={{fontSize: '1rem', lineHeight: '1.6', opacity: 0.9, margin: 0}}>
+                            <strong>Kısa Cevap:</strong> {transfer.title} yolculuğu trafik durumuna bağlı olarak ortalama <strong>{transfer.time}</strong> sürmekte olup, toplam mesafe <strong>{transfer.distance}</strong> civarındadır. 7/24 VIP konforunda ve sabit fiyat garantisiyle {transfer.dest} ulaşımı sağlamak için <strong>0546 401 47 51</strong> numaralı hattımızı arayarak hemen araç çağırabilir veya ileri tarihli rezervasyon yaptırabilirsiniz. Kredi kartı geçerlidir.
+                        </p>
+                    </div>
+
                     <div
                         className="rich-content reveal"
                         dangerouslySetInnerHTML={{ __html: transfer.content }}

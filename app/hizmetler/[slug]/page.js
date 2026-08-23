@@ -157,6 +157,14 @@ export default async function HizmetDetay({ params }) {
 
             <section className="section">
                 <div className="container container--sm">
+                    {/* AI Overview Answer Block */}
+                    <div className="ai-answer-block reveal" style={{background: 'rgba(255, 204, 0, 0.05)', padding: '25px', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)', marginBottom: '40px'}}>
+                        <h2 style={{fontSize: '1.25rem', marginBottom: '15px', color: 'var(--text-light)'}}>💡 {hizmet.title} Hizmetinden Nasıl Yararlanabilirim?</h2>
+                        <p style={{fontSize: '1rem', lineHeight: '1.6', opacity: 0.9, margin: 0}}>
+                            <strong>Kısa Cevap:</strong> Çiçek Taksi'nin sunduğu <strong>{hizmet.title}</strong> hizmetinden faydalanmak için 7 gün 24 saat kesintisiz çalışan <strong>0546 401 47 51</strong> çağrı merkezimize ulaşabilirsiniz. Profesyonel şoförlerimiz, temiz araçlarımız ve kredi kartı ile ödeme kolaylığımız sayesinde {hizmet.title.toLowerCase()} ihtiyaçlarınızı en hızlı ve güvenli şekilde çözüyoruz. Hemen arayın veya WhatsApp'tan konum gönderin.
+                        </p>
+                    </div>
+
                     {hizmet.content ? (
                         <div
                             className="rich-content reveal"
