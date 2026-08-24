@@ -15,12 +15,12 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Çerkezköy Taksi 🚕 7/24 En Yakın | Çiçek Taksi",
-  description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",
+  title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+  description: "Çerkezköy taksi numarası arıyorsanız, en yakın taksi durağı Çiçek Taksi 7/24 hizmetinizde. Çerkezköy otogar taksi, hastane taksi ve Kapaklı ulaşımlarınız için güvenilir adres.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
-    title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi",
-    description: "Çerkezköy taksi mi arıyorsunuz? Çerkezköy en yakın taksi durağı Çiçek Taksi ile 7/24 hızlı, güvenilir ve uygun fiyatlı ulaşım. Çerkezköy taksi numarası: 0546 401 47 51.",
+    title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+    description: "Çerkezköy taksi numarası arıyorsanız, en yakın taksi durağı Çiçek Taksi 7/24 hizmetinizde. Çerkezköy otogar taksi, hastane taksi ve Kapaklı ulaşımlarınız için güvenilir adres.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -28,8 +28,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi 🚕 7/24 En Yakın Taksi | Çiçek Taksi",
-    description: "Çerkezköy taksi arayanlar için en yakın durak Çiçek Taksi. Hemen arayın, anında kapınızdayız: 0546 401 47 51.",
+    title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+    description: "Çerkezköy taksi numarası, otogar ve hastane taksi ulaşımlarınız için en yakın durak Çiçek Taksi. Hemen arayın: 0546 401 47 51.",
   },
   other: {
     "theme-color": "#FFCC00",

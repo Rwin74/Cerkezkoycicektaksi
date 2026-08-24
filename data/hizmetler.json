@@ -848,5 +848,24 @@
         "a": "Evet, gece gündüz fark etmeksizin Hallaçlı mahallesine araç yönlendiriyoruz."
       }
     ]
+  },
+  {
+    "id": 11,
+    "title": "Çerkezköy Otogar ve Hastane Taksi",
+    "slug": "cerkezkoy-otogar-ve-hastane-taksi",
+    "icon": "Car",
+    "tag": "Acil",
+    "description": "Çerkezköy otogar ve hastaneleri için 7/24 hızlı ulaşım.",
+    "content": "\n            <h2>Çerkezköy Otogar ve Hastane Taksi Hizmeti</h2>\n            <p>Otobüs yolculuğunuz sonrasında Çerkezköy Terminali'nden (Otogar) veya acil durumlarda Çerkezköy Devlet Hastanesi, İrmet, Optimed hastanelerinden güvenle evinize ulaşın. Çerkezköy Otogar Taksi ve Hastane Taksi hizmetimizle 7/24 yanınızdayız.</p>\n        ",
+    "faqs": [
+      {
+        "q": "Çerkezköy Otogardan gece taksi bulabilir miyim?",
+        "a": "Evet, 7/24 hizmet verdiğimiz için gece otogara geldiğinizde de bize ulaşabilirsiniz."
+      },
+      {
+        "q": "Hastaneye acil taksi ne kadar sürede gelir?",
+        "a": "En yakın aracımızı yönlendirerek birkaç dakika içerisinde bulunduğunuz hastaneye ulaşıyoruz."
+      }
+    ]
   }
 ]
