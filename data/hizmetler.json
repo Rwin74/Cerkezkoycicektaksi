@@ -9,124 +9,16 @@
     "content": "\n            <h2>Şehir İçi Taksi Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Şehir İçi Taksi</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, Kapaklı taksi, havaalanı transferi, Veliköy taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve taksi çağır, şehir içi ulaşım, şehirler arası ulaşım avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, bagajlı araç, hızlı ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Çerkezköy içi taksi ne kadar sürede kapıma gelir?",
+        "a": "Bulunduğunuz mahalleye göre (Merkez, Bağlık, GMKP vb.) 3 ila 7 dakika içerisinde en yakın durağımızdaki aracımız kapınızda olur."
       },
       {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, bagajlı araç, taksi çağır özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Şehir içi taksilerde kart geçerli mi?",
+        "a": "Evet, tüm şehir içi taksilerimizde pos cihazı bulunur; temassız, kredi kartı veya Troy kart ile ödeme yapabilirsiniz."
       },
       {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Veliköy taksi, hızlı ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, Çerkezköy taksi, 7/24 ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, çocuk koltuğu, Kapaklı taksi, şehirler arası ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, hızlı ulaşım, taksi çağır özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, havaalanı transferi, 7/24 ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, kredi kartı geçerli taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, Çerkezköy taksi durağı, çocuk koltuğu özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, Veliköy taksi, konforlu araç özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, nöbetçi taksi, Kapaklı taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, kredi kartı geçerli taksi, Çerkezköy ucuz taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, Çerkezköy taksi durağı, nöbetçi taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, Kapaklı taksi, şehir içi ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, şehir içi ulaşım, Kızılpınar taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, 7/24 ulaşım, Veliköy taksi, Çerkezköy taksi durağı özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, Çerkezköy taksi durağı, taksi durağı özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, Çerkezköy taksi, VIP transfer özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, en yakın taksi, Çerkezköy taksi durağı özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Çerkezköy nöbetçi taksi, ticari taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, kredi kartı geçerli taksi, taksi çağır özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, Kapaklı taksi, şehir içi ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, bagajlı araç, hızlı ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, Çerkezköy taksi, şehirler arası ulaşım özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, taksi çağır, ticari taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, en yakın taksi, Çerkezköy taksi durağı özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, en yakın taksi, VIP transfer özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, havaalanı transferi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy nöbetçi taksi, güvenli ulaşım, Kapaklı taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehir İçi Taksi için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, taksi durağı, kredi kartı geçerli taksi özellikleriyle her zaman Şehir İçi Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Açılış ücreti ne kadar?",
+        "a": "Tekirdağ UKOME tarafından belirlenen güncel resmi taksimetre açılış ücreti uygulanmaktadır. Sürpriz ücret çıkmaz."
       }
     ]
   },
@@ -140,124 +32,16 @@
     "content": "\n            <h2>Havalimanı Transfer Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Havalimanı Transfer</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, Çerkezköy taksi, havaalanı transferi, en yakın taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve nöbetçi taksi, Çerkezköy taksi durağı, Çerkezköy nöbetçi taksi avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, bagajlı araç, ticari taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "İstanbul Havalimanı'na transfer ne kadar sürer?",
+        "a": "Kuzey Marmara Otoyolu kullanılarak trafiğe takılmadan yaklaşık 55-70 dakika sürmektedir."
       },
       {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy taksi, hızlı ulaşım özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Havalimanı transferi için bagaj kapasiteniz nedir?",
+        "a": "Havalimanı rotaları için özel Dacia Duster / Fiat Doblo gibi geniş araçlarımız mevcuttur. 5 büyük boy valiz rahatlıkla sığar."
       },
       {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, Çerkezköy ucuz taksi, VIP transfer özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, çocuk koltuğu, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, Kızılpınar taksi, resmi taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, nöbetçi taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, Çerkezköy nöbetçi taksi, VIP transfer özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, bagajlı araç, hızlı ulaşım özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, Çerkezköy taksi, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, VIP transfer, resmi taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, çocuk koltuğu, VIP transfer özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, en yakın taksi, VIP transfer özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehirler arası ulaşım, Çerkezköy taksi durağı, ticari taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, resmi taksi, Çerkezköy taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Kapaklı taksi, çocuk koltuğu özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy nöbetçi taksi, Çerkezköy taksi durağı, resmi taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, en yakın taksi, Çerkezköy taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, Çerkezköy taksi durağı, çocuk koltuğu özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, hızlı ulaşım, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, Çerkezköy nöbetçi taksi, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, ticari taksi, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, hızlı ulaşım, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy taksi, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, Kapaklı taksi, ticari taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, Çerkezköy ucuz taksi, en yakın taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, hızlı ulaşım, Çerkezköy taksi durağı özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, bagajlı araç, nöbetçi taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, şehirler arası ulaşım, Çerkezköy ucuz taksi özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, resmi taksi, konforlu araç özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Havalimanı Transfer için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, konforlu araç, Veliköy taksi, bagajlı araç özellikleriyle her zaman Havalimanı Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Havalimanı transferlerinde sabit fiyat garantisi var mı?",
+        "a": "Evet, havalimanı ve uzak mesafe transferleri için otoyol/köprü geçişleri dahil sabit (fix) fiyat garantisi sunuyoruz."
       }
     ]
   },
@@ -271,124 +55,16 @@
     "content": "\n            <h2>Şehirler Arası Taksi Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Şehirler Arası Taksi</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, şehir içi ulaşım, Çerkezköy nöbetçi taksi, çocuk koltuğu arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve konforlu araç, 7/24 ulaşım, taksi çağır avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehirler arası ulaşım, Çerkezköy taksi durağı, Çerkezköy nöbetçi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Tekirdağ dışına çıkıyor musunuz?",
+        "a": "Edirne, İstanbul, Kırklareli başta olmak üzere Türkiye'nin her noktasına konforlu şehirler arası hizmetimiz vardır."
       },
       {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, havaalanı transferi, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Şehirler arası yolculuklarda mola veriliyor mu?",
+        "a": "Elbette. Kendi aracınızla seyahat ediyormuş gibi, yolcunun talebine göre dinlenme tesislerinde mola verilir."
       },
       {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy taksi, resmi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, resmi taksi, Çerkezköy taksi, taksi durağı özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Veliköy taksi, taksi çağır özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, nöbetçi taksi, çocuk koltuğu özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, havaalanı transferi, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Çerkezköy ucuz taksi, nöbetçi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, şehir içi ulaşım, Çerkezköy taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, çocuk koltuğu, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, 7/24 ulaşım, bagajlı araç özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, bagajlı araç, kredi kartı geçerli taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, hızlı ulaşım, resmi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, VIP transfer, Çerkezköy taksi durağı özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, konforlu araç, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, Veliköy taksi, ticari taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, 7/24 ulaşım, Çerkezköy nöbetçi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, Çerkezköy nöbetçi taksi, kredi kartı geçerli taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, resmi taksi, Kızılpınar taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, güvenli ulaşım, Veliköy taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi çağır, Çerkezköy taksi durağı, Çerkezköy nöbetçi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, kredi kartı geçerli taksi, resmi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, konforlu araç, VIP transfer, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, taksi durağı, resmi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, Veliköy taksi, güvenli ulaşım özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, güvenli ulaşım, Çerkezköy taksi durağı özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Çerkezköy nöbetçi taksi, şehir içi ulaşım özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, Çerkezköy nöbetçi taksi, nöbetçi taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, güvenli ulaşım, Kapaklı taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Şehirler Arası Taksi için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy taksi, en yakın taksi özellikleriyle her zaman Şehirler Arası Taksi bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Şoförlerinizin uzun yol tecrübesi var mı?",
+        "a": "Tüm şoförlerimiz SRC 2 yurt içi yolcu taşıma belgesine, psikoteknik raporuna ve uzun yol tecrübesine sahiptir."
       }
     ]
   },
@@ -402,124 +78,16 @@
     "content": "\n            <h2>VIP Transfer Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>VIP Transfer</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, kredi kartı geçerli taksi, bagajlı araç, şehir içi ulaşım arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve Kapaklı taksi, 7/24 ulaşım, ticari taksi avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, konforlu araç, şehir içi ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "VIP transfer hizmetinde hangi araçlar kullanılıyor?",
+        "a": "Düğün, özel davet veya protokol karşılamaları için D-Segment veya yüksek konforlu lüks sınıf araçlarımız tahsis edilmektedir."
       },
       {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, Kızılpınar taksi, havaalanı transferi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Yabancı misafirlerimiz için dil bilen şoför var mı?",
+        "a": "Önceden belirtmeniz durumunda İngilizce iletişim kurabilen VIP şoförlerimiz misafirlerinizi havalimanından karşılayabilir."
       },
       {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, Çerkezköy taksi, havaalanı transferi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, konforlu araç, VIP transfer, Çerkezköy nöbetçi taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, Çerkezköy taksi, hızlı ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, bagajlı araç, şehirler arası ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, kredi kartı geçerli taksi, şehir içi ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, konforlu araç, resmi taksi, 7/24 ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, hızlı ulaşım, resmi taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, Çerkezköy nöbetçi taksi, havaalanı transferi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, Kızılpınar taksi, Çerkezköy taksi durağı özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, havaalanı transferi, Çerkezköy ucuz taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, Çerkezköy ucuz taksi, konforlu araç özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, Kapaklı taksi, VIP transfer özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, kredi kartı geçerli taksi, resmi taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, hızlı ulaşım, kredi kartı geçerli taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, güvenli ulaşım, nöbetçi taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Veliköy taksi, ticari taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, Çerkezköy nöbetçi taksi, taksi çağır özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, resmi taksi, hızlı ulaşım, ticari taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, çocuk koltuğu, Çerkezköy taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, şehir içi ulaşım, havaalanı transferi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, Kızılpınar taksi, nöbetçi taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, şehirler arası ulaşım, güvenli ulaşım özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, kredi kartı geçerli taksi, taksi çağır özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, kredi kartı geçerli taksi, Çerkezköy taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, resmi taksi, Veliköy taksi, Çerkezköy taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, VIP transfer, Çerkezköy ucuz taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, Çerkezköy ucuz taksi, en yakın taksi özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "VIP Transfer için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, en yakın taksi, konforlu araç özellikleriyle her zaman VIP Transfer bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Araç içi ikram mevcut mu?",
+        "a": "VIP transferlerimizde kapalı su, ıslak mendil, şarj imkanı standart olarak sunulmaktadır."
       }
     ]
   },
@@ -533,124 +101,16 @@
     "content": "\n            <h2>Kurumsal Anlaşma Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Kurumsal Anlaşma</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, Çerkezköy nöbetçi taksi, şehir içi ulaşım, Çerkezköy taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve kredi kartı geçerli taksi, Çerkezköy taksi, hızlı ulaşım avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, kredi kartı geçerli taksi, nöbetçi taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Şirketler için aylık faturalandırma yapıyor musunuz?",
+        "a": "Evet, Çerkezköy ve Kapaklı OSB'deki firmalara toplu aylık faturalandırma (e-fatura) ve gider raporlaması yapıyoruz."
       },
       {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, Çerkezköy taksi durağı, konforlu araç özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Personel kullanımı için limit belirlenebilir mi?",
+        "a": "Kurumsal anlaşmalarda departman veya yönetici bazlı kota ve kullanım limitleri sistem üzerinden tanımlanabilir."
       },
       {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi çağır, Kızılpınar taksi, Çerkezköy taksi durağı özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, VIP transfer, Çerkezköy taksi, şehirler arası ulaşım özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, havaalanı transferi, Kapaklı taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, havaalanı transferi, en yakın taksi, şehir içi ulaşım özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, resmi taksi, Kızılpınar taksi, çocuk koltuğu özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, güvenli ulaşım, Çerkezköy ucuz taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, resmi taksi, Kızılpınar taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy nöbetçi taksi, şehir içi ulaşım, havaalanı transferi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, bagajlı araç, Çerkezköy ucuz taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy ucuz taksi, taksi durağı özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, Kapaklı taksi, Veliköy taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, hızlı ulaşım, Kapaklı taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, güvenli ulaşım, taksi çağır özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, Çerkezköy ucuz taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, en yakın taksi, şehir içi ulaşım özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, Veliköy taksi, Çerkezköy ucuz taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, en yakın taksi, Veliköy taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, 7/24 ulaşım, en yakın taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, Çerkezköy taksi, bagajlı araç özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, ticari taksi, hızlı ulaşım, nöbetçi taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, Çerkezköy taksi, ticari taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, Kapaklı taksi, Çerkezköy taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, konforlu araç, Veliköy taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi çağır, Çerkezköy ucuz taksi, Çerkezköy taksi durağı özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, resmi taksi, Veliköy taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kızılpınar taksi, Kapaklı taksi, resmi taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, Kapaklı taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurumsal Anlaşma için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, VIP transfer, şehir içi ulaşım özellikleriyle her zaman Kurumsal Anlaşma bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Sözleşme yapmak için nereye başvurmalıyım?",
+        "a": "info@cicektaksi.com adresinden veya çağrı merkezimizden doğrudan kurumsal müşteri temsilcimizle görüşebilirsiniz."
       }
     ]
   },
@@ -664,124 +124,16 @@
     "content": "\n            <h2>Kurye & Paket Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Kurye & Paket</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, şehir içi ulaşım, şehirler arası ulaşım, en yakın taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve Kızılpınar taksi, taksi çağır, konforlu araç avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 1) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy nöbetçi taksi, Çerkezköy ucuz taksi, nöbetçi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Kargo şirketinin almadığı acil evrakları taşıyor musunuz?",
+        "a": "Evet. Gümrüğe, notere veya farklı fabrikalara yetişmesi gereken acil zarf ve kolilerinizi 'Taksi Kurye' hizmetiyle dakikalar içinde ulaştırıyoruz."
       },
       {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 2) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, taksi durağı, ticari taksi, taksi çağır özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Kurye teslimatında güvenlik nasıl sağlanıyor?",
+        "a": "Paketiniz şoförümüz tarafından imza karşılığı alınır ve sadece belirttiğiniz alıcıya yine imza/kimlik kontrolü yapılarak teslim edilir."
       },
       {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 3) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, en yakın taksi, Kapaklı taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 4) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, taksi durağı, hızlı ulaşım özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 5) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, 7/24 ulaşım, hızlı ulaşım, resmi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 6) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Çerkezköy taksi durağı, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 7) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, Çerkezköy taksi, ticari taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 8) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, havaalanı transferi, konforlu araç özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 9) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, 7/24 ulaşım, hızlı ulaşım, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 10) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, konforlu araç, resmi taksi, Çerkezköy taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 11) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, en yakın taksi, Çerkezköy taksi durağı, konforlu araç özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 12) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, ticari taksi, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 13) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, güvenli ulaşım, Çerkezköy ucuz taksi, nöbetçi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 14) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Veliköy taksi, şehir içi ulaşım özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 15) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, havaalanı transferi, Çerkezköy taksi, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 16) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, resmi taksi, güvenli ulaşım özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 17) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi, Kapaklı taksi, Çerkezköy taksi durağı özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 18) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, kredi kartı geçerli taksi, Veliköy taksi, nöbetçi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 19) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, en yakın taksi, taksi durağı özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 20) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, nöbetçi taksi, taksi çağır, şehir içi ulaşım özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 21) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy ucuz taksi, Veliköy taksi, resmi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 22) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Kapaklı taksi, Veliköy taksi, VIP transfer özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 23) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, Kapaklı taksi, taksi çağır özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 24) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Çerkezköy taksi durağı, VIP transfer, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 25) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, nöbetçi taksi, Çerkezköy ucuz taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 26) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, hızlı ulaşım, Çerkezköy taksi, en yakın taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 27) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, şehir içi ulaşım, Çerkezköy taksi durağı, bagajlı araç özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 28) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, Veliköy taksi, Çerkezköy taksi, Çerkezköy taksi durağı özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 29) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, 7/24 ulaşım, Çerkezköy nöbetçi taksi, havaalanı transferi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
-      },
-      {
-        "q": "Kurye & Paket için önceden rezervasyon (Soru 30) yapabilir miyim?",
-        "a": "Kesinlikle. 7/24 esasına göre çalışan araçlarımız, bagajlı araç, en yakın taksi, Çerkezköy nöbetçi taksi özellikleriyle her zaman Kurye & Paket bölgesinde hizmetinizdedir. Seyahatinizi güvence altına alabilirsiniz."
+        "q": "Evcil hayvan gönderimi yapıyor musunuz?",
+        "a": "Sahipsiz evcil hayvan gönderimi yapılamamaktadır, ancak refakatçisi (sahibi) eşliğinde pet taksi hizmetimiz mevcuttur."
       }
     ]
   },
