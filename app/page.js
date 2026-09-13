@@ -5,11 +5,20 @@ import bloglarData from '@/data/bloglar.json';
 import { getIcon } from '@/components/IconMap';
 import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
 import Branches from '@/components/Branches';
+import FareCalculator from '@/components/FareCalculator';
 
 export const metadata = {
   alternates: {
     canonical: "/",
   },
+  keywords: [
+    "Çerkezköy taksi",
+    "Çerkezköy taksi ücreti hesaplama",
+    "taksi fiyat hesaplama",
+    "Çerkezköy taksi fiyatları",
+    "Kapaklı taksi ücreti",
+    "taksi yol parası hesaplama",
+  ],
 };
 
 export default function Home() {
@@ -195,6 +204,8 @@ export default function Home() {
             </div>
         </div>
       </header>
+
+      <FareCalculator compact />
 
       <Branches />
 

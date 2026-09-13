@@ -43,6 +43,7 @@ export default function Footer() {
                             <li><strong>Kategori:</strong> Taksi Durağı</li>
                             <li><Link href="/ekibimiz">Şoförlerimiz (EEAT)</Link></li>
                             <li><Link href="/fiyatlar">Taksi Ücretleri</Link></li>
+                            <li><Link href="/taksi-ucreti-hesaplama">Yol Ücreti Hesapla</Link></li>
                             <li><Link href="/subeler">Şubelerimiz</Link></li>
                         </ul>
                     </div>

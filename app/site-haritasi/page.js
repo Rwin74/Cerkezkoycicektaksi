@@ -49,6 +49,7 @@ export default function SiteHaritasi() {
             <li><Link href="/">Ana Sayfa</Link></li>
             <li><Link href="/hakkimizda">Hakkımızda</Link></li>
             <li><Link href="/fiyatlar">Fiyatlar</Link></li>
+            <li><Link href="/taksi-ucreti-hesaplama">Taksi Ücreti Hesaplama</Link></li>
             <li><Link href="/iletisim">İletişim</Link></li>
             <li><Link href="/yorumlar">Yorumlar</Link></li>
             <li><Link href="/ekibimiz">Şoförlerimiz</Link></li>

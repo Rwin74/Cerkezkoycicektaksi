@@ -1077,3 +1077,95 @@ em { font-style: normal; color: var(--taxi-yellow); }
 .rich-content a:hover {
     color: var(--dark-base);
 }
+
+/* ============================================
+   Taksi Ücreti Hesaplama
+   ============================================ */
+.fare-calculator {
+    padding: var(--sp-64) 0;
+    background: linear-gradient(145deg, #171717 0%, #242424 100%);
+    color: #fff;
+}
+.fare-calculator--compact { padding: 56px 0; }
+.fare-calculator__shell {
+    display: grid;
+    gap: 36px;
+    align-items: start;
+}
+@media(min-width: 900px) {
+    .fare-calculator__shell { grid-template-columns: minmax(260px, .72fr) minmax(520px, 1.28fr); gap: 56px; }
+}
+.fare-calculator__intro { padding-top: 10px; }
+.fare-calculator__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 13px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255,204,0,.35);
+    border-radius: var(--rad-pill);
+    background: rgba(255,204,0,.1);
+    color: var(--taxi-yellow);
+    font-size: .85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+.fare-calculator__intro h2 { color: #fff; font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 14px; }
+.fare-calculator__intro p { color: rgba(255,255,255,.7); font-size: 1.05rem; max-width: 520px; }
+.fare-calculator__tariff { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.fare-calculator__tariff span { padding: 9px 12px; border-radius: 10px; background: rgba(255,255,255,.07); color: rgba(255,255,255,.75); font-size: .9rem; }
+.fare-calculator__tariff strong { color: var(--taxi-yellow); }
+.fare-calculator__detail-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 22px; color: var(--taxi-yellow); font-weight: 700; }
+.fare-calculator__detail-link:hover { gap: 11px; }
+.fare-calculator__form {
+    padding: clamp(20px, 4vw, 34px);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--rad-lg);
+    background: #fff;
+    color: var(--text-main);
+    box-shadow: 0 24px 70px rgba(0,0,0,.3);
+}
+.fare-field { position: relative; margin-bottom: 10px; }
+.fare-field label { display: block; margin-bottom: 7px; color: var(--dark-base); font-size: .9rem; font-weight: 800; }
+.fare-field__control { display: flex; align-items: center; gap: 11px; min-height: 54px; padding: 0 15px; border: 1.5px solid #dedede; border-radius: 13px; background: #fbfbfb; transition: border-color var(--trans-fast), box-shadow var(--trans-fast); }
+.fare-field__control:focus-within { border-color: var(--taxi-yellow-hover); box-shadow: 0 0 0 4px rgba(255,204,0,.14); background: #fff; }
+.fare-field__control svg { flex: 0 0 auto; color: #8a6c00; }
+.fare-field__control input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--dark-base); font: inherit; }
+.fare-field__control input::placeholder { color: #8a8a8a; }
+.fare-field__spinner { width: 17px; height: 17px; flex: 0 0 auto; border: 2px solid #ddd; border-top-color: var(--taxi-yellow-hover); border-radius: 50%; animation: fare-spin .7s linear infinite; }
+.fare-field__spinner--dark { border-color: rgba(0,0,0,.2); border-top-color: var(--dark-base); }
+@keyframes fare-spin { to { transform: rotate(360deg); } }
+.fare-field__suggestions { position: absolute; z-index: 30; top: calc(100% - 2px); left: 0; right: 0; overflow: hidden; border: 1px solid #ddd; border-radius: 12px; background: #fff; box-shadow: var(--shadow-lg); }
+.fare-field__suggestions button { display: flex; align-items: flex-start; gap: 9px; width: 100%; padding: 12px 14px; color: #333; text-align: left; font-size: .88rem; line-height: 1.35; border-bottom: 1px solid #eee; }
+.fare-field__suggestions li:last-child button { border-bottom: 0; }
+.fare-field__suggestions button:hover { background: var(--taxi-yellow-light); }
+.fare-field__suggestions svg { flex: 0 0 auto; margin-top: 2px; color: #8a6c00; }
+.fare-calculator__locate { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 16px 4px; color: #705900; font-weight: 700; font-size: .86rem; }
+.fare-calculator__locate:hover { color: #111; }
+.fare-calculator__locate:disabled, .fare-calculator__submit:disabled { opacity: .65; cursor: wait; }
+.fare-calculator__submit { width: 100%; min-height: 54px; margin-top: 8px; border-radius: 13px; }
+.fare-calculator__message { margin-top: 14px; padding: 11px 13px; border-radius: 10px; background: #fff1f1; color: #9d1c1c; font-size: .9rem; font-weight: 600; }
+.fare-calculator__note { margin-top: 14px; color: #777; font-size: .77rem; line-height: 1.45; }
+.fare-result { margin-top: 18px; padding: 20px; border: 1px solid #f0ce47; border-radius: 15px; background: linear-gradient(145deg, #fff9dd, #fff); }
+.fare-result__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.fare-result__top span { color: #5e5e5e; font-weight: 700; }
+.fare-result__top strong { color: #111; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1; }
+.fare-result__meta { display: flex; flex-wrap: wrap; gap: 9px 18px; margin: 16px 0 9px; font-weight: 700; }
+.fare-result__meta span { display: inline-flex; align-items: center; gap: 6px; }
+.fare-result > p { margin-bottom: 16px; color: #666; font-size: .85rem; }
+.fare-result .btn { width: 100%; border-radius: 11px; }
+.fare-page-hero { text-align: center; }
+.fare-page-hero .page-hero__breadcrumb { justify-content: center; }
+.fare-page-hero .page-hero__desc { max-width: 720px; }
+.fare-seo-content h2:first-of-type { margin-top: 24px; }
+.fare-faq__list { display: grid; gap: 12px; margin-top: 40px; }
+.fare-faq__list details { padding: 20px 22px; border: 1px solid #e8e8e8; border-radius: 14px; background: #fff; box-shadow: var(--shadow-sm); }
+.fare-faq__list summary { cursor: pointer; color: var(--dark-base); font-weight: 800; }
+.fare-faq__list p { padding-top: 12px; color: var(--text-muted); }
+@media(max-width: 639px) {
+    .fare-calculator, .fare-calculator--compact { padding: 42px 0; }
+    .fare-calculator__shell { gap: 24px; }
+    .fare-calculator__form { padding: 18px; border-radius: 18px; }
+    .fare-result__top { align-items: flex-start; flex-direction: column; gap: 8px; }
+}

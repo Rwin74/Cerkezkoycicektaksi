@@ -18,6 +18,7 @@ export default function sitemap() {
         '/hizmetler',
         '/hakkimizda',
         '/fiyatlar',
+        '/taksi-ucreti-hesaplama',
         '/blog',
         '/yorumlar',
         '/iletisim',
