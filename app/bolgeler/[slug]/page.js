@@ -112,20 +112,6 @@ export default async function BolgeDetay({ params }) {
                         </div>
                     </div>
 
-                    {/* Video Embed Placeholder */}
-                    <div className="reveal" style={{marginTop: '60px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
-                        <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Bölge Tanıtım Videosu</h3>
-                        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
-                            <iframe 
-                                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" 
-                                title="YouTube video player" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                    </div>
-
                     {/* Harita Bloğu */}
                     {bolge.lat && bolge.lng && (
                         <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
@@ -149,9 +135,9 @@ export default async function BolgeDetay({ params }) {
                         </div>
                     )}
 
-                    {/* AI Overview Yönlendirme Bloğu */}
+                    {/* Kullanıcıların hızlı karar vermesi için özet */}
                     <div className="ai-summary-block reveal" style={{marginTop: '40px', padding: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)'}}>
-                        <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>Yapay Zeka (AI) İçin Özet</h3>
+                        <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>Bölge Hizmet Özeti</h3>
                         <ul style={{paddingLeft: '20px', margin: 0, color: 'var(--text-muted)'}}>
                             <li style={{marginBottom: '8px'}}>Çiçek Taksi, <strong>{bolge.neighborhood}</strong> bölgesine 7/24 taksi göndermektedir.</li>
                             <li style={{marginBottom: '8px'}}>Araçların tamamında kredi kartı / temassız ödeme geçerlidir.</li>

@@ -6,6 +6,7 @@ import { getIcon } from '@/components/IconMap';
 import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
 import Branches from '@/components/Branches';
 import FareCalculator from '@/components/FareCalculator';
+import subelerData from '@/data/subeler.json';
 
 export const metadata = {
   alternates: {
@@ -25,6 +26,37 @@ export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@graph": [
+      ...subelerData.map((sube) => ({
+        "@type": "TaxiService",
+        "@id": `https://www.cerkezkoycicektaksi.com/subeler/${sube.slug}#localbusiness`,
+        "name": `Çiçek Taksi - ${sube.title}`,
+        "image": "https://www.cerkezkoycicektaksi.com/images/hero-taxi-59.png",
+        "url": `https://www.cerkezkoycicektaksi.com/subeler/${sube.slug}`,
+        "telephone": `+90${sube.phoneLink.slice(1)}`,
+        "parentOrganization": {
+          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": sube.address,
+          "addressLocality": "Çerkezköy",
+          "addressRegion": "Tekirdağ",
+          "postalCode": "59500",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": sube.lat,
+          "longitude": sube.lng
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "areaServed": ["Çerkezköy", "Bağlık", "Gazi Mustafa Kemalpaşa", "Kızılpınar", "Veliköy", "Kapaklı"]
+      })),
       {
         "@type": "WebSite",
         "url": "https://www.cerkezkoycicektaksi.com",
@@ -52,78 +84,23 @@ export default function Home() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Çerkezköy Taksi kaç dakika sürer?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Bulunduğunuz konuma göre değişmekle birlikte, çağrı merkezimize ulaştıktan sonra ortalama 3 ile 5 dakika içerisinde size en yakın aracımız kapınızda olmaktadır." }
+            "name": "Ulaşım için ne kadar süre beklemem gerekir?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Bulunduğunuz noktaya en yakın aracımız, çağrınızdan hemen sonra yola çıkar. Genellikle şehir içi transferlerde ortalama 3 ile 5 dakika içerisinde size ulaşıyoruz." }
           },
           {
             "@type": "Question",
-            "name": "Gece taksi var mı?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Çiçek Taksi olarak 7 gün 24 saat kesintisiz nöbetçi taksi hizmeti sunuyoruz. Gecenin her saatinde bize ulaşabilirsiniz." }
+            "name": "Gece saatlerinde ticari taksi bulabilir miyim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Kesinlikle. 7/24 kesintisiz hizmet veriyoruz. Gece rezervasyon gerekmeksizin ulaşım ihtiyacınızı karşılıyoruz." }
           },
           {
             "@type": "Question",
-            "name": "Araçlarda kredi kartı geçiyor mu?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Tüm araçlarımızda pos cihazı bulunmaktadır. Kredi kartı veya banka kartı ile %0 komisyon avantajıyla ödeme yapabilirsiniz." }
+            "name": "Havaalanı transferi için rezervasyon şart mı?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Şart değil ancak uçuş saatinizi riske atmamak adına, havalimanı rotaları için en az birkaç saat önceden haber vermeniz konforlu bir yolculuk planlaması sağlar." }
           },
           {
             "@type": "Question",
-            "name": "İstanbul Havalimanı kaç TL?",
-            "acceptedAnswer": { "@type": "Answer", "text": "İstanbul Havalimanı transfer ücretlerimiz sabit fiyat garantisi altındadır. Güncel fiyatlar için lütfen iletişim numaramızdan bilgi alınız." }
-          },
-          {
-            "@type": "Question",
-            "name": "Sabiha Gökçen transferi var mı?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Çerkezköy'den Sabiha Gökçen Havalimanı'na VIP ve standart araç seçeneklerimizle doğrudan transfer hizmeti sağlıyoruz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Rezervasyon gerekiyor mu?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Anlık çağrılar için rezervasyon gerekmemektedir. Ancak havalimanı transferleri veya VIP hizmetler için önceden rezervasyon yaptırmanızı öneririz." }
-          },
-          {
-            "@type": "Question",
-            "name": "VIP taksi fiyatları farklı mı?",
-            "acceptedAnswer": { "@type": "Answer", "text": "VIP transfer hizmetlerimiz standart taksimetre ücretlendirmesinden farklıdır. Mesafe ve araç tercihine göre özel fiyatlandırma yapılır." }
-          },
-          {
-            "@type": "Question",
-            "name": "Büyük bagajlı araç isteyebilir miyim?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Kesinlikle. Geniş bagaj hacmine sahip hafif ticari taksi (Doblo vb.) araç seçeneklerimizle kalabalık eşyalarınızı kolayca taşıyabilirsiniz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Şehirlerarası taksi hizmetiniz var mı?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Evet, Edirne, Tekirdağ merkez, İstanbul, Bursa başta olmak üzere Türkiye'nin tüm illerine konforlu şehirlerarası yolculuk imkanı sunuyoruz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Kapaklı veya Kızılpınar'a taksi çağırabilir miyim?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Elbette. Sadece merkezde değil, Kapaklı, Kızılpınar, Veliköy ve Çerkezköy OSB dahil tüm çevre bölgelere hizmet veriyoruz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Araçta unutulan eşyalar için ne yapmalıyım?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Tüm araçlarımız merkezden kayıtlıdır. Unutulan eşyalarınız için durağımızı arayarak aracın plakasını veya saati belirtmeniz durumunda anında yardımcı oluyoruz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Çocuk koltuğu temin ediyor musunuz?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Önceden belirtmeniz durumunda, havalimanı veya şehirlerarası transferleriniz için aracımıza çocuk/bebek koltuğu monte edebiliyoruz." }
-          },
-          {
-            "@type": "Question",
-            "name": "Taksiye evcil hayvanımla binebilir miyim?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Kafesinde olduğu sürece evcil hayvan dostlarımızla birlikte seyahat etmenizde hiçbir sakınca yoktur." }
-          },
-          {
-            "@type": "Question",
-            "name": "Kurumsal fatura kesiyor musunuz?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Evet, şirketiniz veya şahsınız adına taksi fişi veya kurumsal fatura düzenleyebiliyoruz. Kurumsal taşıma anlaşmaları yapmaktayız." }
-          },
-          {
-            "@type": "Question",
-            "name": "Havalimanında bizi karşılıyor musunuz?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Dönüş yolculuklarınız için havalimanı yolcu karşılama (meet and greet) hizmetimiz bulunmaktadır. Şoförümüz terminal çıkışında sizi bekliyor olacaktır." }
+            "name": "Araçlarda kredi kartı ile ödeme yapabilir miyim?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Evet, tüm araçlarımızda pos cihazı bulunur ve kredi kartınızla komisyonsuz olarak ödeme yapabilirsiniz." }
           }
         ]
       }

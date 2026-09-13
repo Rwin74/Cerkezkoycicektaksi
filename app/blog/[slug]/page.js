@@ -140,14 +140,6 @@ export default async function BlogDetay({ params }) {
                 "@type": "ImageObject",
                 "url": "https://www.cerkezkoycicektaksi.com/logo.png",
                 "name": blog.title
-            },
-            {
-                "@type": "VideoObject",
-                "name": "Çiçek Taksi Tanıtım Videosu",
-                "description": "Çerkezköy'de konforlu ve güvenli taksi hizmetinin adresi Çiçek Taksi'nin kısa tanıtım videosu.",
-                "thumbnailUrl": "https://www.cerkezkoycicektaksi.com/logo.png",
-                "uploadDate": "2026-01-01T08:00:00+03:00",
-                "contentUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             }
         ]
     };

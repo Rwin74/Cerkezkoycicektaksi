@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import bolgelerData from '@/data/bolgeler.json';
 import bloglarData from '@/data/bloglar.json';
-import transferlerData from '@/data/transferler.json';
 import hizmetlerData from '@/data/hizmetler.json';
 
 export default function SpiderWeb({ currentPath }) {
@@ -13,12 +12,11 @@ export default function SpiderWeb({ currentPath }) {
 
     const randomBolge = getRandomItems(bolgelerData, 1)[0];
     const randomBlog = getRandomItems(bloglarData, 1)[0];
-    const randomTransfer = getRandomItems(transferlerData, 1)[0];
     const randomHizmet = getRandomItems(hizmetlerData, 1)[0];
 
     const links = [
         { title: randomHizmet.title, url: `/hizmetler/${randomHizmet.slug}`, type: 'Hizmet' },
-        { title: randomTransfer.title, url: `/transfer/${randomTransfer.slug}`, type: 'Transfer' },
+        { title: 'Havalimanı Transferi', url: '/hizmetler/havalimani-transfer', type: 'Transfer' },
         { title: `${randomBolge.neighborhood} Taksi`, url: `/bolgeler/${randomBolge.slug}`, type: 'Bölge' },
         { title: randomBlog.title, url: `/blog/${randomBlog.slug}`, type: 'Rehber' }
     ].filter(l => l.url !== currentPath); // prevent linking to itself

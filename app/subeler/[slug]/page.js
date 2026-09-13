@@ -38,10 +38,14 @@ export default async function SubeDetay({ params }) {
 
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": sube.title,
+        "@type": "TaxiService",
+        "@id": `https://www.cerkezkoycicektaksi.com/subeler/${sube.slug}#localbusiness`,
+        "name": `Çiçek Taksi - ${sube.title}`,
         "image": "https://www.cerkezkoycicektaksi.com/images/hero-taxi-59.png",
-        "telephone": sube.phoneLink,
+        "telephone": `+90${sube.phoneLink.slice(1)}`,
+        "parentOrganization": {
+            "@id": "https://www.cerkezkoycicektaksi.com/#organization"
+        },
         "address": {
             "@type": "PostalAddress",
             "streetAddress": sube.address,
@@ -63,23 +67,9 @@ export default async function SubeDetay({ params }) {
         }
     };
 
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": sube.faqs.slice(0, 5).map(faq => ({
-            "@type": "Question",
-            "name": faq.q,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.a
-            }
-        }))
-    };
-
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <header className="page-hero">
                 <div className="page-hero__bg"></div>

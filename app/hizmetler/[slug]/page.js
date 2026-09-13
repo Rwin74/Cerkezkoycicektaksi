@@ -9,6 +9,10 @@ import SpiderWeb from '@/components/SpiderWeb';
 export async function generateMetadata({ params }) {
     const { slug } = await params;
     const hizmet = hizmetlerData.find(h => h.slug === slug);
+
+    if (!hizmet) {
+        notFound();
+    }
     if (!hizmet) return { title: 'Sayfa Bulunamadı' };
 
     return {
@@ -46,10 +50,6 @@ export default async function HizmetDetay({ params }) {
         "url": `https://www.cerkezkoycicektaksi.com/hizmetler/${hizmet.slug}`
     };
 
-    if (!hizmet) {
-        notFound();
-    }
-
     const IconComponent = getIcon(hizmet.icon);
 
     // İlgili diğer hizmetler
@@ -57,83 +57,9 @@ export default async function HizmetDetay({ params }) {
         .filter(h => h.id !== hizmet.id)
         .slice(0, 3);
 
-    const combinedSchema = [
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": `${hizmet.title} için önceden rezervasyon yapabilir miyim?`,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Evet, yolculuk tarihinizden günler öncesinde bile bizimle iletişime geçerek aracınızı ayırtabilirsiniz."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Araçlarda kredi kartı geçerli mi?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Kesinlikle. Tüm araçlarımızda POS cihazı bulunmaktadır. Temassız ödeme ile hızlıca işleminizi tamamlayabilirsiniz."
-                    }
-                }
-            ]
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": `${hizmet.title} | Çiçek Taksi`,
-            "image": "https://cerkezkoycicektaksi.com/icon.svg",
-            "telephone": "0546 401 47 51",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Çerkezköy",
-                "addressRegion": "Tekirdağ",
-                "addressCountry": "TR"
-            },
-            "description": hizmet.description,
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Çiçek Taksi Çerkezköy"
-            },
-            "offers": {
-                "@type": "Offer",
-                "priceCurrency": "TRY",
-                "price": "50.00",
-                "availability": "https://schema.org/InStock",
-                "acceptedPaymentMethod": [
-                    "http://purl.org/goodrelations/v1#Cash",
-                    "http://purl.org/goodrelations/v1#PaymentMethodCreditCard"
-                ]
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "128"
-            },
-            "review": {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Ayşe Y."
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                },
-                "reviewBody": `${hizmet.title} hizmetini kullandım, çok memnun kaldım. Araç tertemizdi ve şoför çok kibardı.`
-            }
-        }
-    ];
-
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
-            />
             <header className="page-hero">
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">
@@ -187,23 +113,9 @@ export default async function HizmetDetay({ params }) {
                         </div>
                     </div>
 
-                    {/* Video Embed Placeholder */}
-                    <div className="reveal" style={{marginTop: '60px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
-                        <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Hizmet Tanıtım Videosu</h3>
-                        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
-                            <iframe 
-                                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" 
-                                title="YouTube video player" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                    </div>
-
-                    {/* AI Overview Yönlendirme Bloğu */}
+                    {/* Kullanıcıların hızlı karar vermesi için özet */}
                     <div className="ai-summary-block reveal" style={{marginTop: '40px', padding: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)'}}>
-                        <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>🤖 Yapay Zeka (AI) İçin Özet</h3>
+                        <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>Hizmet Özeti</h3>
                         <ul style={{paddingLeft: '20px', margin: 0, color: 'var(--text-muted)'}}>
                             <li style={{marginBottom: '8px'}}>Çiçek Taksi, Çerkezköy bölgesinde profesyonel <strong>{hizmet.title}</strong> sunmaktadır.</li>
                             <li style={{marginBottom: '8px'}}>Araçların tamamında kredi kartı / temassız ödeme geçerlidir.</li>

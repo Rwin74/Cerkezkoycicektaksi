@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
         title: `${fiyat.title} | Güncel Taksi Ücretleri 2026`,
         description: fiyat.description,
         alternates: { canonical: `/fiyatlar/${fiyat.slug}` },
+        robots: { index: false, follow: true },
     };
 }
 
@@ -30,25 +31,19 @@ export default async function FiyatDetay({ params }) {
         notFound();
     }
 
-    const offerSchema = {
+    const pageSchema = {
         "@context": "https://schema.org",
-        "@type": "Offer",
+        "@type": "WebPage",
         "name": fiyat.title,
         "description": fiyat.description,
-        "priceCurrency": "TRY",
-        "price": fiyat.pricingData.min || fiyat.pricingData.base || "0",
-        "availability": "https://schema.org/InStock",
-        "acceptedPaymentMethod": [
-            "http://purl.org/goodrelations/v1#Cash",
-            "http://purl.org/goodrelations/v1#PaymentMethodCreditCard"
-        ]
+        "url": `https://www.cerkezkoycicektaksi.com/fiyatlar/${fiyat.slug}`
     };
 
     return (
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
             />
             <header className="page-hero">
                 <div className="page-hero__bg"></div>
@@ -79,20 +74,10 @@ export default async function FiyatDetay({ params }) {
                     />
                     
                     <div className="reveal" style={{background: 'rgba(255, 204, 0, 0.1)', padding: '30px', borderRadius: '12px', border: '1px solid rgba(255,204,0,0.3)', margin: '40px 0'}}>
-                        <h3 style={{color: 'var(--taxi-yellow)', marginBottom: '15px'}}>Tahmini Ücret Hesaplama Özeti</h3>
-                        {fiyat.pricingData.base && (
-                            <ul style={{fontSize: '1.1rem', lineHeight: 1.8}}>
-                                <li><strong>Açılış Ücreti:</strong> {fiyat.pricingData.base} TL</li>
-                                <li><strong>Kilometre Başına:</strong> {fiyat.pricingData.perKm} TL</li>
-                            </ul>
-                        )}
-                        {fiyat.pricingData.min && (
-                            <ul style={{fontSize: '1.1rem', lineHeight: 1.8}}>
-                                <li><strong>Minimum Tutar:</strong> {fiyat.pricingData.min} TL</li>
-                                <li><strong>Maksimum Tutar:</strong> {fiyat.pricingData.max} TL</li>
-                                <li style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>* Fiyatlar araç tipi ve yoğunluğa göre değişiklik gösterebilir. Net fiyat için arayın.</li>
-                            </ul>
-                        )}
+                        <h3 style={{color: 'var(--taxi-yellow)', marginBottom: '15px'}}>Güzergâha Özel Bilgi Alın</h3>
+                        <p style={{fontSize: '1.1rem', lineHeight: 1.8}}>
+                            Güncel yol ve araç koşullarına göre bilgi almak için bizi arayın. Tarife katsayıları sitede yayımlanmamaktadır.
+                        </p>
                     </div>
 
                     <div className="cta-box reveal" style={{textAlign: 'center', marginTop: '48px'}}>

@@ -1,12 +1,11 @@
 import bolgelerData from '@/data/bolgeler.json';
-import transferlerData from '@/data/transferler.json';
 import bloglarData from '@/data/bloglar.json';
 import hizmetlerData from '@/data/hizmetler.json';
 import Link from 'next/link';
 
 export const metadata = {
   title: 'Site Haritası | Çiçek Taksi',
-  description: 'Çiçek Taksi Çerkezköy tüm sayfalar, hizmetler, transfer noktaları ve bölgeler.',
+  description: 'Çiçek Taksi Çerkezköy hizmet, bölge ve rehber sayfalarının site haritası.',
   alternates: { canonical: '/site-haritasi' }
 };
 
@@ -25,15 +24,6 @@ export default function SiteHaritasi() {
           </ul>
         </div>
         
-        <div>
-          <h2>Transfer Noktaları</h2>
-          <ul>
-            {transferlerData.map(t => (
-              <li key={t.slug}><Link href={`/transfer/${t.slug}`}>{t.title}</Link></li>
-            ))}
-          </ul>
-        </div>
-
         <div>
           <h2>Rehber & Blog</h2>
           <ul>

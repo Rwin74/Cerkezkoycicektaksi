@@ -1,9 +1,7 @@
 import hizmetlerData from '@/data/hizmetler.json';
 import bolgelerData from '@/data/bolgeler.json';
 import bloglarData from '@/data/bloglar.json';
-import transferlerData from '@/data/transferler.json';
 import noktalarData from '@/data/noktalar.json';
-import fiyatlarData from '@/data/fiyatlar.json';
 import ekibimizData from '@/data/ekibimiz.json';
 import subelerData from '@/data/subeler.json';
 import landingPagesData from '@/data/landingPages.json';
@@ -50,23 +48,10 @@ export default function sitemap() {
         priority: 0.9,
     }));
 
-    // Dynamic transfers
-    const transfers = transferlerData.map((transfer) => ({
-        url: `${baseUrl}/transfer/${transfer.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.9,
-    }));
-
     const noktalar = noktalarData.map((nokta) => ({
         url: `${baseUrl}/noktalar/${nokta.slug}`,
         changeFrequency: 'weekly',
         priority: 0.8,
-    }));
-
-    const fiyatlar = fiyatlarData.map((fiyat) => ({
-        url: `${baseUrl}/fiyatlar/${fiyat.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.9,
     }));
 
     const ekip = ekibimizData.map((personel) => ({
@@ -95,5 +80,5 @@ export default function sitemap() {
         priority: 0.9,
     }));
 
-    return [...routes, ...services, ...neighborhoods, ...transfers, ...noktalar, ...fiyatlar, ...ekip, ...subeler, ...blogs, ...landingPages];
+    return [...routes, ...services, ...neighborhoods, ...noktalar, ...ekip, ...subeler, ...blogs, ...landingPages];
 }

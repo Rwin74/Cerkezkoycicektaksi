@@ -106,7 +106,7 @@ export default async function NoktaDetay({ params }) {
                         </div>
                     </div>
 
-                    {/* AI Overview Yönlendirme Bloğu */}
+                    {/* Kullanıcıların hızlı karar vermesi için özet */}
                     <div className="ai-summary-block reveal" style={{marginTop: '40px', padding: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)'}}>
                         <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>Hızlı Özet</h3>
                         <ul style={{paddingLeft: '20px', margin: 0, color: 'var(--text-muted)'}}>
@@ -115,20 +115,6 @@ export default async function NoktaDetay({ params }) {
                             <li>Çağrı numarası: 0546 401 47 51.</li>
                         </ul>
                     </div>
-                    {/* Video Embed Placeholder */}
-                    <div className="reveal" style={{marginTop: '60px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
-                        <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Bölge Tanıtımı</h3>
-                        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
-                            <iframe 
-                                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" 
-                                title="YouTube video player" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                    </div>
-
                     {/* Harita Bloğu */}
                     <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
                         <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Harita Konumu</h3>

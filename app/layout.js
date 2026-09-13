@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import ScrollObserver from "@/components/ScrollObserver";
-import AiOverview from "@/components/AiOverview";
 import PhoneFloat from "@/components/PhoneFloat";
 import Script from "next/script";
+import subelerData from "@/data/subeler.json";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -55,97 +55,19 @@ export default function RootLayout({ children }) {
       {
         "@type": "Organization",
         "@id": "https://www.cerkezkoycicektaksi.com/#organization",
-        "name": "Çiçek taksi",
+        "name": "Çiçek Taksi",
         "url": "https://www.cerkezkoycicektaksi.com",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.cerkezkoycicektaksi.com/logo.png"
         },
-        "contactPoint": {
+        "contactPoint": subelerData.map((sube) => ({
           "@type": "ContactPoint",
-          "telephone": "+905464014751",
+          "telephone": `+90${sube.phoneLink.slice(1)}`,
           "contactType": "customer service",
           "areaServed": "TR",
           "availableLanguage": "Turkish"
-        }
-      },
-      {
-        "@type": "TaxiService",
-        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-1",
-        "name": "Çiçek taksi Çerkezköy (Merkez Şube)",
-        "image": "https://www.cerkezkoycicektaksi.com/logo.png",
-        "url": "https://www.cerkezkoycicektaksi.com",
-        "telephone": "+905304014751",
-        "parentOrganization": {
-          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Gazi Mustafa Kemalpaşa, Ladin Sk 7/3",
-          "addressLocality": "Çerkezköy",
-          "addressRegion": "Tekirdağ",
-          "postalCode": "59500",
-          "addressCountry": "TR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 41.2858,
-          "longitude": 28.0003
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "priceRange": "$$",
-        "areaServed": [
-          "Çerkezköy",
-          "Bağlık",
-          "Gazi Mustafa Kemalpaşa",
-          "Kızılpınar",
-          "Veliköy",
-          "Kapaklı"
-        ]
-      },
-      {
-        "@type": "TaxiService",
-        "@id": "https://www.cerkezkoycicektaksi.com/#localbusiness-2",
-        "name": "Çiçek taksi Çerkezköy (Anfi Tiyatro Şube)",
-        "image": "https://www.cerkezkoycicektaksi.com/logo.png",
-        "url": "https://www.cerkezkoycicektaksi.com",
-        "telephone": "+905464014751",
-        "parentOrganization": {
-          "@id": "https://www.cerkezkoycicektaksi.com/#organization"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Anfi Tiyatro Önü, Gazi Mustafa Kemalpaşa, Malkoçoğlu Cd.",
-          "addressLocality": "Çerkezköy",
-          "addressRegion": "Tekirdağ",
-          "postalCode": "59500",
-          "addressCountry": "TR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 41.2865,
-          "longitude": 27.9985
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "priceRange": "$$",
-        "areaServed": [
-          "Çerkezköy",
-          "Bağlık",
-          "Gazi Mustafa Kemalpaşa",
-          "Kızılpınar",
-          "Veliköy",
-          "Kapaklı"
-        ]
+        }))
       }
     ]
   };
@@ -180,7 +102,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={outfit.className}>
-        <AiOverview />
         <Preloader />
         <ScrollObserver />
         <Navbar />

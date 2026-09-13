@@ -9,6 +9,10 @@ import SpiderWeb from '@/components/SpiderWeb';
 export async function generateMetadata({ params }) {
     const { slug } = await params;
     const transfer = transferlerData.find(t => t.slug === slug);
+
+    if (!transfer) {
+        notFound();
+    }
     if (!transfer) return { title: 'Sayfa Bulunamadı' };
 
     return {
@@ -19,6 +23,10 @@ export async function generateMetadata({ params }) {
             title: `${transfer.title} | Çiçek Taksi`,
             description: transfer.description,
             type: 'website',
+        },
+        robots: {
+            index: false,
+            follow: true,
         },
     };
 }
@@ -48,10 +56,6 @@ export default async function TransferDetay({ params }) {
         "url": `https://www.cerkezkoycicektaksi.com/transfer/${transfer.slug}`
     };
 
-    if (!transfer) {
-        notFound();
-    }
-
     const MapPinIcon = getIcon('MapPin');
     const PlaneIcon = getIcon('Plane');
 
@@ -60,36 +64,9 @@ export default async function TransferDetay({ params }) {
         .filter(t => t.id !== transfer.id)
         .slice(0, 3);
 
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": `${transfer.title} için önceden rezervasyon yapabilir miyim?`,
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet, uçuş saatinizden en az 3 saat önce bizimle iletişime geçerek rezervasyon yapmanızı kesinlikle öneririz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kredi kartı geçerli mi?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Tüm transfer hizmetlerimizde araçlarımızda POS cihazı mevcuttur."
-                }
-            }
-        ]
-    };
-
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
             <header className="page-hero">
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">
@@ -134,20 +111,6 @@ export default async function TransferDetay({ params }) {
                             <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Teklif Al</a>
                         </div>
                     </div>
-                    {/* Video Embed Placeholder */}
-                    <div className="reveal" style={{marginTop: '60px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
-                        <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Transfer Tanıtımı</h3>
-                        <div style={{position: 'relative', paddingBottom: '56.25%', height: 0}}>
-                            <iframe 
-                                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" 
-                                title="YouTube video player" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                    </div>
-
                     {/* Harita Bloğu */}
                     <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
                         <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Güzergah Haritası</h3>
