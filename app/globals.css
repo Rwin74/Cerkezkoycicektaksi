@@ -1113,9 +1113,6 @@ em { font-style: normal; color: var(--taxi-yellow); }
 }
 .fare-calculator__intro h2 { color: #fff; font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 14px; }
 .fare-calculator__intro p { color: rgba(255,255,255,.7); font-size: 1.05rem; max-width: 520px; }
-.fare-calculator__tariff { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-.fare-calculator__tariff span { padding: 9px 12px; border-radius: 10px; background: rgba(255,255,255,.07); color: rgba(255,255,255,.75); font-size: .9rem; }
-.fare-calculator__tariff strong { color: var(--taxi-yellow); }
 .fare-calculator__detail-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 22px; color: var(--taxi-yellow); font-weight: 700; }
 .fare-calculator__detail-link:hover { gap: 11px; }
 .fare-calculator__form {

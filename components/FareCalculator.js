@@ -3,12 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Calculator, LocateFixed, MapPin, Navigation, Route, Search } from "lucide-react";
-import {
-  calculateTaxiFare,
-  TAXI_INCLUDED_KM,
-  TAXI_OPENING_FARE,
-  TAXI_PER_KM,
-} from "@/lib/taxiFare";
+import { calculateTaxiFare } from "@/lib/taxiFare";
 
 function LocationField({ id, label, placeholder, value, onChange, onSelect, icon: Icon }) {
   const [suggestions, setSuggestions] = useState([]);
@@ -195,10 +190,6 @@ export default function FareCalculator({ compact = false }) {
               Çerkezköy <em>taksi ücreti</em> ne kadar?
             </h2>
             <p>Başlangıç ve varış noktanızı seçin; yol mesafesine göre tahmini tutarı hemen görün.</p>
-            <div className="fare-calculator__tariff" aria-label="Ücret tarifesi">
-              <span><strong>{TAXI_OPENING_FARE} TL</strong> ilk {TAXI_INCLUDED_KM} km</span>
-              <span><strong>{TAXI_PER_KM} TL</strong> sonraki her km</span>
-            </div>
             {compact && (
               <Link href="/taksi-ucreti-hesaplama" className="fare-calculator__detail-link">
                 Detaylı hesaplama sayfası <ArrowRight size={17} />
@@ -245,7 +236,7 @@ export default function FareCalculator({ compact = false }) {
                   <span><Route size={18} /> {result.distanceKm.toLocaleString("tr-TR")} km</span>
                   <span>Yaklaşık {result.durationMinutes} dk</span>
                 </div>
-                <p>İlk 1 km 185 TL, kalan {Math.max(0, result.distanceKm - 1).toLocaleString("tr-TR", { maximumFractionDigits: 1 })} km × 46 TL.</p>
+                <p>Seçtiğiniz araç rotasının tahmini mesafesine göre hesaplandı.</p>
                 <a href="tel:+905464014751" className="btn btn--dark">📞 Taksi çağır: 0546 401 47 51</a>
               </div>
             )}

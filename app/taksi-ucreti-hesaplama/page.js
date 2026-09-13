@@ -24,7 +24,7 @@ export const metadata = {
 const faqs = [
   {
     q: "Çerkezköy taksi ücreti nasıl hesaplanır?",
-    a: "Hesaplayıcı ilk 1 kilometre için 185 TL, sonraki her kilometre için 46 TL esas alır. Yol ağı üzerinden bulunan mesafeye bu formül uygulanır.",
+    a: "Hesaplayıcı seçtiğiniz iki konum arasındaki araç rotasını bulur ve yol mesafesine güncel ücretlendirmeyi uygulayarak tahmini toplamı gösterir.",
   },
   {
     q: "Hesaplanan taksi fiyatı kesin mi?",
@@ -87,9 +87,8 @@ export default function TaxiFareCalculatorPage() {
           <span className="sh__overtitle">Güncel ücret rehberi</span>
           <h2>Çerkezköy taksi fiyatı nasıl hesaplanıyor?</h2>
           <p>
-            Çiçek Taksi yol ücreti hesaplama aracı, seçtiğiniz iki adres arasındaki araç rotasını bulur ve mesafeyi güncel tarifemize uygular. <strong>0–1 km arası 185 TL</strong>, ilk kilometreden sonraki mesafe ise <strong>kilometre başına 46 TL</strong> üzerinden hesaplanır.
+            Çiçek Taksi yol ücreti hesaplama aracı, seçtiğiniz iki adres arasındaki araç rotasını bulur ve mesafeye güncel ücretlendirmeyi uygulayarak tahmini toplamı gösterir.
           </p>
-          <blockquote>Örnek: 15 km yol için ilk 1 km 185 TL + kalan 14 km × 46 TL = 829 TL tahmini ücret.</blockquote>
           <h2>Çerkezköy ve çevresinde ücretsiz rota hesabı</h2>
           <p>
             Araç; Çerkezköy merkez, Bağlık, Kızılpınar, Veliköy, Kapaklı ve Tekirdağ çevresinde taksi yol parası hesaplamak için kullanılabilir. Adresinizi yazabilir veya telefonunuzdan mevcut konumunuzu paylaşabilirsiniz. Konum izni vermek istemiyorsanız manuel adres girişi yeterlidir.
@@ -119,4 +118,3 @@ export default function TaxiFareCalculatorPage() {
     </>
   );
 }
-
