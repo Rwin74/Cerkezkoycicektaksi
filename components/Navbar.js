@@ -9,6 +9,8 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const pathname = usePathname();
     const isEnglish = pathname.startsWith('/en');
+    const isAtakanBranch = pathname === '/subeler/gazi-mustafa-kemalpasa-subesi';
+    const phoneLink = isAtakanBranch ? '+905304014751' : '+905464014751';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,7 +47,7 @@ export default function Navbar() {
                             <li><Link href="/en/istanbul-airport-cerkezkoy-taxi" className="nav__link" onClick={closeMenu}>Airport Transfer</Link></li>
                             <li><Link href="/en/about-us" className="nav__link" onClick={closeMenu}>About Us</Link></li>
                             <li><Link href="/en/contact" className="nav__link" onClick={closeMenu}>Contact</Link></li>
-                            <li><a href="tel:+905464014751" className="nav__cta nav__cta--desktop">📞 Call Now</a></li>
+                            <li><a href={`tel:${phoneLink}`} className="nav__cta nav__cta--desktop">📞 Call Now</a></li>
                         </>
                     ) : (
                         <>
@@ -56,7 +58,7 @@ export default function Navbar() {
                             <li><Link href="/blog" className="nav__link" onClick={closeMenu}>Blog</Link></li>
                             <li><Link href="/yorumlar" className="nav__link" onClick={closeMenu}>Yorumlar</Link></li>
                             <li><Link href="/iletisim" className="nav__link" onClick={closeMenu}>İletişim</Link></li>
-                            <li><a href="tel:+905464014751" className="nav__cta nav__cta--desktop">📞 Hemen Ara</a></li>
+                            <li><a href={`tel:${phoneLink}`} className="nav__cta nav__cta--desktop">📞 Hemen Ara</a></li>
                         </>
                     )}
                     <li style={{ display: 'flex', alignItems: 'center' }}>

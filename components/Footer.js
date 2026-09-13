@@ -21,9 +21,10 @@ export default function Footer() {
                     <div className="footer__col">
                         <h4>İletişim Bilgileri</h4>
                         <ul>
-                            <li><strong>Telefon:</strong> <a href="tel:+905464014751">0546 401 47 51</a></li>
-                            <li style={{marginBottom: '4px', lineHeight: '1.4'}}><strong>Gazi MKP Şb:</strong> Anfi Tiyatro Önü, Çerkezköy</li>
-                            <li style={{marginBottom: '4px', lineHeight: '1.4'}}><strong>Bağlık Şb:</strong> Bağlık Mah. Çerkezköy</li>
+                            <li><strong>Gazi MKP Şb:</strong> <a href="tel:+905304014751">0530 401 47 51</a></li>
+                            <li style={{marginBottom: '4px', lineHeight: '1.4'}}>Anfi Tiyatro Önü, Çerkezköy</li>
+                            <li><strong>Bağlık Şb:</strong> <a href="tel:+905464014751">0546 401 47 51</a></li>
+                            <li style={{marginBottom: '4px', lineHeight: '1.4'}}>Bağlık Mah. Çerkezköy</li>
                             <li><strong>Çalışma Saatleri:</strong> 7 Gün 24 Saat Açık</li>
                         </ul>
                         {/* GEO Data */}
