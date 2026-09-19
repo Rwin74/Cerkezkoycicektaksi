@@ -1,0 +1,40 @@
+{
+  "account_id": "134-350-0117",
+  "campaign_id": "24058027602",
+  "campaign_name": "Çerkezköy-Atakan",
+  "status": "ENABLED",
+  "max_daily_budget_try": 400.0,
+  "telegram_notifications": true,
+  "telegram_bot_token": "8927614239:AAEqBO7pPsuAW59qLb5t-SgqcaAcotT2eeU",
+  "telegram_chat_id": "1114058213",
+  "negative_keywords": [
+    "otobüs",
+    "tren",
+    "marmaray",
+    "korsan",
+    "iş ilanı",
+    "şoför",
+    "plaka",
+    "oyun",
+    "bedava",
+    "belediye",
+    "havaş",
+    "metro",
+    "dolmuş",
+    "bilet"
+  ],
+  "positive_target_keywords": [
+    "çerkezköy taksi",
+    "çerkezköy acil taksi",
+    "çerkezköy çiçek taksi",
+    "kapaklı taksi durağı",
+    "çerkezköy taksi numarası",
+    "en yakın taksi durağı",
+    "çerkezköy nöbetçi taksi",
+    "çerkezköy 7 24 taksi",
+    "çerkezköy taksi ücretleri",
+    "kızılpınar taksi",
+    "veliköy taksi"
+  ],
+  "last_updated": "2026-09-20 00:40:00"
+}
