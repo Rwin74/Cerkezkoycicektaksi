@@ -1,27 +1,18 @@
 import "./globals.css";
-import { Outfit } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Preloader from "@/components/Preloader";
 import ScrollObserver from "@/components/ScrollObserver";
 import PhoneFloat from "@/components/PhoneFloat";
 import Script from "next/script";
 import subelerData from "@/data/subeler.json";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-  variable: "--font-outfit",
-});
-
 export const metadata = {
   title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
-  description: "Çerkezköy taksi numarası arıyorsanız, en yakın taksi durağı Çiçek Taksi 7/24 hizmetinizde. Çerkezköy otogar taksi, hastane taksi ve Kapaklı ulaşımlarınız için güvenilir adres.",
+  description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve Kapaklı için hemen arayın: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
     title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
-    description: "Çerkezköy taksi numarası arıyorsanız, en yakın taksi durağı Çiçek Taksi 7/24 hizmetinizde. Çerkezköy otogar taksi, hastane taksi ve Kapaklı ulaşımlarınız için güvenilir adres.",
+    description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve Kapaklı için hemen arayın: 0546 401 47 51.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -73,11 +64,8 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="tr" className={outfit.variable} data-scroll-behavior="smooth">
+    <html lang="tr" data-scroll-behavior="smooth">
       <head>
-        <link rel="alternate" hrefLang="tr" href="https://www.cerkezkoycicektaksi.com" />
-        <link rel="alternate" hrefLang="en" href="https://www.cerkezkoycicektaksi.com/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.cerkezkoycicektaksi.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -101,8 +89,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={outfit.className}>
-        <Preloader />
+      <body>
         <ScrollObserver />
         <Navbar />
         <main>{children}</main>

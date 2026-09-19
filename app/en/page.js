@@ -7,6 +7,7 @@ export const metadata = {
   description: "24/7 Premium taxi service in Cerkezkoy, Kapakli, OSB & Airport transfers (IST & SAW). Fast arrival, fixed rates, English speaking drivers & credit card accepted.",
   alternates: {
     canonical: "/en",
+    languages: { tr: "/", en: "/en", "x-default": "/" },
   },
   openGraph: {
     title: "Cerkezkoy Taxi & Airport VIP Transfer Service | Cicek Taxi",
@@ -59,7 +60,7 @@ export default function EnglishHome() {
             </h1>
             
             <p className="home-hero__desc">
-              Don't be late! Experience safe and executive transport in Cerkezkoy & Kapakli. <strong>0% Extra Commission</strong> on all international Credit Card payments. 💳✨
+              Do not be late! Experience safe and executive transport in Cerkezkoy & Kapakli. <strong>0% Extra Commission</strong> on all international Credit Card payments. 💳✨
             </p>
             
             <div className="home-hero__actions">

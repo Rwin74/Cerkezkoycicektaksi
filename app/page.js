@@ -3,7 +3,7 @@ import Link from "next/link";
 import hizmetlerData from '@/data/hizmetler.json';
 import bloglarData from '@/data/bloglar.json';
 import { getIcon } from '@/components/IconMap';
-import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
+import { BookOpen, ArrowRight, Clock, Tag, CreditCard } from 'lucide-react';
 import Branches from '@/components/Branches';
 import FareCalculator from '@/components/FareCalculator';
 import subelerData from '@/data/subeler.json';
@@ -11,6 +11,7 @@ import subelerData from '@/data/subeler.json';
 export const metadata = {
   alternates: {
     canonical: "/",
+    languages: { tr: "/", en: "/en", "x-default": "/" },
   },
   keywords: [
     "Çerkezköy taksi",
@@ -57,19 +58,6 @@ export default function Home() {
         },
         "areaServed": ["Çerkezköy", "Bağlık", "Gazi Mustafa Kemalpaşa", "Kızılpınar", "Veliköy", "Kapaklı"]
       })),
-      {
-        "@type": "WebSite",
-        "url": "https://www.cerkezkoycicektaksi.com",
-        "name": "Çiçek Taksi Çerkezköy",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://www.cerkezkoycicektaksi.com/arama?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
-      },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [{
@@ -128,12 +116,12 @@ export default function Home() {
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
-                    Gideceğin yere geç kalma! <strong>Çerkezköy taksi</strong> arayanlar için en güvenilir durak olan Çiçek Taksi ile 7/24 konforlu bir yolculuk seni bekliyor. Çerkezköy'de kredi kartından <strong>komisyon almayan tek taksi</strong> durağıyız! 💳✨
+                    Gideceğin yere geç kalma! <strong>Çerkezköy taksi</strong> arayanlar için en güvenilir durak olan Çiçek Taksi ile 7/24 konforlu bir yolculuk seni bekliyor. Kredi kartıyla ödeme seçeneğini arama sırasında şubemizden öğrenebilirsiniz. 💳✨
                 </p>
                 
                 <div className="home-hero__actions reveal" data-delay="300">
                     <a href="tel:+905464014751" className="btn btn--primary btn--lg">📞 0546 401 47 51</a>
-                    <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Çağır</a>
+                    <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp üzerinden Çağır</a>
                 </div>
                 
                 <div className="home-hero__stats reveal stagger" data-delay="400">
@@ -151,10 +139,7 @@ export default function Home() {
             <div className="home-hero__visual reveal reveal--right" data-delay="500">
                 <div className="floating-card" style={{background: 'rgba(15, 15, 15, 0.95)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', backdropFilter: 'blur(10px)'}}>
                     <div className="floating-card__icon-wrapper" style={{background: 'var(--taxi-yellow)', color: '#111'}}>
-                        {(() => {
-                            const CreditCardIcon = getIcon('CreditCard');
-                            return <CreditCardIcon size={28} className="floating-card__icon" />;
-                        })()}
+                        <CreditCard size={28} className="floating-card__icon" />
                     </div>
                     <div className="floating-card__text">
                         <span style={{color: 'var(--taxi-yellow)', fontWeight: '800', letterSpacing: '0.5px'}}>KREDİ KARTI GEÇERLİ</span>
@@ -208,7 +193,7 @@ export default function Home() {
             </div>
             
             <div style={{textAlign: 'center', marginTop: '40px'}} className="reveal" data-delay="300">
-                <a href="/hizmetler" className="btn btn--outline" title="Tüm Çerkezköy Taksi Hizmetleri">Tüm Çerkezköy Taksi Hizmetlerimizi İncele 🚀</a>
+                <Link href="/hizmetler" className="btn btn--outline" title="Tüm Çerkezköy Taksi Hizmetleri">Tüm Çerkezköy Taksi Hizmetlerimizi İncele 🚀</Link>
             </div>
         </div>
       </section>
@@ -308,7 +293,7 @@ export default function Home() {
             ].map((review, idx) => (
               <div key={idx} className="card reveal" data-delay={idx * 100} style={{padding: '20px', background: '#fff', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)'}}>
                 <div style={{color: '#f1c40f', marginBottom: '10px'}}>★★★★★</div>
-                <p style={{fontStyle: 'italic', color: '#555', marginBottom: '15px'}}>"{review.comment}"</p>
+                <p style={{fontStyle: 'italic', color: '#555', marginBottom: '15px'}}>&ldquo;{review.comment}&rdquo;</p>
                 <strong style={{color: '#333'}}>- {review.name}</strong>
               </div>
             ))}
@@ -321,7 +306,7 @@ export default function Home() {
             <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Sizi bekletmiyoruz, <strong>Çerkezköy taksi numarası</strong> ile tek tıkla kapınızdayız!</p>
             <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: 0}} data-delay="100">
                 <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
-                <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Çağır</a>
+                <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp üzerinden Çağır</a>
             </div>
         </div>
       </section>

@@ -1,29 +1,16 @@
 import Link from 'next/link';
-import bolgelerData from '@/data/bolgeler.json';
-import bloglarData from '@/data/bloglar.json';
-import hizmetlerData from '@/data/hizmetler.json';
 
 export default function SpiderWeb({ currentPath }) {
-    // Generate 4 random links from different categories to create the spider web effect
-    const getRandomItems = (arr, num) => {
-        const shuffled = [...arr].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, num);
-    };
-
-    const randomBolge = getRandomItems(bolgelerData, 1)[0];
-    const randomBlog = getRandomItems(bloglarData, 1)[0];
-    const randomHizmet = getRandomItems(hizmetlerData, 1)[0];
-
     const links = [
-        { title: randomHizmet.title, url: `/hizmetler/${randomHizmet.slug}`, type: 'Hizmet' },
+        { title: 'Taksi Ücreti Hesaplama', url: '/taksi-ucreti-hesaplama', type: 'Ücret' },
         { title: 'Havalimanı Transferi', url: '/hizmetler/havalimani-transfer', type: 'Transfer' },
-        { title: `${randomBolge.neighborhood} Taksi`, url: `/bolgeler/${randomBolge.slug}`, type: 'Bölge' },
-        { title: randomBlog.title, url: `/blog/${randomBlog.slug}`, type: 'Rehber' }
+        { title: 'Şubeler ve Telefonlar', url: '/subeler', type: 'İletişim' },
+        { title: 'Taksi Hizmetleri', url: '/hizmetler', type: 'Hizmet' }
     ].filter(l => l.url !== currentPath); // prevent linking to itself
 
     return (
         <div className="spider-web reveal" style={{marginTop: '60px', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '40px'}}>
-            <h3 style={{fontSize: '1.5rem', marginBottom: '20px', textAlign: 'center'}}>Bölge Ulaşım Ağı (İlginizi Çekebilir)</h3>
+            <h3 style={{fontSize: '1.5rem', marginBottom: '20px', textAlign: 'center'}}>Yolculuğunuzu Planlayın</h3>
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '15px', justifyContent: 'center'}}>
                 {links.map((link, i) => (
                     <Link key={i} href={link.url} className="spider-link" style={{
