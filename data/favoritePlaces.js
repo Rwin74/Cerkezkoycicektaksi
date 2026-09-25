@@ -1,0 +1,26 @@
+// Settlement favorites use their mapped center; hospitals and airports use a building/terminal.
+// Each source is retained so the coordinate can be audited later.
+export const favoritePlaces = [
+  { name: "Çorlu", area: "Tekirdağ merkez", lat: 41.1591, lon: 27.8041, source: "https://mapcarta.com/%C3%87orlu" },
+  { name: "Silivri", area: "İstanbul merkez", lat: 41.0742, lon: 28.2482, source: "https://mapcarta.com/13824946" },
+  { name: "Yeniçiftlik", area: "Marmaraereğlisi · Tekirdağ", lat: 41.01339, lon: 27.85203, source: "https://mapcarta.com/13821082" },
+  { name: "Tekirdağ", area: "Süleymanpaşa merkez", lat: 40.9781, lon: 27.5108, source: "https://mapcarta.com/Tekirda%C4%9F" },
+  { name: "Tekirdağ Şehir Hastanesi", area: "Süleymanpaşa · Tekirdağ", lat: 41.00733, lon: 27.52527, source: "https://mapcarta.com/W617098632" },
+  { name: "İstanbul", area: "Şehir merkezi", lat: 41.037, lon: 28.9851, source: "https://mapcarta.com/Istanbul" },
+  { name: "Başakşehir Çam ve Sakura Hastanesi", area: "Başakşehir · İstanbul", lat: 41.10453, lon: 28.77643, source: "https://mapcarta.com/W793003829" },
+  { name: "İstanbul Havalimanı", area: "Ana terminal · Arnavutköy", lat: 41.26267, lon: 28.7425, source: "https://mapcarta.com/W687768729" },
+  { name: "Sabiha Gökçen Havalimanı", area: "Ana terminal · Pendik", lat: 40.90759, lon: 29.31597, source: "https://mapcarta.com/W595327339" },
+  { name: "Saray", area: "Tekirdağ merkez", lat: 41.4427, lon: 27.9214, source: "https://mapcarta.com/Saray" },
+  { name: "Vize", area: "Kırklareli merkez", lat: 41.5729, lon: 27.767, source: "https://mapcarta.com/Vize" },
+  { name: "Kırklareli", area: "Şehir merkezi", lat: 41.737, lon: 27.2236, source: "https://mapcarta.com/K%C4%B1rklareli" },
+  { name: "İğneada", area: "Demirköy · Kırklareli", lat: 41.87737, lon: 27.98728, source: "https://mapcarta.com/13836466" },
+  { name: "Erikli", area: "Keşan · Edirne (köy merkezi)", lat: 40.64011, lon: 26.45616, source: "https://mapcarta.com/13840516" },
+  { name: "Keşan", area: "Edirne merkez", lat: 40.8549, lon: 26.6303, source: "https://mapcarta.com/Ke%C5%9Fan" },
+  { name: "Tekirdağ Feribot İskelesi", area: "Ceyport terminali · Süleymanpaşa", lat: 40.965083, lon: 27.503528, source: "https://www.arabasarjistasyonlari.com/ceyport-feribot-terminali-wat-mobilite-istasyonu-nerede.html" },
+  { name: "Marmaraereğlisi", area: "Tekirdağ merkez", lat: 40.9694, lon: 27.955, source: "https://mapcarta.com/Marmara_Ere%C4%9Flisi" },
+  { name: "Edirne", area: "Şehir merkezi", lat: 41.6759, lon: 26.5587, source: "https://mapcarta.com/Edirne" },
+  { name: "Çanakkale", area: "Şehir merkezi", lat: 40.1463, lon: 26.4029, source: "https://mapcarta.com/%C3%87anakkale" },
+  { name: "Çatalca", area: "İstanbul merkez", lat: 41.14368, lon: 28.46052, source: "https://mapcarta.com/13844966" },
+  { name: "Selimpaşa", area: "Silivri · İstanbul", lat: 41.05473, lon: 28.36662, source: "https://mapcarta.com/13825354" },
+  { name: "Kumburgaz", area: "Büyükçekmece · İstanbul", lat: 41.03111, lon: 28.45374, source: "https://mapcarta.com/13830210" },
+];

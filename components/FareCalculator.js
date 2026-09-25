@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator, LocateFixed, MapPin, Navigation, Route, Search } from "lucide-react";
+import { ArrowRight, Calculator, ChevronDown, LocateFixed, MapPin, Navigation, Route, Search, Star } from "lucide-react";
 import { calculateTaxiFare } from "@/lib/taxiFare";
+import { favoritePlaces } from "@/data/favoritePlaces";
 
 function LocationField({ id, label, placeholder, value, onChange, onSelect, icon: Icon }) {
   const [suggestions, setSuggestions] = useState([]);
@@ -95,6 +96,8 @@ export default function FareCalculator({ compact = false }) {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
   const [locating, setLocating] = useState(false);
+  const [favoritesOpen, setFavoritesOpen] = useState(false);
+  const [selectedFavorite, setSelectedFavorite] = useState(null);
 
   const selectFrom = (place) => {
     setFromPlace(place);
@@ -106,6 +109,31 @@ export default function FareCalculator({ compact = false }) {
     setToPlace(place);
     setToText(place.label);
     setResult(null);
+  };
+
+  const chooseFavorite = async (favorite) => {
+    setStatus("");
+    setResult(null);
+    setSelectedFavorite(favorite.name);
+    setToText(favorite.name);
+    setToPlace(null);
+    setLoading(true);
+    try {
+      const destination = { id: `favorite-${favorite.name}`, label: `${favorite.name} (${favorite.area})`, lat: favorite.lat, lon: favorite.lon };
+      selectTo(destination);
+      setFavoritesOpen(false);
+      const origin = fromPlace || (fromText.trim().length >= 3 ? await findFirstPlace(fromText) : null);
+      if (!origin) {
+        setStatus("Favori varış noktası seçildi. Ücreti görmek için başlangıç konumunuzu seçin veya mevcut konumunuzu kullanın.");
+        return;
+      }
+      if (!fromPlace) selectFrom(origin);
+      await calculateRoute(origin, destination);
+    } catch (error) {
+      setStatus(error.message || "Favori konum bulunamadı. Varış adresini elle seçebilirsiniz.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const useCurrentLocation = () => {
@@ -142,6 +170,17 @@ export default function FareCalculator({ compact = false }) {
     );
   };
 
+  const calculateRoute = async (origin, destination) => {
+    const params = new URLSearchParams({
+      fromLat: String(origin.lat), fromLon: String(origin.lon),
+      toLat: String(destination.lat), toLon: String(destination.lon),
+    });
+    const response = await fetch(`/api/rota-hesapla?${params}`);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || "Rota hesaplanamadı.");
+    setResult({ ...data, fare: calculateTaxiFare(data.distanceKm) });
+  };
+
   const calculate = async (event) => {
     event.preventDefault();
     setStatus("");
@@ -159,20 +198,7 @@ export default function FareCalculator({ compact = false }) {
       if (!fromPlace) selectFrom(origin);
       if (!toPlace) selectTo(destination);
 
-      const params = new URLSearchParams({
-        fromLat: String(origin.lat),
-        fromLon: String(origin.lon),
-        toLat: String(destination.lat),
-        toLon: String(destination.lon),
-      });
-      const response = await fetch(`/api/rota-hesapla?${params}`);
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "Rota hesaplanamadı.");
-
-      setResult({
-        ...data,
-        fare: calculateTaxiFare(data.distanceKm),
-      });
+      await calculateRoute(origin, destination);
     } catch (error) {
       setStatus(error.message || "Hesaplama sırasında bir sorun oluştu. Lütfen tekrar deneyin.");
     } finally {
@@ -216,9 +242,23 @@ export default function FareCalculator({ compact = false }) {
               placeholder="Gitmek istediğiniz yeri yazın"
               value={toText}
               icon={MapPin}
-              onChange={(value) => { setToText(value); setToPlace(null); setResult(null); }}
+              onChange={(value) => { setToText(value); setToPlace(null); setSelectedFavorite(null); setResult(null); }}
               onSelect={selectTo}
             />
+            <div className="fare-favorites">
+              <button type="button" className="fare-favorites__toggle" aria-expanded={favoritesOpen} aria-controls={compact ? "home-favorites" : "page-favorites"} onClick={() => setFavoritesOpen(!favoritesOpen)}>
+                <span><Star size={18} fill="currentColor" /> Favori yerler <small>Hızlı varış seçimi</small></span>
+                <ChevronDown size={19} className={favoritesOpen ? "fare-favorites__chevron fare-favorites__chevron--open" : "fare-favorites__chevron"} />
+              </button>
+              {favoritesOpen && <div id={compact ? "home-favorites" : "page-favorites"} className="fare-favorites__panel">
+                <p>Gitmek istediğiniz yeri seçin. Şehir ve ilçe seçenekleri merkez noktasına hesaplanır; farklı bir adres için yukarıya adres yazın.</p>
+                <div className="fare-favorites__grid">
+                  {favoritePlaces.map((favorite) => <button key={favorite.name} type="button" className={`fare-favorites__place ${selectedFavorite === favorite.name ? "fare-favorites__place--selected" : ""}`} onClick={() => chooseFavorite(favorite)} disabled={loading}>
+                    <MapPin size={16} aria-hidden="true" /><span><strong>{favorite.name}</strong><small>{favorite.area}</small></span>
+                  </button>)}
+                </div>
+              </div>}
+            </div>
             <button type="submit" className="btn btn--primary fare-calculator__submit" disabled={loading}>
               {loading ? <span className="fare-field__spinner fare-field__spinner--dark" /> : <Search size={19} />}
               {loading ? "Rota hesaplanıyor…" : "Yol ücretini hesapla"}

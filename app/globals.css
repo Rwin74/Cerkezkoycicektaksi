@@ -317,12 +317,23 @@ em { font-style: normal; color: var(--taxi-yellow); }
 .nav__link:hover::after, .nav__link--active::after { width: 100%; }
 
 .nav__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
     background: var(--dark-base);
     color: #fff;
     padding: 10px 20px;
     border-radius: var(--rad-pill);
     font-weight: 700;
     transition: all var(--trans-bouncy);
+}
+.nav__links > li { flex-shrink: 0; }
+@media (min-width: 993px) and (max-width: 1550px) {
+    .nav__links { gap: 12px; }
+    .nav__link { font-size: .88rem; }
+    .nav__cta { padding: 10px 14px; font-size: .9rem; }
 }
 .nav__cta:hover { background: var(--taxi-yellow); color: var(--dark-base); transform: scale(1.05); }
 
@@ -1141,6 +1152,24 @@ em { font-style: normal; color: var(--taxi-yellow); }
 .fare-calculator__locate { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 16px 4px; color: #705900; font-weight: 700; font-size: .86rem; }
 .fare-calculator__locate:hover { color: #111; }
 .fare-calculator__locate:disabled, .fare-calculator__submit:disabled { opacity: .65; cursor: wait; }
+.fare-favorites { margin: 8px 0 14px; border: 1px solid #eadca3; border-radius: 14px; background: #fffdf5; overflow: hidden; }
+.fare-favorites__toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 13px 16px; color: #262116; text-align: left; font-weight: 800; }
+.fare-favorites__toggle > span { display: flex; align-items: center; gap: 9px; }
+.fare-favorites__toggle svg { color: #bd8500; flex-shrink: 0; }
+.fare-favorites__toggle small { padding-left: 5px; color: #786c50; font-size: .75rem; font-weight: 600; }
+.fare-favorites__chevron { transition: transform .2s ease; }
+.fare-favorites__chevron--open { transform: rotate(180deg); }
+.fare-favorites__panel { padding: 4px 14px 15px; border-top: 1px solid #f0e8c9; }
+.fare-favorites__panel > p { margin: 9px 2px 13px; color: #665f51; font-size: .82rem; line-height: 1.4; }
+.fare-favorites__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-height: 300px; overflow-y: auto; }
+.fare-favorites__place { display: flex; align-items: flex-start; gap: 8px; min-width: 0; padding: 11px; border: 1px solid #e8e3d7; border-radius: 10px; background: #fff; color: #2a2925; text-align: left; transition: border-color .2s, background .2s, transform .2s; }
+.fare-favorites__place:hover, .fare-favorites__place--selected { border-color: #d7a300; background: #fff8d9; transform: translateY(-1px); }
+.fare-favorites__place:disabled { opacity: .6; cursor: wait; }
+.fare-favorites__place svg { flex-shrink: 0; margin-top: 2px; color: #bc8800; }
+.fare-favorites__place span { display: grid; gap: 2px; min-width: 0; }
+.fare-favorites__place strong { font-size: .82rem; line-height: 1.25; overflow-wrap: anywhere; }
+.fare-favorites__place small { color: #777; font-size: .72rem; }
+@media (max-width: 480px) { .fare-favorites__toggle small { display: none; } .fare-favorites__grid { grid-template-columns: 1fr; } }
 .fare-calculator__submit { width: 100%; min-height: 54px; margin-top: 8px; border-radius: 13px; }
 .fare-calculator__message { margin-top: 14px; padding: 11px 13px; border-radius: 10px; background: #fff1f1; color: #9d1c1c; font-size: .9rem; font-weight: 600; }
 .fare-calculator__note { margin-top: 14px; color: #777; font-size: .77rem; line-height: 1.45; }

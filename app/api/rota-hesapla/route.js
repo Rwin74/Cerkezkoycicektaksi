@@ -38,6 +38,11 @@ export async function GET(request) {
       return Response.json({ error: "Bu iki konum arasında araç rotası bulunamadı." }, { status: 404 });
     }
 
+    // OSRM snaps locations to driveable roads. A distant snap would quote the wrong trip.
+    if (data.waypoints?.some((point) => point.distance > 1000)) {
+      return Response.json({ error: "Seçilen konum araç yoluna uzak görünüyor. Lütfen daha açık bir adres seçin." }, { status: 422 });
+    }
+
     return Response.json({
       distanceKm: Number((route.distance / 1000).toFixed(1)),
       durationMinutes: Math.max(1, Math.round(route.duration / 60)),

@@ -143,7 +143,7 @@ export default function Home() {
                     </div>
                     <div className="floating-card__text">
                         <span style={{color: 'var(--taxi-yellow)', fontWeight: '800', letterSpacing: '0.5px'}}>KREDİ KARTI GEÇERLİ</span>
-                        <strong style={{lineHeight: '1.4', fontWeight: '600', color: '#fff'}}><strong>Çerkezköy Taksi</strong> durağı olarak <span style={{color: '#fff', padding: '2px 6px', background: '#44bd32', borderRadius: '4px', fontWeight: '800'}}>%0 KOMİSYON</span><br/>Alıyoruz!</strong>
+                        <strong style={{lineHeight: '1.4', fontWeight: '600', color: '#fff'}}>Çiçek Taksi durağı olarak <span style={{color: '#fff', padding: '2px 6px', background: '#44bd32', borderRadius: '4px', fontWeight: '800'}}>%0 KOMİSYON</span><br/>Alıyoruz!</strong>
                     </div>
                 </div>
                 <Image 
