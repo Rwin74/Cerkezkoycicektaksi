@@ -1194,6 +1194,14 @@ em { font-style: normal; color: var(--taxi-yellow); }
 .fare-booking__field input, .fare-booking__field textarea { width: 100%; min-width: 0; padding: 12px; border: 1px solid #d7d7d7; border-radius: 9px; background: #fff; color: #171717; font: inherit; font-weight: 400; }
 .fare-booking__field input:focus, .fare-booking__field textarea:focus { outline: 3px solid rgba(255,204,0,.25); border-color: #9b7600; }
 .fare-booking__field textarea { resize: vertical; }
+.fare-booking__return-toggle { display: flex; align-items: center; gap: 11px; margin: 4px 0 14px; padding: 13px; border: 1px solid #e5dfca; border-radius: 10px; background: #fff; color: #302b1c; cursor: pointer; }
+.fare-booking__return-toggle--active { border-color: #c39500; background: #fff8db; }
+.fare-booking__return-toggle input { width: 18px; height: 18px; margin: 0; accent-color: #967100; }
+.fare-booking__return-toggle > svg { flex: 0 0 auto; color: #8a6c00; }
+.fare-booking__return-toggle span { display: grid; gap: 2px; }
+.fare-booking__return-toggle strong { font-size: .88rem; }
+.fare-booking__return-toggle small { color: #6d6656; font-size: .76rem; }
+.fare-booking__route-status { margin: 0 0 12px; padding: 10px 12px; border-radius: 9px; background: #f5f3e9; color: #514a35; font-size: .82rem; line-height: 1.5; }
 .fare-booking__send { display: flex; width: 100%; min-height: 48px; align-items: center; justify-content: center; gap: 8px; border-radius: 10px; }
 .fare-booking__disclaimer { margin: 12px 0 0; color: #686868; font-size: .76rem; line-height: 1.5; }
 .fare-page-hero { text-align: center; }

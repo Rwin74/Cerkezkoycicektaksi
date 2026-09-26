@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator, CalendarClock, ChevronDown, LocateFixed, MapPin, Navigation, Route, Search, Send, Star } from "lucide-react";
+import { ArrowRight, ArrowLeftRight, Calculator, CalendarClock, ChevronDown, LocateFixed, MapPin, Navigation, Route, Search, Send, Star } from "lucide-react";
 import { calculateTaxiFare } from "@/lib/taxiFare";
 import { favoritePlaces } from "@/data/favoritePlaces";
 
@@ -99,6 +99,10 @@ export default function FareCalculator({ compact = false, bookingPage = false })
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const [selectedFavorite, setSelectedFavorite] = useState(null);
   const [bookingError, setBookingError] = useState("");
+  const [returnTripEnabled, setReturnTripEnabled] = useState(false);
+  const [returnResult, setReturnResult] = useState(null);
+  const [returnLoading, setReturnLoading] = useState(false);
+  const [returnError, setReturnError] = useState("");
 
   const selectFrom = (place) => {
     setFromPlace(place);
@@ -172,6 +176,9 @@ export default function FareCalculator({ compact = false, bookingPage = false })
   };
 
   const calculateRoute = async (origin, destination) => {
+    setReturnTripEnabled(false);
+    setReturnResult(null);
+    setReturnError("");
     const params = new URLSearchParams({
       fromLat: String(origin.lat), fromLon: String(origin.lon),
       toLat: String(destination.lat), toLon: String(destination.lon),
@@ -180,6 +187,35 @@ export default function FareCalculator({ compact = false, bookingPage = false })
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "Rota hesaplanamadı.");
     setResult({ ...data, fare: calculateTaxiFare(data.distanceKm) });
+  };
+
+  const toggleReturnTrip = async (enabled) => {
+    setReturnTripEnabled(enabled);
+    setBookingError("");
+    setReturnError("");
+    setReturnResult(null);
+    if (!enabled) return;
+
+    if (!fromPlace || !toPlace) {
+      setReturnError("Dönüş rotası için lütfen konumları seçip ücreti yeniden hesaplayın.");
+      return;
+    }
+
+    setReturnLoading(true);
+    try {
+      const params = new URLSearchParams({
+        fromLat: String(toPlace.lat), fromLon: String(toPlace.lon),
+        toLat: String(fromPlace.lat), toLon: String(fromPlace.lon),
+      });
+      const response = await fetch(`/api/rota-hesapla?${params}`);
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Dönüş rotası hesaplanamadı.");
+      setReturnResult({ ...data, fare: calculateTaxiFare(data.distanceKm) });
+    } catch (error) {
+      setReturnError(error.message || "Dönüş rotası hesaplanamadı. Adresleri kontrol edip tekrar deneyin.");
+    } finally {
+      setReturnLoading(false);
+    }
   };
 
   const calculate = async (event) => {
@@ -212,15 +248,29 @@ export default function FareCalculator({ compact = false, bookingPage = false })
     setBookingError("");
     const form = new FormData(event.currentTarget);
     const dateValue = String(form.get("appointmentDate") || "");
+    const returnDateValue = String(form.get("returnDate") || "");
     const passengerPhone = String(form.get("passengerPhone") || "").trim();
     if (!dateValue || new Date(dateValue) <= new Date()) {
       setBookingError("Lütfen ileri bir tarih ve saat seçin.");
       return;
     }
+    if (returnTripEnabled && (!returnDateValue || new Date(returnDateValue) <= new Date(dateValue))) {
+      setBookingError("Dönüş saatini gidiş saatinden ileri bir zaman olarak seçin.");
+      return;
+    }
+    if (returnTripEnabled && !returnResult) {
+      setBookingError("Dönüş ücreti hesaplanamadı. Lütfen dönüş rotasını yeniden deneyin.");
+      return;
+    }
 
     const date = new Date(dateValue);
+    const returnDate = returnTripEnabled ? new Date(returnDateValue) : null;
+    const returnFare = returnTripEnabled ? returnResult.fare : 0;
     const mapsLink = fromPlace?.lat && fromPlace?.lon
       ? `https://maps.google.com/?q=${fromPlace.lat},${fromPlace.lon}`
+      : "";
+    const returnMapsLink = toPlace?.lat && toPlace?.lon
+      ? `https://maps.google.com/?q=${toPlace.lat},${toPlace.lon}`
       : "";
     const message = [
       "Merhaba, Çiçek Taksi sitesinden planlı yolculuk talebi oluşturmak istiyorum.",
@@ -229,7 +279,14 @@ export default function FareCalculator({ compact = false, bookingPage = false })
       `Varış: ${toText.trim()}`,
       `Tarih ve saat: ${date.toLocaleString("tr-TR", { dateStyle: "long", timeStyle: "short" })}`,
       `Telefon: ${passengerPhone}`,
-      `Tahmini ücret: ${result.fare.toLocaleString("tr-TR")} TL (${result.distanceKm.toLocaleString("tr-TR")} km) — kesin tutar durak tarafından teyit edilir.`,
+      `Tahmini gidiş ücreti: ${result.fare.toLocaleString("tr-TR")} TL (${result.distanceKm.toLocaleString("tr-TR")} km)`,
+      returnTripEnabled ? "DÖNÜŞ YOLCULUĞU" : "",
+      returnTripEnabled ? `Dönüş alınış: ${toText.trim()}` : "",
+      returnTripEnabled && returnMapsLink ? `Dönüş konum haritası: ${returnMapsLink}` : "",
+      returnTripEnabled ? `Dönüş varış: ${fromText.trim()}` : "",
+      returnTripEnabled ? `Dönüş tarihi ve saati: ${returnDate.toLocaleString("tr-TR", { dateStyle: "long", timeStyle: "short" })}` : "",
+      returnTripEnabled ? `Tahmini dönüş ücreti: ${returnFare.toLocaleString("tr-TR")} TL (${returnResult.distanceKm.toLocaleString("tr-TR")} km)` : "",
+      returnTripEnabled ? `Tahmini gidiş-dönüş toplamı: ${(result.fare + returnFare).toLocaleString("tr-TR")} TL — kesin tutar durak tarafından teyit edilir.` : "Tahmini tutardır; kesin ücret durak tarafından teyit edilir.",
       String(form.get("appointmentNote") || "").trim() ? `Not: ${String(form.get("appointmentNote")).trim()}` : "",
       "Araç uygunluğu ve rezervasyon teyidi rica ederim.",
     ].filter(Boolean).join("\n");
@@ -314,8 +371,24 @@ export default function FareCalculator({ compact = false, bookingPage = false })
                     <p className="fare-booking__intro">Alınış ve varış bilgileri hesaplamadan aktarılır. Zamanı, telefonunuzu ve varsa özel notunuzu ekleyin.</p>
                     <form onSubmit={sendAppointmentRequest}>
                       <label className="fare-booking__field">Yolculuk tarihi ve saati
-                      <input type="datetime-local" name="appointmentDate" required />
+                        <input type="datetime-local" name="appointmentDate" required />
                       </label>
+                      <label className={`fare-booking__return-toggle ${returnTripEnabled ? "fare-booking__return-toggle--active" : ""}`}>
+                        <input type="checkbox" name="returnTrip" checked={returnTripEnabled} onChange={(event) => toggleReturnTrip(event.target.checked)} />
+                        <ArrowLeftRight size={19} aria-hidden="true" />
+                        <span><strong>Dönüşte de al</strong><small>Aynı rota ters yönde talebe eklensin</small></span>
+                      </label>
+                      {returnTripEnabled && (
+                        <>
+                          <label className="fare-booking__field">Dönüş tarihi ve saati
+                            <input type="datetime-local" name="returnDate" required />
+                            <span>Varış yerinizden başlangıç noktasına dönüş isteği eklenir.</span>
+                          </label>
+                          {returnLoading && <p className="fare-booking__route-status">Dönüş rotası ve ücreti hesaplanıyor…</p>}
+                          {returnError && <p className="fare-calculator__message" role="alert">{returnError}</p>}
+                          {returnResult && <p className="fare-booking__route-status">Tahmini dönüş: {returnResult.distanceKm.toLocaleString("tr-TR")} km · {returnResult.fare.toLocaleString("tr-TR")} TL. Gidiş-dönüş tahmini toplam: {(result.fare + returnResult.fare).toLocaleString("tr-TR")} TL.</p>}
+                        </>
+                      )}
                       <label className="fare-booking__field">Size ulaşabileceğimiz telefon
                         <input type="tel" name="passengerPhone" autoComplete="tel" placeholder="05xx xxx xx xx" minLength={10} maxLength={20} required />
                       </label>
@@ -323,7 +396,7 @@ export default function FareCalculator({ compact = false, bookingPage = false })
                         <textarea name="appointmentNote" rows={3} maxLength={300} placeholder="Vardiya çıkışı, yolcu/bagaj bilgisi veya buluşma tarifi" />
                       </label>
                       {bookingError && <p className="fare-calculator__message" role="alert">{bookingError}</p>}
-                      <button type="submit" className="btn btn--whatsapp fare-booking__send"><Send size={17} /> WhatsApp&apos;ta durağa gönder</button>
+                      <button type="submit" className="btn btn--whatsapp fare-booking__send" disabled={returnTripEnabled && (returnLoading || !returnResult)}><Send size={17} /> WhatsApp&apos;ta durağa gönder</button>
                     </form>
                     <p className="fare-booking__disclaimer">WhatsApp açıldığında mesajı kontrol edip kendiniz gönderirsiniz. Bu bir yolculuk talebidir; araç uygunluğu ve randevu, durak WhatsApp üzerinden onaylayınca kesinleşir. Ücret tahminidir.</p>
                   </div>
