@@ -1,10 +1,5 @@
-import hizmetlerData from '@/data/hizmetler.json';
-import bolgelerData from '@/data/bolgeler.json';
 import bloglarData from '@/data/bloglar.json';
-import noktalarData from '@/data/noktalar.json';
-import ekibimizData from '@/data/ekibimiz.json';
 import subelerData from '@/data/subeler.json';
-import landingPagesData from '@/data/landingPages.json';
 
 
 export default function sitemap() {
@@ -27,37 +22,10 @@ export default function sitemap() {
         '/en/rates',
         '/en/contact',
         '/en/about-us',
-        '/en/istanbul-airport-cerkezkoy-taxi'
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         changeFrequency: 'daily',
         priority: route === '' ? 1 : 0.8,
-    }));
-
-    // Dynamic services
-    const services = hizmetlerData.map((hizmet) => ({
-        url: `${baseUrl}/hizmetler/${hizmet.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.8,
-    }));
-
-    // Dynamic neighborhoods
-    const neighborhoods = bolgelerData.map((bolge) => ({
-        url: `${baseUrl}/bolgeler/${bolge.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.9,
-    }));
-
-    const noktalar = noktalarData.map((nokta) => ({
-        url: `${baseUrl}/noktalar/${nokta.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.8,
-    }));
-
-    const ekip = ekibimizData.map((personel) => ({
-        url: `${baseUrl}/ekibimiz/${personel.slug}`,
-        changeFrequency: 'monthly',
-        priority: 0.7,
     }));
 
     const subeler = subelerData.map((sube) => ({
@@ -73,12 +41,5 @@ export default function sitemap() {
         priority: 0.7,
     }));
 
-    // Dynamic landing pages
-    const landingPages = landingPagesData.map((page) => ({
-        url: `${baseUrl}/${page.slug}`,
-        changeFrequency: 'weekly',
-        priority: 0.9,
-    }));
-
-    return [...routes, ...services, ...neighborhoods, ...noktalar, ...ekip, ...subeler, ...blogs, ...landingPages];
+    return [...routes, ...subeler, ...blogs];
 }

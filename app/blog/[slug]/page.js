@@ -13,14 +13,12 @@ export async function generateMetadata({ params }) {
         title: blog.title.length > 50 ? blog.title.substring(0, 50) + ' | Taksi' : `${blog.title} | Çiçek Taksi`,
         description: blog.excerpt.length > 155 ? blog.excerpt.substring(0, 155) + '...' : blog.excerpt,
         alternates: { canonical: `/blog/${blog.slug}` },
-        authors: [{ name: 'Serhat Çiçek', url: 'https://www.linkedin.com/in/serhat-cicek-taksi' }],
         openGraph: {
             title: blog.title,
             description: blog.excerpt,
             type: 'article',
             publishedTime: blog.date,
             modifiedTime: blog.date,
-            authors: ['Serhat Çiçek'],
         },
     };
 }
@@ -34,21 +32,14 @@ export async function generateStaticParams() {
 export default async function BlogDetay({ params }) {
     const { slug } = await params;
     const blog = bloglarData.find(b => b.slug === slug);
+    if (!blog) notFound();
 
-    
-    
-
-    
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": blog.title,
         "description": blog.excerpt,
-        "author": { 
-            "@type": "Person", 
-            "name": "Serhat Çiçek",
-            "url": "https://www.linkedin.com/in/serhat-cicek-taksi"
-        },
+        "author": { "@type": "Organization", "name": "Çiçek Taksi Çerkezköy" },
         "publisher": {
             "@type": "Organization",
             "name": "Çiçek Taksi Çerkezköy",
@@ -62,10 +53,6 @@ export default async function BlogDetay({ params }) {
         "url": `https://www.cerkezkoycicektaksi.com/blog/${blog.slug}`
     };
 
-    if (!blog) {
-        notFound();
-    }
-
     // İlgili bloglar (aynı kategoriden)
     const relatedBlogs = bloglarData
         .filter(b => b.id !== blog.id && b.category === blog.category)
@@ -74,83 +61,10 @@ export default async function BlogDetay({ params }) {
     // İlgili hizmetler
     const relatedServices = hizmetlerData.slice(0, 3);
 
-    const richSchema = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "headline": blog.title,
-                "datePublished": blog.date,
-                "author": {
-                    "@type": "Person",
-                    "name": "Serhat Çiçek",
-                    "url": "https://www.linkedin.com/in/serhat-cicek-taksi"
-                },
-                "speakable": {
-                    "@type": "SpeakableSpecification",
-                    "xpath": [
-                        "//h1",
-                        "//div[@class='rich-content']/p[1]"
-                    ]
-                }
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Çiçek Taksi'de kredi kartı geçerli mi?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Evet, Çiçek Taksi'de tüm yolculuklarınızda %0 komisyon ile kredi kartı geçerlidir."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Taksi çağırdığımda ortalama kaç dakikada gelir?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Bulunduğunuz konuma göre değişmekle birlikte, taksimiz genellikle 5-10 dakika içerisinde kapınızda olur."
-                        }
-                    }
-                ]
-            },
-            {
-                "@type": "HowTo",
-                "name": "Çerkezköy'de Nasıl Taksi Çağırılır?",
-                "step": [
-                    {
-                        "@type": "HowToStep",
-                        "name": "Adım 1: Bizi Arayın veya WhatsApp'tan Yazın",
-                        "text": "0546 401 47 51 numaralı telefonu arayın veya WhatsApp üzerinden konumunuzu gönderin."
-                    },
-                    {
-                        "@type": "HowToStep",
-                        "name": "Adım 2: Taksimizi Bekleyin",
-                        "text": "Taksi şoförümüz bulunduğunuz konuma en kısa sürede ulaşmak için yola çıkacaktır."
-                    },
-                    {
-                        "@type": "HowToStep",
-                        "name": "Adım 3: Konforlu Yolculuk",
-                        "text": "Kredi kartı geçerli, güvenli ve konforlu araçlarımızla gitmek istediğiniz yere ulaşın."
-                    }
-                ]
-            },
-            {
-                "@type": "ImageObject",
-                "url": "https://www.cerkezkoycicektaksi.com/logo.png",
-                "name": blog.title
-            }
-        ]
-    };
 
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(richSchema) }}
-            />
             <header className="page-hero" style={{paddingBottom: '40px'}}>
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">
@@ -173,15 +87,6 @@ export default async function BlogDetay({ params }) {
                         dangerouslySetInnerHTML={{ __html: blog.content }} 
                     />
                     
-                    <div className="author-box reveal" style={{background: 'var(--bg-gray)', padding: '30px', borderRadius: '12px', marginTop: '40px', borderLeft: '4px solid var(--taxi-yellow)'}}>
-                        <h4 style={{marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '10px'}}>
-                            <span style={{fontSize: '24px'}}>✍️</span> Serhat Çiçek (Kurucu / Baş Şoför)
-                        </h4>
-                        <p style={{fontSize: '0.95rem', opacity: 0.9, fontStyle: 'italic', lineHeight: '1.6'}}>
-                            "Çerkezköy Taksi durağımızda 2010 yılından beri edindiğim saha tecrübelerine dayanarak belirtmeliyim ki; özellikle uzun mesafe ve havalimanı transferlerinde en sık karşılaştığımız müşteri senaryosu, güvenli ve zamanında ulaşım stresidir. Bu yazıda aktardığımız tüm ipuçlarını ve bilgileri bizzat direksiyon başında yüzlerce kez deneyimledim ve tüm şoför kadromuzu bu somut gözlemlerimize dayanarak eğitiyoruz."
-                        </p>
-                    </div>
-
                     <hr style={{margin: '48px 0', borderColor: 'var(--bg-gray)'}} />
                     
                     {/* CTA */}

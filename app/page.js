@@ -73,7 +73,7 @@ export default function Home() {
           {
             "@type": "Question",
             "name": "Ulaşım için ne kadar süre beklemem gerekir?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Bulunduğunuz noktaya en yakın aracımız, çağrınızdan hemen sonra yola çıkar. Genellikle şehir içi transferlerde ortalama 3 ile 5 dakika içerisinde size ulaşıyoruz." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Aracın uygunluğu ve tahmini varış süresi konuma, trafiğe ve mevcut talebe göre değişir. Çağrı sırasında bilgi alabilirsiniz." }
           },
           {
             "@type": "Question",
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
           <div className="faq-grid reveal" style={{display: 'flex', flexDirection: 'column', gap: '15px', maxWidth: '800px', margin: '0 auto'}}>
             {[
-              { q: "Ulaşım için ne kadar süre beklemem gerekir?", a: "Bulunduğunuz noktaya en yakın aracımız, çağrınızdan hemen sonra yola çıkar. Genellikle şehir içi transferlerde ortalama 3 ile 5 dakika içerisinde size ulaşıyoruz." },
+              { q: "Ulaşım için ne kadar süre beklemem gerekir?", a: "Aracın uygunluğu ve tahmini varış süresi konuma, trafiğe ve mevcut talebe göre değişir. Çağrı sırasında bilgi alabilirsiniz." },
               { q: "Gece saatlerinde ticari taksi bulabilir miyim?", a: "Kesinlikle. 7/24 kesintisiz hizmet veriyoruz. Gece rezervasyon gerekmeksizin ulaşım ihtiyacınızı karşılıyoruz." },
               { q: "Havaalanı transferi için rezervasyon şart mı?", a: "Şart değil ancak uçuş saatinizi riske atmamak adına, havalimanı rotaları için en az birkaç saat önceden haber vermeniz konforlu bir yolculuk planlaması sağlar." },
               { q: "Araçlarda kredi kartı ile ödeme yapabilir miyim?", a: "Evet, tüm araçlarımızda pos cihazı bulunur ve kredi kartınızla komisyonsuz olarak ödeme yapabilirsiniz." }
@@ -278,32 +278,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Yorumlar / Sosyal Kanıt */}
+      {/* Müşteri değerlendirmeleri */}
       <section className="section section--gray">
         <div className="container">
           <div className="sh sh--center reveal">
-              <span className="sh__overtitle">Müşteri Yorumları</span>
-              <h2 className="sh__title">Bizi Tercih Edenlerin <em>Deneyimleri</em> ⭐</h2>
+              <span className="sh__overtitle">Müşteri Değerlendirmeleri</span>
+              <h2 className="sh__title">Yorumları <em>Google Haritalar'da</em> Görün</h2>
           </div>
-          <div className="grid grid--3 stagger" style={{marginTop: '40px'}}>
-            {[
-              { name: "Ahmet Y.", comment: "Havaalanı transferi için tercih ettim. Tam vaktinde geldiler, araç çok temizdi. Kesinlikle tavsiye ederim." },
-              { name: "Ayşe K.", comment: "Gece geç saatte taksi çağırdım, 3 dakikada kapıdaydılar. Şoför bey çok kibar ve ilgiliydi. Kredi kartı geçmesi de büyük avantaj." },
-              { name: "Mehmet D.", comment: "Çerkezköy içi ulaşımda her zaman ilk tercihim. Hızlı, güvenilir ve uygun fiyatlı. Teşekkürler Çiçek Taksi!" }
-            ].map((review, idx) => (
-              <div key={idx} className="card reveal" data-delay={idx * 100} style={{padding: '20px', background: '#fff', borderRadius: '12px', boxShadow: '0 5px 15px rgba(0,0,0,0.05)'}}>
-                <div style={{color: '#f1c40f', marginBottom: '10px'}}>★★★★★</div>
-                <p style={{fontStyle: 'italic', color: '#555', marginBottom: '15px'}}>&ldquo;{review.comment}&rdquo;</p>
-                <strong style={{color: '#333'}}>- {review.name}</strong>
-              </div>
-            ))}
+          <div style={{marginTop: '24px', textAlign: 'center'}}>
+            <p>Gerçek müşteri değerlendirmelerini işletme profilimizde okuyun; yolculuk sonrası kendi deneyiminizi paylaşabilirsiniz.</p>
+            <a className="btn btn--dark btn--lg" href="https://www.google.com/maps/search/?api=1&query=%C3%87i%C3%A7ek%20Taksi%20%C3%87erkezk%C3%B6y" target="_blank" rel="noopener noreferrer">
+              Google Haritalar'da yorumları aç
+            </a>
           </div>
         </div>
       </section>
       <section className="section section--yellow" style={{textAlign: 'center'}}>
         <div className="container">
             <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Hemen En Yakın <em>Çerkezköy Taksi</em> Çağır 🚕</h2>
-            <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Sizi bekletmiyoruz, <strong>Çerkezköy taksi numarası</strong> ile tek tıkla kapınızdayız!</p>
+            <p className="reveal" style={{fontSize: '1.25rem', marginBottom: '30px'}}>Alınış konumunuzu ve gideceğiniz yeri paylaşın; araç uygunluğunu ve tahmini varış süresini ararken teyit edin.</p>
             <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: 0}} data-delay="100">
                 <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                 <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp üzerinden Çağır</a>

@@ -33,15 +33,15 @@
     "faqs": [
       {
         "q": "İstanbul Havalimanı'na transfer ne kadar sürer?",
-        "a": "Kuzey Marmara Otoyolu kullanılarak trafiğe takılmadan yaklaşık 55-70 dakika sürmektedir."
+        "a": "Süre trafik, hava ve seçilen güzergâha göre değişir. Uçuş saatinizi paylaşarak uygun hareket saatini ve tahmini süreyi telefonda teyit edin."
       },
       {
         "q": "Havalimanı transferi için bagaj kapasiteniz nedir?",
-        "a": "Havalimanı rotaları için özel Dacia Duster / Fiat Doblo gibi geniş araçlarımız mevcuttur. 5 büyük boy valiz rahatlıkla sığar."
+        "a": "Araç ve bagaj kapasitesi yolculuk günündeki uygunluğa göre değişebilir. Yolcu sayısını ve valiz adedini ararken belirtip uygun aracı teyit edin."
       },
       {
         "q": "Havalimanı transferlerinde sabit fiyat garantisi var mı?",
-        "a": "Evet, havalimanı ve uzak mesafe transferleri için otoyol/köprü geçişleri dahil sabit (fix) fiyat garantisi sunuyoruz."
+        "a": "Sabit ücret veya taksimetreyle hesaplama seçeneklerini, ayrıca varsa otoyol ve köprü geçişlerini yolculuk öncesinde telefonla netleştirin."
       }
     ]
   },
@@ -148,7 +148,7 @@
     "faqs": [
       {
         "q": "Kızılpınar taksi kaç dakikada gelir?",
-        "a": "Araçlarımız bölgede aktif ring halinde olduğu için ortalama 3-5 dakika içinde adresinize ulaşır."
+        "a": "Araç uygunluğu ve tahmini varış süresi bulunduğunuz konuma, trafiğe ve mevcut talebe göre değişir. Ararken bilgi alabilirsiniz."
       },
       {
         "q": "Kredi kartı geçiyor mu?",

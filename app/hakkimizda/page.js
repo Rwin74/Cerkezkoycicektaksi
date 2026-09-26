@@ -37,7 +37,7 @@ export default function Hakkimizda() {
                         <div className="feature reveal" data-delay="100">
                             <div className="feature__icon">🕐</div>
                             <h3 className="feature__title">7/24 Kesintisiz</h3>
-                            <p className="feature__text">Gecenin bir yarısı veya bayram sabahı... Çiçek Taksi uyumaz! Her an kapınızdayız.</p>
+                            <p className="feature__text">Taksi talebi için 7/24 telefonla ulaşın; araç uygunluğunu ve tahmini varış süresini görüşmede teyit edin.</p>
                         </div>
                         <div className="feature reveal" data-delay="200">
                             <div className="feature__icon">🛡️</div>
@@ -47,7 +47,7 @@ export default function Hakkimizda() {
                         <div className="feature reveal">
                             <div className="feature__icon">💰</div>
                             <h3 className="feature__title">Sürpriz Fiyat Yok</h3>
-                            <p className="feature__text">Taksimetre kapınızda açılır. Havalimanı veya şehirler arası yollarda sabit fiyat garantisi veriyoruz.</p>
+                            <p className="feature__text">Havalimanı veya şehirler arası yolculuklarda ücretin nasıl hesaplanacağını ve varsa geçiş masraflarını yola çıkmadan önce telefonla netleştirin.</p>
                         </div>
                         <div className="feature reveal" data-delay="100">
                             <div className="feature__icon">🚗</div>

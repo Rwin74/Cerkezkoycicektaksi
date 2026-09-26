@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Cerkezkoy Taxi Rates & Airport Transfer Pricing | Cicek Taxi',
-  description: 'Transparent fixed rates and official taxi meter tariffs for Cerkezkoy, Kapakli, OSB, and Istanbul Airport transfers. No hidden fees.',
+  description: 'Get a distance-based fare estimate and call to confirm the applicable tariff, route, and any additional costs.',
   alternates: {
     canonical: '/en/rates',
   }

@@ -4,14 +4,14 @@ import { Phone, MessageSquare, Shield, Clock, CreditCard, Plane, MapPin, CheckCi
 
 export const metadata = {
   title: "Cerkezkoy Taxi & Airport VIP Transfer Service | Cicek Taxi",
-  description: "24/7 Premium taxi service in Cerkezkoy, Kapakli, OSB & Airport transfers (IST & SAW). Fast arrival, fixed rates, English speaking drivers & credit card accepted.",
+  description: "Contact Cicek Taxi in Cerkezkoy to confirm pickup availability, estimated arrival time, fare calculation, and payment options.",
   alternates: {
     canonical: "/en",
     languages: { tr: "/", en: "/en", "x-default": "/" },
   },
   openGraph: {
     title: "Cerkezkoy Taxi & Airport VIP Transfer Service | Cicek Taxi",
-    description: "24/7 Premium taxi service in Cerkezkoy, Kapakli, OSB & Airport transfers (IST & SAW). Fast arrival, fixed rates, English speaking drivers & credit card accepted.",
+    description: "Contact Cicek Taxi in Cerkezkoy to confirm pickup availability, estimated arrival time, fare calculation, and payment options.",
     url: "https://www.cerkezkoycicektaksi.com/en",
     locale: "en_US",
     type: "website",
@@ -150,7 +150,7 @@ export default function EnglishHome() {
           <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
             <details style={{ padding: '15px', background: '#fff', borderRadius: '8px', border: '1px solid #ddd' }}>
               <summary style={{ fontWeight: 'bold' }}>How fast will a taxi arrive after booking?</summary>
-              <p style={{ marginTop: '10px', color: '#555' }}>Our nearest taxi is dispatched immediately upon your call or WhatsApp message. Average arrival time within Cerkezkoy is 3 to 5 minutes.</p>
+              <p style={{ marginTop: '10px', color: '#555' }}>Arrival time depends on your location, traffic, and current demand. Call or message us to check vehicle availability and an estimate.</p>
             </details>
             <details style={{ padding: '15px', background: '#fff', borderRadius: '8px', border: '1px solid #ddd' }}>
               <summary style={{ fontWeight: 'bold' }}>Can I pay by international credit card?</summary>
@@ -168,7 +168,7 @@ export default function EnglishHome() {
       <section className="section section--yellow" style={{ textAlign: 'center', padding: '60px 0' }}>
         <div className="container">
           <h2 className="sh__title">Book Your <em>Cerkezkoy Taxi</em> Now 🚕</h2>
-          <p style={{ fontSize: '1.2rem', margin: '20px 0 30px' }}>Instant dispatch within 3-5 minutes!</p>
+          <p style={{ fontSize: '1.2rem', margin: '20px 0 30px' }}>Call to check vehicle availability and the estimated arrival time for your location.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 +90 546 401 47 51</a>
             <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 Text on WhatsApp</a>

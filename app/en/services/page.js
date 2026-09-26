@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Taxi & Transfer Services in Cerkezkoy | Cicek Taxi',
-  description: 'Explore our 24/7 taxi services in Cerkezkoy: Airport Transfer (IST/SAW), Corporate OSB Rides, VIP Vito Vans, and Intercity Private Taxi.',
+  description: 'Contact Cicek Taxi to ask about city, airport, and intercity journey availability and arrangements.',
   alternates: {
     canonical: '/en/services',
   }
@@ -27,7 +27,7 @@ export default function EnglishServices() {
     },
     {
       title: "24/7 City & Regional Taxi",
-      desc: "Fast 3-5 minute dispatch across Cerkezkoy, Kapakli, Velikoy, Kizilpinar, train station, and local hospitals.",
+      desc: "Call to check vehicle availability and estimated arrival time for your pickup location.",
       link: "tel:+905464014751"
     }
   ];

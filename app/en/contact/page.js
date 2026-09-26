@@ -1,8 +1,8 @@
 import { Phone, MessageSquare, MapPin, Mail, Clock } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Cicek Taxi Cerkezkoy | 24/7 Dispatch Phone & WhatsApp',
-  description: 'Need a taxi in Cerkezkoy? Call +90 546 401 47 51 or WhatsApp us for immediate dispatch and airport transfer bookings.',
+  title: 'Contact Cicek Taxi | Cerkezkoy',
+  description: 'Call or message Cicek Taxi to confirm pickup availability, estimated arrival time, and journey details.',
   alternates: {
     canonical: '/en/contact',
   }

@@ -10,7 +10,7 @@ export default function Footer() {
                             <div className="footer__brand-icon">🚕</div>
                             Çiçek<span style={{color: 'var(--taxi-yellow)'}}>Taksi</span>
                         </div>
-                        <p>Mahallenizin güvenilir, güler yüzlü ve en hızlı taksi durağı. Kredi kartı geçerlidir!</p>
+                        <p>Çerkezköy'de taksi çağırmak için bizi arayın veya WhatsApp üzerinden konumunuzu paylaşın.</p>
                         <div className="footer__badges">
                             <span className="footer__badge">💳 Kredi Kartı</span>
                             <span className="footer__badge">💵 Nakit</span>
@@ -41,7 +41,7 @@ export default function Footer() {
                         <h4>İşletme Bilgileri</h4>
                         <ul>
                             <li><strong>Kategori:</strong> Taksi Durağı</li>
-                            <li><Link href="/ekibimiz">Şoförlerimiz</Link></li>
+                            <li><Link href="/ekibimiz">Hakkımızda</Link></li>
                             <li><Link href="/fiyatlar">Taksi Ücretleri</Link></li>
                             <li><Link href="/taksi-ucreti-hesaplama">Yol Ücreti Hesapla</Link></li>
                             <li><Link href="/subeler">Şubelerimiz</Link></li>

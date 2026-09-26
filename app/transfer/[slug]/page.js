@@ -1,156 +1,60 @@
 import transferlerData from '@/data/transferler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import LazyMap from '@/components/LazyMap';
-import { getIcon } from '@/components/IconMap';
-import Breadcrumb from '@/components/Breadcrumb';
-import SpiderWeb from '@/components/SpiderWeb';
 
 export async function generateMetadata({ params }) {
-    const { slug } = await params;
-    const transfer = transferlerData.find(t => t.slug === slug);
+  const { slug } = await params;
+  const transfer = transferlerData.find((item) => item.slug === slug);
+  if (!transfer) return { title: 'Rota bulunamadı', robots: { index: false } };
 
-    if (!transfer) {
-        notFound();
-    }
-    if (!transfer) return { title: 'Sayfa Bulunamadı' };
-
-    return {
-        title: `${transfer.title} | VIP & Ekonomik`,
-        description: `${transfer.origin} - ${transfer.dest} arası konforlu ve güvenilir transfer. Kredi kartı geçerli, 7/24 hizmet. Hemen fiyat alın!`,
-        alternates: { canonical: `/transfer/${transfer.slug}` },
-        openGraph: {
-            title: `${transfer.title} | Çiçek Taksi`,
-            description: transfer.description,
-            type: 'website',
-        },
-        robots: {
-            index: false,
-            follow: true,
-        },
-    };
+  return {
+    title: `${transfer.origin} - ${transfer.dest} | Yolculuk Bilgisi`,
+    description: `${transfer.origin} - ${transfer.dest} yolculuğu için uygunluk, süre ve ücret bilgisini telefonla teyit edin.`,
+    robots: { index: false, follow: true },
+  };
 }
 
-export async function generateStaticParams() {
-    return transferlerData.map((transfer) => ({
-        slug: transfer.slug,
-    }));
+export function generateStaticParams() {
+  return transferlerData.map(({ slug }) => ({ slug }));
 }
 
 export default async function TransferDetay({ params }) {
-    const { slug } = await params;
-    const transfer = transferlerData.find(t => t.slug === slug);
+  const { slug } = await params;
+  const transfer = transferlerData.find((item) => item.slug === slug);
+  if (!transfer) notFound();
 
-    
-    
+  const directionsUrl = `https://maps.google.com/maps?saddr=${encodeURIComponent(transfer.origin)}&daddr=${encodeURIComponent(transfer.dest)}&output=embed`;
 
-    
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Taxi Transfer",
-        "name": transfer.title,
-        "description": transfer.description,
-        "provider": { "@type": "TaxiService", "name": "Çiçek Taksi" },
-        "areaServed": transfer.dest,
-        "url": `https://www.cerkezkoycicektaksi.com/transfer/${transfer.slug}`
-    };
-
-    const MapPinIcon = getIcon('MapPin');
-    const PlaneIcon = getIcon('Plane');
-
-    // İlgili diğer transferler
-    const relatedTransfers = transferlerData
-        .filter(t => t.id !== transfer.id)
-        .slice(0, 3);
-
-    return (
-        <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <header className="page-hero">
-                <div className="page-hero__bg"></div>
-                <div className="container relative z-10">
-                    <div className="page-hero__breadcrumb reveal">
-                        <Breadcrumb customItems={[
-                            {label: 'Transfer Rotaları', url: '/transfer'},
-                            {label: transfer.title, url: `/transfer/${transfer.slug}`}
-                        ]} />
-                    </div>
-                    <div className="reveal" data-delay="100" style={{marginBottom: '20px', color: 'var(--taxi-yellow)'}}>
-                        <PlaneIcon size={64} />
-                    </div>
-                    <h1 className="page-hero__title reveal" data-delay="100">
-                        {transfer.title}
-                    </h1>
-                    <p className="page-hero__desc reveal" data-delay="200">
-                        {transfer.description}
-                    </p>
-                </div>
-            </header>
-
-            <section className="section">
-                <div className="container container--sm">
-                    {/* AI Overview Answer Block */}
-                    <div className="ai-answer-block reveal" style={{background: 'rgba(255, 204, 0, 0.05)', padding: '25px', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)', marginBottom: '40px'}}>
-                        <h2 style={{fontSize: '1.25rem', marginBottom: '15px', color: 'var(--text-light)'}}>💡 {transfer.title} Ne Kadar Sürer ve Nasıl Rezerve Edilir?</h2>
-                        <p style={{fontSize: '1rem', lineHeight: '1.6', opacity: 0.9, margin: 0}}>
-                            <strong>Kısa Cevap:</strong> {transfer.title} yolculuğu trafik durumuna bağlı olarak ortalama <strong>{transfer.time}</strong> sürmekte olup, toplam mesafe <strong>{transfer.distance}</strong> civarındadır. 7/24 VIP konforunda ve sabit fiyat garantisiyle {transfer.dest} ulaşımı sağlamak için <strong>0546 401 47 51</strong> numaralı hattımızı arayarak hemen araç çağırabilir veya ileri tarihli rezervasyon yaptırabilirsiniz. Kredi kartı geçerlidir.
-                        </p>
-                    </div>
-
-                    <div
-                        className="rich-content reveal"
-                        dangerouslySetInnerHTML={{ __html: transfer.content }}
-                    />
-
-                    <div className="cta-box reveal" style={{background: 'var(--taxi-yellow)', padding: '40px', borderRadius: '16px', textAlign: 'center', marginTop: '48px'}}>
-                        <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>Hemen Transfer Rezervasyonu Yapın!</h3>
-                        <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>Günün her saati garantili ulaşım.</p>
-                        <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
-                            <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
-                            <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Teklif Al</a>
-                        </div>
-                    </div>
-                    {/* Harita Bloğu */}
-                    <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
-                        <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Güzergah Haritası</h3>
-                        <iframe 
-                            width="100%" 
-                            height="400" 
-                            style={{border:0, display: 'block'}} 
-                            loading="lazy" 
-                            allowFullScreen 
-                            src={`https://maps.google.com/maps?saddr=${transfer.origin}&daddr=${transfer.dest}&output=embed`}>
-                        </iframe>
-                    </div>
-
-                    {/* Spider Web İç Linkleme */}
-                    <SpiderWeb currentPath={`/transfer/${transfer.slug}`} />
-                </div>
-            </section>
-
-            {/* İlgili Transferler */}
-            <section className="section section--gray">
-                <div className="container">
-                    <div className="sh sh--center reveal">
-                        <span className="sh__overtitle">Diğer Rotalar</span>
-                        <h2 className="sh__title">Popüler <em>Transferler</em></h2>
-                    </div>
-                    <div className="grid grid--3 stagger">
-                        {relatedTransfers.map((t, i) => {
-                            return (
-                                <Link href={`/transfer/${t.slug}`} key={t.id} style={{textDecoration: 'none', color: 'inherit'}}>
-                                    <div className="card card--service reveal" data-delay={i * 100}>
-                                        <div className="card__icon"><MapPinIcon size={32} /></div>
-                                        <h3 className="card__title">{t.route}</h3>
-                                        <p className="card__text" style={{fontSize: '0.9rem'}}>{t.distance} - {t.time}</p>
-                                    </div>
-                                </Link>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-        </>
-    );
+  return (
+    <>
+      <header className="page-hero">
+        <div className="page-hero__bg"></div>
+        <div className="container relative z-10">
+          <div className="page-hero__breadcrumb reveal"><Link href="/">Ana Sayfa</Link> / Yolculuk Bilgisi</div>
+          <h1 className="page-hero__title reveal">{transfer.origin} - {transfer.dest}</h1>
+          <p className="page-hero__desc reveal" data-delay="100">Yolculuk ayrıntılarını arama sırasında teyit edin.</p>
+        </div>
+      </header>
+      <section className="section">
+        <div className="container container--sm">
+          <div className="rich-content">
+            <h2>Yolculuk öncesinde netleştirin</h2>
+            <p>Alınış adresinizi, istediğiniz saati, yolcu sayısını ve bagaj durumunu paylaşın. Araç uygunluğunu, tahmini varış süresini, ücret hesabını ve varsa otoyol geçiş masraflarını telefonla teyit edin.</p>
+            <p>Harita önerilen rotayı gösterir; trafik, yol çalışmaları ve seçilen güzergâh gerçek süreyi ve ücreti etkileyebilir.</p>
+          </div>
+          <div className="cta-box" style={{background: 'var(--taxi-yellow)', padding: '32px', borderRadius: '16px', textAlign: 'center', marginTop: '28px'}}>
+            <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
+              <a href="tel:+905304014751" className="btn btn--dark btn--lg">Gazi MKP: 0530 401 47 51</a>
+              <a href="tel:+905464014751" className="btn btn--dark btn--lg">Bağlık: 0546 401 47 51</a>
+              <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">WhatsApp</a>
+            </div>
+          </div>
+          <div style={{marginTop: '36px', borderRadius: '16px', overflow: 'hidden'}}>
+            <h2>Önerilen rota haritası</h2>
+            <iframe title={`${transfer.origin} - ${transfer.dest} rota haritası`} width="100%" height="380" style={{border: 0, display: 'block'}} loading="lazy" src={directionsUrl}></iframe>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
