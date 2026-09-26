@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator, ChevronDown, LocateFixed, MapPin, Navigation, Route, Search, Star } from "lucide-react";
+import { ArrowRight, Calculator, CalendarClock, ChevronDown, LocateFixed, MapPin, Navigation, Route, Search, Send, Star } from "lucide-react";
 import { calculateTaxiFare } from "@/lib/taxiFare";
 import { favoritePlaces } from "@/data/favoritePlaces";
 
@@ -87,7 +87,7 @@ async function findFirstPlace(query) {
   return data.results[0];
 }
 
-export default function FareCalculator({ compact = false }) {
+export default function FareCalculator({ compact = false, bookingPage = false }) {
   const [fromText, setFromText] = useState("");
   const [toText, setToText] = useState("");
   const [fromPlace, setFromPlace] = useState(null);
@@ -98,6 +98,7 @@ export default function FareCalculator({ compact = false }) {
   const [locating, setLocating] = useState(false);
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const [selectedFavorite, setSelectedFavorite] = useState(null);
+  const [bookingError, setBookingError] = useState("");
 
   const selectFrom = (place) => {
     setFromPlace(place);
@@ -206,16 +207,46 @@ export default function FareCalculator({ compact = false }) {
     }
   };
 
+  const sendAppointmentRequest = (event) => {
+    event.preventDefault();
+    setBookingError("");
+    const form = new FormData(event.currentTarget);
+    const dateValue = String(form.get("appointmentDate") || "");
+    const passengerPhone = String(form.get("passengerPhone") || "").trim();
+    if (!dateValue || new Date(dateValue) <= new Date()) {
+      setBookingError("Lütfen ileri bir tarih ve saat seçin.");
+      return;
+    }
+
+    const date = new Date(dateValue);
+    const mapsLink = fromPlace?.lat && fromPlace?.lon
+      ? `https://maps.google.com/?q=${fromPlace.lat},${fromPlace.lon}`
+      : "";
+    const message = [
+      "Merhaba, Çiçek Taksi sitesinden planlı yolculuk talebi oluşturmak istiyorum.",
+      `Alınış: ${fromText.trim()}`,
+      mapsLink ? `Konum haritası: ${mapsLink}` : "",
+      `Varış: ${toText.trim()}`,
+      `Tarih ve saat: ${date.toLocaleString("tr-TR", { dateStyle: "long", timeStyle: "short" })}`,
+      `Telefon: ${passengerPhone}`,
+      `Tahmini ücret: ${result.fare.toLocaleString("tr-TR")} TL (${result.distanceKm.toLocaleString("tr-TR")} km) — kesin tutar durak tarafından teyit edilir.`,
+      String(form.get("appointmentNote") || "").trim() ? `Not: ${String(form.get("appointmentNote")).trim()}` : "",
+      "Araç uygunluğu ve rezervasyon teyidi rica ederim.",
+    ].filter(Boolean).join("\n");
+
+    window.open(`https://wa.me/905464014751?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className={`fare-calculator ${compact ? "fare-calculator--compact" : ""}`} aria-labelledby={compact ? "home-fare-title" : "fare-title"}>
       <div className="container">
         <div className="fare-calculator__shell">
           <div className="fare-calculator__intro">
-            <span className="fare-calculator__eyebrow"><Calculator size={17} /> Ücretsiz hesapla</span>
+            <span className="fare-calculator__eyebrow">{bookingPage ? <CalendarClock size={17} /> : <Calculator size={17} />} {bookingPage ? "Yolculuğunu planla" : "Ücretsiz hesapla"}</span>
             <h2 id={compact ? "home-fare-title" : "fare-title"}>
-              Çerkezköy <em>taksi ücreti</em> ne kadar?
+              {bookingPage ? <>Çerkezköy <em>taksi randevusu</em> oluştur</> : <>Çerkezköy <em>taksi ücreti</em> ne kadar?</>}
             </h2>
-            <p>Başlangıç ve varış noktanızı seçin; yol mesafesine göre tahmini tutarı hemen görün.</p>
+            <p>{bookingPage ? "Alınış ve varış yerini seçin, tahmini ücreti görün ve istediğiniz tarih için yolculuk talebini WhatsApp'tan durağa iletin." : "Başlangıç ve varış noktanızı seçin; yol mesafesine göre tahmini tutarı hemen görün."}</p>
             {compact && (
               <Link href="/taksi-ucreti-hesaplama" className="fare-calculator__detail-link">
                 Detaylı hesaplama sayfası <ArrowRight size={17} />
@@ -277,6 +308,26 @@ export default function FareCalculator({ compact = false }) {
                   <span>Yaklaşık {result.durationMinutes} dk</span>
                 </div>
                 <p>Seçtiğiniz araç rotasının tahmini mesafesine göre hesaplandı.</p>
+                <details className="fare-booking">
+                  <summary><CalendarClock size={19} /> Bu yolculuk için önceden taksi planla</summary>
+                  <div className="fare-booking__body">
+                    <p className="fare-booking__intro">Alınış ve varış bilgileri hesaplamadan aktarılır. Zamanı, telefonunuzu ve varsa özel notunuzu ekleyin.</p>
+                    <form onSubmit={sendAppointmentRequest}>
+                      <label className="fare-booking__field">Yolculuk tarihi ve saati
+                      <input type="datetime-local" name="appointmentDate" required />
+                      </label>
+                      <label className="fare-booking__field">Size ulaşabileceğimiz telefon
+                        <input type="tel" name="passengerPhone" autoComplete="tel" placeholder="05xx xxx xx xx" minLength={10} maxLength={20} required />
+                      </label>
+                      <label className="fare-booking__field">Not <span>(isteğe bağlı)</span>
+                        <textarea name="appointmentNote" rows={3} maxLength={300} placeholder="Vardiya çıkışı, yolcu/bagaj bilgisi veya buluşma tarifi" />
+                      </label>
+                      {bookingError && <p className="fare-calculator__message" role="alert">{bookingError}</p>}
+                      <button type="submit" className="btn btn--whatsapp fare-booking__send"><Send size={17} /> WhatsApp&apos;ta durağa gönder</button>
+                    </form>
+                    <p className="fare-booking__disclaimer">WhatsApp açıldığında mesajı kontrol edip kendiniz gönderirsiniz. Bu bir yolculuk talebidir; araç uygunluğu ve randevu, durak WhatsApp üzerinden onaylayınca kesinleşir. Ücret tahminidir.</p>
+                  </div>
+                </details>
                 <a href="tel:+905464014751" className="btn btn--dark">📞 Taksi çağır: 0546 401 47 51</a>
               </div>
             )}

@@ -10,7 +10,7 @@ export default function Footer() {
                             <div className="footer__brand-icon">🚕</div>
                             Çiçek<span style={{color: 'var(--taxi-yellow)'}}>Taksi</span>
                         </div>
-                        <p>Çerkezköy'de taksi çağırmak için bizi arayın veya WhatsApp üzerinden konumunuzu paylaşın.</p>
+                        <p>Çerkezköy&apos;de taksi çağırmak için bizi arayın veya WhatsApp üzerinden konumunuzu paylaşın.</p>
                         <div className="footer__badges">
                             <span className="footer__badge">💳 Kredi Kartı</span>
                             <span className="footer__badge">💵 Nakit</span>
@@ -44,6 +44,7 @@ export default function Footer() {
                             <li><Link href="/ekibimiz">Hakkımızda</Link></li>
                             <li><Link href="/fiyatlar">Taksi Ücretleri</Link></li>
                             <li><Link href="/taksi-ucreti-hesaplama">Yol Ücreti Hesapla</Link></li>
+                            <li><Link href="/cerkezkoy-taksi-randevu">Taksi Randevusu Oluştur</Link></li>
                             <li><Link href="/subeler">Şubelerimiz</Link></li>
                         </ul>
                     </div>

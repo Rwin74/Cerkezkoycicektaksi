@@ -12,6 +12,7 @@ export default function sitemap() {
         '/hakkimizda',
         '/fiyatlar',
         '/taksi-ucreti-hesaplama',
+        '/cerkezkoy-taksi-randevu',
         '/blog',
         '/yorumlar',
         '/iletisim',

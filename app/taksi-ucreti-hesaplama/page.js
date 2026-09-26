@@ -96,6 +96,9 @@ export default function TaxiFareCalculatorPage() {
           <p>
             Sonuç yaklaşık bilgi verir. Yolculuk sırasındaki trafik, bekleme süresi, yol çalışmaları ve sürücünün kullanmak zorunda kaldığı farklı güzergâhlar taksimetre tutarını değiştirebilir. Havalimanı ve şehirler arası sabit fiyatlar için <Link href="/fiyatlar">taksi fiyatları sayfamızı</Link> inceleyebilir veya bizi arayabilirsiniz.
           </p>
+          <p>
+            Yolculuğunuzun günü ve saati belliyse <Link href="/cerkezkoy-taksi-randevu">Çerkezköy taksi randevu sayfamızdan</Link> alınış ve varış yerini, planladığınız saati ve notunuzu ekleyip talebinizi WhatsApp üzerinden durağa iletebilirsiniz. Randevu, araç uygunluğu durak tarafından onaylandığında kesinleşir.
+          </p>
         </div>
       </section>
 
