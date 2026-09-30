@@ -57,13 +57,6 @@ export default function EnglishRates() {
                   <td style={{ padding: '16px 20px' }}>Meter Tariff / Credit Card</td>
                   <td style={{ padding: '16px 20px' }}><a href="https://wa.me/905464014751" className="btn btn--primary btn--sm">Book</a></td>
                 </tr>
-                <tr>
-                  <td style={{ padding: '16px 20px', fontWeight: 'bold' }}>Cerkezkoy Center ↔ Kapakli Center</td>
-                  <td style={{ padding: '16px 20px' }}>8 - 12 Mins</td>
-                  <td style={{ padding: '16px 20px' }}>~ 7 km</td>
-                  <td style={{ padding: '16px 20px' }}>Official Meter Rate</td>
-                  <td style={{ padding: '16px 20px' }}><a href="tel:+905464014751" className="btn btn--primary btn--sm">Call Taxi</a></td>
-                </tr>
               </tbody>
             </table>
           </div>

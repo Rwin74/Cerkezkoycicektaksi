@@ -9,7 +9,6 @@ export const metadata = {
     "taksi fiyat hesaplama",
     "Çerkezköy taksi fiyatları",
     "taksi yol parası hesaplama",
-    "Kapaklı taksi ücreti",
     "Çerkezköy taksimetre hesaplama",
   ],
   alternates: { canonical: "/taksi-ucreti-hesaplama" },
@@ -31,8 +30,8 @@ const faqs = [
     a: "Hayır. Gösterilen sonuç tahminidir. Trafik, bekleme, yol çalışması, güzergâh değişikliği ve güncel tarife gerçek taksimetre tutarını etkileyebilir.",
   },
   {
-    q: "Kapaklı ve Kızılpınar için de hesaplama yapabilir miyim?",
-    a: "Evet. Türkiye içindeki başlangıç ve varış noktalarını yazarak Çerkezköy, Kapaklı, Kızılpınar, Veliköy ve çevre bölgeler için rota hesaplayabilirsiniz.",
+    q: "Kızılpınar için de rota hesaplayabilir miyim?",
+    a: "Evet. Başlangıç ve varış noktasını yazarak Çerkezköy, Kızılpınar, Veliköy ve çevresi için rota mesafesini hesaplayabilirsiniz.",
   },
 ];
 
@@ -91,7 +90,7 @@ export default function TaxiFareCalculatorPage() {
           </p>
           <h2>Çerkezköy ve çevresinde ücretsiz rota hesabı</h2>
           <p>
-            Araç; Çerkezköy merkez, Bağlık, Kızılpınar, Veliköy, Kapaklı ve Tekirdağ çevresinde taksi yol parası hesaplamak için kullanılabilir. Adresinizi yazabilir veya telefonunuzdan mevcut konumunuzu paylaşabilirsiniz. Konum izni vermek istemiyorsanız manuel adres girişi yeterlidir.
+            Araç; Çerkezköy merkez, Bağlık, Kızılpınar, Veliköy ve Tekirdağ çevresindeki yolculuklar için rota tahmini sunar. Adresinizi yazabilir veya telefonunuzdan mevcut konumunuzu paylaşabilirsiniz. Konum izni vermek istemiyorsanız manuel adres girişi yeterlidir.
           </p>
           <p>
             Sonuç yaklaşık bilgi verir. Yolculuk sırasındaki trafik, bekleme süresi, yol çalışmaları ve sürücünün kullanmak zorunda kaldığı farklı güzergâhlar taksimetre tutarını değiştirebilir. Havalimanı ve şehirler arası sabit fiyatlar için <Link href="/fiyatlar">taksi fiyatları sayfamızı</Link> inceleyebilir veya bizi arayabilirsiniz.

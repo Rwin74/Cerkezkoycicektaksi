@@ -61,7 +61,7 @@ export default function Footer() {
                 <div className="footer__bottom">
                     <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
                         <p>&copy; {new Date().getFullYear()} Çiçek Taksi Çerkezköy. Tüm hakları saklıdır.</p>
-                        <p style={{fontSize: '0.8rem'}}>Çerkezköy Taksi | Havalimanı Transfer | Şehirler Arası Taksi | Tekirdağ Taksi | Kapaklı Taksi | <Link href="/site-haritasi" style={{color: 'inherit', textDecoration: 'underline'}}>Site Haritası</Link></p>
+                        <p style={{fontSize: '0.8rem'}}>Çerkezköy Taksi | Havalimanı Transfer | Şehirler Arası Taksi | Tekirdağ Taksi | <Link href="/site-haritasi" style={{color: 'inherit', textDecoration: 'underline'}}>Site Haritası</Link></p>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)'}}>
                         <span>Tasarım ve Altyapı: <a href="https://atakanyagli.com" target="_blank" rel="noopener noreferrer" style={{color: 'var(--taxi-yellow)'}}>Atakan Yağlı</a></span>

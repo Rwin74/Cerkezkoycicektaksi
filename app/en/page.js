@@ -32,7 +32,7 @@ export default function EnglishHome() {
         "@type": "TaxiService",
         "name": "Cicek Taxi Cerkezkoy",
         "telephone": "+905464014751",
-        "areaServed": ["Cerkezkoy", "Kapakli", "Velikoy", "Kizilpinar", "Cerkezkoy OSB", "Istanbul Airport (IST)", "Sabiha Gokcen (SAW)"]
+        "areaServed": ["Cerkezkoy", "Velikoy", "Kizilpinar", "Cerkezkoy OSB", "Istanbul Airport (IST)", "Sabiha Gokcen (SAW)"]
       }
     ]
   };
@@ -60,7 +60,7 @@ export default function EnglishHome() {
             </h1>
             
             <p className="home-hero__desc">
-              Do not be late! Experience safe and executive transport in Cerkezkoy & Kapakli. <strong>0% Extra Commission</strong> on all international Credit Card payments. 💳✨
+              Do not be late! Experience reliable and executive transport in Cerkezkoy. <strong>0% Extra Commission</strong> on international credit card payments. 💳✨
             </p>
             
             <div className="home-hero__actions">

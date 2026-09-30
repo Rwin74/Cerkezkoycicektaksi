@@ -18,7 +18,27 @@ const nextConfig = {
         source: '/noktalar',
         destination: '/',
         permanent: true,
-      }
+      },
+      {
+        source: '/kapakli-taksi',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/hizmetler/kapakli-7-24-taksi',
+        destination: '/hizmetler',
+        permanent: true,
+      },
+      {
+        source: '/fiyatlar/cerkezkoy-kapakli-taksi-ucreti',
+        destination: '/fiyatlar',
+        permanent: true,
+      },
+      {
+        source: '/noktalar/kapakli-devlet-hastanesi',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 };

@@ -8,11 +8,11 @@ import subelerData from "@/data/subeler.json";
 
 export const metadata = {
   title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
-  description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve Kapaklı için hemen arayın: 0546 401 47 51.",
+  description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
     title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
-    description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve Kapaklı için hemen arayın: 0546 401 47 51.",
+    description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",

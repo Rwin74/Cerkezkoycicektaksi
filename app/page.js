@@ -18,7 +18,6 @@ export const metadata = {
     "Çerkezköy taksi ücreti hesaplama",
     "taksi fiyat hesaplama",
     "Çerkezköy taksi fiyatları",
-    "Kapaklı taksi ücreti",
     "taksi yol parası hesaplama",
   ],
 };
@@ -56,7 +55,7 @@ export default function Home() {
           "opens": "00:00",
           "closes": "23:59"
         },
-        "areaServed": ["Çerkezköy", "Bağlık", "Gazi Mustafa Kemalpaşa", "Kızılpınar", "Veliköy", "Kapaklı"]
+        "areaServed": ["Çerkezköy", "Bağlık", "Gazi Mustafa Kemalpaşa", "Kızılpınar", "Veliköy"]
       })),
       {
         "@type": "BreadcrumbList",

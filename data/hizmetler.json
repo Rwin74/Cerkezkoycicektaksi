@@ -6,7 +6,7 @@
     "icon": "Car",
     "tag": "Popüler",
     "description": "Çerkezköy içi güvenilir ve hızlı ulaşım.",
-    "content": "\n            <h2>Şehir İçi Taksi Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Şehir İçi Taksi</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, Kapaklı taksi, havaalanı transferi, Veliköy taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve taksi çağır, şehir içi ulaşım, şehirler arası ulaşım avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
+    "content": "\n            <h2>Şehir İçi Taksi Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>Şehir İçi Taksi</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, taksi, havaalanı transferi, Veliköy taksi arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve taksi çağır, şehir içi ulaşım, şehirler arası ulaşım avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
         "q": "Çerkezköy içi taksi ne kadar sürede kapıma gelir?",
@@ -75,7 +75,7 @@
     "icon": "Star",
     "tag": "Özel",
     "description": "Özel günleriniz için lüks araç kiralama.",
-    "content": "\n            <h2>VIP Transfer Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>VIP Transfer</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, kredi kartı geçerli taksi, bagajlı araç, şehir içi ulaşım arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve Kapaklı taksi, 7/24 ulaşım, ticari taksi avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
+    "content": "\n            <h2>VIP Transfer Hizmeti Hakkında</h2>\n            <p>Çiçek Taksi olarak <strong>VIP Transfer</strong> ihtiyaçlarınızda her zaman yanınızdayız. Gelişmiş araç filomuz ve tecrübeli şoförlerimizle, kredi kartı geçerli taksi, bagajlı araç, şehir içi ulaşım arayan müşterilerimiz için birinci sınıf hizmet sunuyoruz.</p>\n            <h3>Neden Bizi Tercih Etmelisiniz?</h3>\n            <p>Yılların deneyimi, güler yüzlü hizmet ve taksi, 7/24 ulaşım, ticari taksi avantajlarımızla rakiplerimizden ayrılıyoruz.</p>\n        ",
     "faqs": [
       {
         "q": "VIP transfer hizmetinde hangi araçlar kullanılıyor?",
@@ -102,7 +102,7 @@
     "faqs": [
       {
         "q": "Şirketler için aylık faturalandırma yapıyor musunuz?",
-        "a": "Evet, Çerkezköy ve Kapaklı OSB'deki firmalara toplu aylık faturalandırma (e-fatura) ve gider raporlaması yapıyoruz."
+        "a": "Evet, Çerkezköy ve  OSB'deki firmalara toplu aylık faturalandırma (e-fatura) ve gider raporlaması yapıyoruz."
       },
       {
         "q": "Personel kullanımı için limit belirlenebilir mi?",
@@ -173,16 +173,16 @@
   },
   {
     "id": 9,
-    "title": "Kapaklı 7/24 Taksi",
-    "slug": "kapakli-7-24-taksi",
+    "title": " 7/24 Taksi",
+    "slug": "-7-24-taksi",
     "icon": "MapPin",
     "tag": "Bölge",
-    "description": "Kapaklı geneline kesintisiz taksi hizmeti.",
-    "content": "\n            <h2>Kapaklı 7/24 Taksi Hizmeti</h2>\n            <p>Çerkezköy ile Kapaklı arasında ve Kapaklı içi ulaşımlarınızda Çiçek Taksi güvencesiyle 7 gün 24 saat seyahat edebilirsiniz.</p>\n        ",
+    "description": " geneline kesintisiz taksi hizmeti.",
+    "content": "\n            <h2> 7/24 Taksi Hizmeti</h2>\n            <p>Çerkezköy ile  arasında ve  içi ulaşımlarınızda Çiçek Taksi güvencesiyle 7 gün 24 saat seyahat edebilirsiniz.</p>\n        ",
     "faqs": [
       {
-        "q": "Kapaklı Merkezden Çerkezköy Otogara gidiş var mı?",
-        "a": "Evet, Kapaklı - Çerkezköy arası tüm rotalar için hizmet sunuyoruz."
+        "q": " Merkezden Çerkezköy Otogara gidiş var mı?",
+        "a": "Evet,  - Çerkezköy arası tüm rotalar için hizmet sunuyoruz."
       }
     ]
   },
