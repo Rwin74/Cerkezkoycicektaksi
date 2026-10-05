@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Istanbul Airport - Cerkezkoy | Journey Information',
+  title: 'Cerkezkoy Istanbul Airport Taxi',
   description: 'Call Cicek Taxi to confirm vehicle availability, pickup time, fare calculation, and luggage arrangements for an Istanbul Airport journey from Cerkezkoy.',
   alternates: { canonical: '/en/istanbul-airport-cerkezkoy-taxi' },
   robots: { index: false, follow: true },

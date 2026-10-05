@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AreaRideGuide from '@/components/AreaRideGuide';
 
 export const metadata = {
-  title: "Sabiha Gökçen Taksi | Çiçek Taksi",
+  title: "Sabiha Gökçen Havalimanı Taksi",
   description: "Çerkezköy'den Sabiha Gökçen Havalimanı yönüne yolculuk için adres, araç uygunluğu ve ücret bilgisini telefonla teyit edin.",
   robots: { index: false, follow: true },
   alternates: {

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import LazyMap from '@/components/LazyMap';
 import Breadcrumb from '@/components/Breadcrumb';
+import { searchTitleBase } from '@/lib/seo';
 import { MapPin } from 'lucide-react';
 import SpiderWeb from '@/components/SpiderWeb';
 
@@ -12,7 +13,7 @@ export async function generateMetadata({ params }) {
     if (!nokta) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${nokta.title} | 7/24 Taksi | 5 Dakikada Kapınızda`,
+        title: searchTitleBase(`${nokta.title} Taksi 7/24`),
         description: `${nokta.title} için anında taksi hizmeti. Kredi kartı geçerli, hızlı ulaşım. Hemen arayın, beklemeyin!`,
         alternates: { canonical: `/noktalar/${nokta.slug}` },
         openGraph: {

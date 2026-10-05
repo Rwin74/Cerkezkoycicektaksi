@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AreaRideGuide from '@/components/AreaRideGuide';
 
 export const metadata = {
-  title: "Tekirdağ Taksi | Çiçek Taksi",
+  title: "Tekirdağ Taksi",
   description: "Çerkezköy'den Tekirdağ yönüne yolculuk için adres, araç uygunluğu ve ücret bilgisini telefonla teyit edin.",
   robots: { index: false, follow: true },
   alternates: {

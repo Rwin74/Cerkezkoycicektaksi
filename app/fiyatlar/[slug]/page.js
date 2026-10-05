@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { Calculator } from 'lucide-react';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }) {
     if (!fiyat) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${fiyat.title} | Güncel Taksi Ücretleri 2026`,
+        title: searchTitleBase(fiyat.title),
         description: fiyat.description,
         alternates: { canonical: `/fiyatlar/${fiyat.slug}` },
         robots: { index: false, follow: true },

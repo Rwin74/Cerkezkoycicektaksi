@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AreaRideGuide from '@/components/AreaRideGuide';
 
 export const metadata = {
-  title: "Çorlu Havalimanı Taksi | Çiçek Taksi",
+  title: "Çorlu Havalimanı Taksi",
   description: "Çerkezköy'den Çorlu Havalimanı yönüne yolculuk için adres, araç uygunluğu ve ücret bilgisini telefonla teyit edin.",
   robots: { index: false, follow: true },
   alternates: {

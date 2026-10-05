@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import LazyMap from '@/components/LazyMap';
 import Breadcrumb from '@/components/Breadcrumb';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }) {
   if (!bolge) return { title: 'Sayfa Bulunamadı' };
 
   return {
-    title: `${bolge.neighborhood} Taksi Bilgisi | Çiçek Taksi`,
+    title: searchTitleBase(`${bolge.neighborhood} Taksi`),
     description: `${bolge.neighborhood} bölgesinden taksi talebi ve iletişim bilgileri. Araç uygunluğunu ve tahmini varış süresini ararken teyit edin.`,
     robots: { index: false, follow: true },
   };

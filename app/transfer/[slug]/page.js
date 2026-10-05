@@ -1,6 +1,7 @@
 import transferlerData from '@/data/transferler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }) {
   if (!transfer) return { title: 'Rota bulunamadı', robots: { index: false } };
 
   return {
-    title: `${transfer.origin} - ${transfer.dest} | Yolculuk Bilgisi`,
+    title: searchTitleBase(`${transfer.origin} ${transfer.dest} Taksi`),
     description: `${transfer.origin} - ${transfer.dest} yolculuğu için uygunluk, süre ve ücret bilgisini telefonla teyit edin.`,
     robots: { index: false, follow: true },
   };

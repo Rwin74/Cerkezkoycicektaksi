@@ -6,7 +6,7 @@ export const metadata = {
   alternates: {
     canonical: "/subeler",
   },
-    title: 'Şubelerimiz | Çiçek Taksi Çerkezköy',
+    title: 'Çiçek Taksi Şubeleri',
     description: 'Çiçek Taksi şubeleri ve durak lokasyonları. Size en yakın taksi durağını bulun.',
 };
 

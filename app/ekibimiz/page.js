@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/ekibimiz' },
-  title: 'Çiçek Taksi Hakkında | Çerkezköy',
+  title: 'Çiçek Taksi Ekibi',
   description: 'Çerkezköy Çiçek Taksi iletişim ve yolculuk bilgileri.',
 };
 

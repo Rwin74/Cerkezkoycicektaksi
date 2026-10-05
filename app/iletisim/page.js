@@ -5,7 +5,7 @@ export const metadata = {
   alternates: {
     canonical: "/iletisim",
   },
-    title: 'İletişim | Çiçek Taksi Çerkezköy',
+    title: 'Çiçek Taksi İletişim',
     description: "Çerkezköy Taksi durağımıza 7/24 ulaşabilirsiniz. Taksi çağırmak için hemen telefon numaralarımızdan bizi arayın."
 };
 

@@ -7,11 +7,14 @@ import Script from "next/script";
 import subelerData from "@/data/subeler.json";
 
 export const metadata = {
-  title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+  title: {
+    default: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
+    template: "%s | Komisyonsuz Kartla Ödeme",
+  },
   description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
-    title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+    title: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
     description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
@@ -20,7 +23,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi 🚕 En Yakın Taksi Durağı & Numarası | Çiçek Taksi",
+    title: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
     description: "Çerkezköy taksi numarası, otogar ve hastane taksi ulaşımlarınız için en yakın durak Çiçek Taksi. Hemen arayın: 0546 401 47 51.",
   },
   other: {
@@ -48,10 +51,23 @@ export default function RootLayout({ children }) {
         "@id": "https://www.cerkezkoycicektaksi.com/#organization",
         "name": "Çiçek Taksi",
         "url": "https://www.cerkezkoycicektaksi.com",
+        "description": "Çerkezköy’de Gazi Mustafa Kemal Paşa ve Bağlık şubeleriyle hizmet veren taksi durağı.",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.cerkezkoycicektaksi.com/logo.png"
+          "url": "https://www.cerkezkoycicektaksi.com/icon.svg"
         },
+        "address": subelerData.map((sube) => ({
+          "@type": "PostalAddress",
+          "streetAddress": sube.address,
+          "addressLocality": "Çerkezköy",
+          "addressRegion": "Tekirdağ",
+          "postalCode": "59500",
+          "addressCountry": "TR"
+        })),
+        "sameAs": subelerData.flatMap((sube) => [
+          sube.mapsLink,
+          `https://wa.me/90${sube.phoneLink.slice(1)}`
+        ]),
         "contactPoint": subelerData.map((sube) => ({
           "@type": "ContactPoint",
           "telephone": `+90${sube.phoneLink.slice(1)}`,
@@ -68,7 +84,7 @@ export default function RootLayout({ children }) {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
         {/* Google tag (gtag.js) */}
         <Script

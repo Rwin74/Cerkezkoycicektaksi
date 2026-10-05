@@ -1,7 +1,7 @@
 import { Phone, MessageSquare, MapPin, Mail, Clock } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Cicek Taxi | Cerkezkoy',
+  title: 'Contact Cicek Taxi',
   description: 'Call or message Cicek Taxi to confirm pickup availability, estimated arrival time, and journey details.',
   alternates: {
     canonical: '/en/contact',

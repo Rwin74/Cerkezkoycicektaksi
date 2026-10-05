@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AreaRideGuide from '@/components/AreaRideGuide';
 
 export const metadata = {
-  title: "Çerkezköy VIP Taksi | Çiçek Taksi",
+  title: "Çerkezköy VIP Taksi",
   description: "Çerkezköy'den Çerkezköy VIP transfer yönüne yolculuk için adres, araç uygunluğu ve ücret bilgisini telefonla teyit edin.",
   robots: { index: false, follow: true },
   alternates: {

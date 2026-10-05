@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Cerkezkoy Taxi Rates & Airport Transfer Pricing | Cicek Taxi',
+  title: 'Cerkezkoy Taxi Rates',
   description: 'Get a distance-based fare estimate and call to confirm the applicable tariff, route, and any additional costs.',
   alternates: {
     canonical: '/en/rates',

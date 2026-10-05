@@ -16,6 +16,10 @@ export default function Footer() {
                             <span className="footer__badge">💵 Nakit</span>
                             <span className="footer__badge">📱 Temassız</span>
                         </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '12px' }} aria-label="WhatsApp iletişim bağlantıları">
+                            <a href="https://wa.me/905304014751" target="_blank" rel="noopener noreferrer">Gazi MKP WhatsApp</a>
+                            <a href="https://wa.me/905464014751" target="_blank" rel="noopener noreferrer">Bağlık WhatsApp</a>
+                        </div>
                     </div>
                     {/* GBP Sync: Telefon, Adres, Çalışma Saati, Harita, Kategori, Hizmetler */}
                     <div className="footer__col">

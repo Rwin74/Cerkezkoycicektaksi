@@ -3,6 +3,7 @@ import Link from 'next/link';
 import subelerData from '@/data/subeler.json';
 import Breadcrumb from '@/components/Breadcrumb';
 import SpiderWeb from '@/components/SpiderWeb';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }) {
     if (!sube) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${sube.title} | 7/24 Taksi | Çiçek Taksi`,
+        title: searchTitleBase(`${sube.title} Taksi`),
         description: sube.description,
         alternates: { canonical: `/subeler/${sube.slug}` },
         openGraph: {

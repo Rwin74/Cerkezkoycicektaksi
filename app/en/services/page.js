@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Taxi & Transfer Services in Cerkezkoy | Cicek Taxi',
+  title: 'Cerkezkoy Taxi & Transfers',
   description: 'Contact Cicek Taxi to ask about city, airport, and intercity journey availability and arrangements.',
   alternates: {
     canonical: '/en/services',

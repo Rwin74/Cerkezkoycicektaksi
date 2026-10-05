@@ -3,6 +3,7 @@ import hizmetlerData from '@/data/hizmetler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import SpiderWeb from '@/components/SpiderWeb';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }) {
     if (!blog) return { title: 'Yazı Bulunamadı' };
 
     return {
-        title: blog.title.length > 50 ? blog.title.substring(0, 50) + ' | Taksi' : `${blog.title} | Çiçek Taksi`,
+        title: searchTitleBase(blog.title),
         description: blog.excerpt.length > 155 ? blog.excerpt.substring(0, 155) + '...' : blog.excerpt,
         alternates: { canonical: `/blog/${blog.slug}` },
         openGraph: {

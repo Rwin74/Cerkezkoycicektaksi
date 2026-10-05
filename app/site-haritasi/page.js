@@ -3,7 +3,7 @@ import hizmetlerData from '@/data/hizmetler.json';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Site Haritası | Çiçek Taksi',
+  title: 'Site Haritası',
   description: 'Çiçek Taksi Çerkezköy iletişim, ücret ve hizmet sayfalarına buradan ulaşın.',
   alternates: { canonical: '/site-haritasi' }
 };

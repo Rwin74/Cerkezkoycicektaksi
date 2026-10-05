@@ -1,6 +1,6 @@
 export const metadata = {
   alternates: { canonical: '/yorumlar' },
-  title: 'Müşteri Değerlendirmeleri | Çiçek Taksi Çerkezköy',
+  title: 'Çiçek Taksi Yorumları',
   description: 'Çiçek Taksi hakkındaki müşteri değerlendirmelerini Google Haritalar üzerinden görüntüleyin.',
 };
 

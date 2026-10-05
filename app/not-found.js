@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Sayfa Bulunamadı | Çiçek Taksi',
+  title: 'Sayfa Bulunamadı',
   description: 'Aradığınız sayfaya ulaşılamıyor. Çiçek Taksi ile güvenli ulaşım için ana sayfaya dönebilirsiniz.'
 };
 

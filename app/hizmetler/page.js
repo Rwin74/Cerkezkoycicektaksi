@@ -3,7 +3,7 @@ import hizmetlerData from '@/data/hizmetler.json';
 import { getIcon } from '@/components/IconMap';
 
 export const metadata = {
-    title: 'Hizmetlerimiz | Çiçek Taksi Çerkezköy',
+    title: 'Çerkezköy Taksi Hizmetleri',
     description: 'Çerkezköy taksi hizmetleri: Şehir içi taksi, havalimanı transfer, VIP transfer ve daha fazlası.',
     alternates: { canonical: '/hizmetler' },
 };

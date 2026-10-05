@@ -3,14 +3,14 @@ import Link from "next/link";
 import { Phone, MessageSquare, Shield, Clock, CreditCard, Plane, MapPin, CheckCircle, Car, Star } from 'lucide-react';
 
 export const metadata = {
-  title: "Cerkezkoy Taxi & Airport VIP Transfer Service | Cicek Taxi",
+  title: { absolute: "Cerkezkoy Taxi 24/7 | No-Fee Card Payments" },
   description: "Contact Cicek Taxi in Cerkezkoy to confirm pickup availability, estimated arrival time, fare calculation, and payment options.",
   alternates: {
     canonical: "/en",
     languages: { tr: "/", en: "/en", "x-default": "/" },
   },
   openGraph: {
-    title: "Cerkezkoy Taxi & Airport VIP Transfer Service | Cicek Taxi",
+    title: "Cerkezkoy Taxi 24/7 | No-Fee Card Payments",
     description: "Contact Cicek Taxi in Cerkezkoy to confirm pickup availability, estimated arrival time, fare calculation, and payment options.",
     url: "https://www.cerkezkoycicektaksi.com/en",
     locale: "en_US",

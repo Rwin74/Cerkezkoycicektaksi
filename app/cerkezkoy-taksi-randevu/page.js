@@ -2,7 +2,7 @@ import Link from "next/link";
 import FareCalculator from "@/components/FareCalculator";
 
 export const metadata = {
-  title: "Çerkezköy Taksi Randevu ve Rezervasyon | Çiçek Taksi",
+  title: "Taksi Randevusu Oluştur",
   description: "Çerkezköy taksi randevunuzu önceden planlayın. Alınış ve varış konumunu seçin, tahmini ücreti görün; tarih, saat ve notla yolculuk talebinizi WhatsApp'tan Çiçek Taksi'ye gönderin.",
   keywords: [
     "Çerkezköy taksi randevu",
@@ -14,7 +14,7 @@ export const metadata = {
   ],
   alternates: { canonical: "/cerkezkoy-taksi-randevu" },
   openGraph: {
-    title: "Çerkezköy Taksi Randevu | Çiçek Taksi",
+    title: "Çerkezköy Taksi Randevusu",
     description: "Yolculuğunuzu, saatinizi ve notunuzu belirleyin; tahmini ücreti görüp talebinizi WhatsApp'tan gönderin.",
     url: "/cerkezkoy-taksi-randevu",
     type: "website",

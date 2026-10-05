@@ -4,7 +4,7 @@ export const metadata = {
   alternates: {
     canonical: "/fiyatlar",
   },
-    title: 'Çerkezköy Transfer Fiyatları | Çiçek Taksi',
+    title: 'Çerkezköy Taksi Ücretleri',
     description: "Çerkezköy'den havalimanlarına, İstanbul ve Edirne gibi şehirlere sabit fiyatlı, sürprizsiz taksi fiyatlarımız."
 };
 

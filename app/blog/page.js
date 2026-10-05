@@ -3,7 +3,7 @@ import bloglarData from '@/data/bloglar.json';
 import { BookOpen, Clock, ArrowRight } from 'lucide-react';
 
 export const metadata = {
-    title: 'Çerkezköy Blog - Ulaşım ve Gezi Rehberi | Çiçek Taksi',
+    title: 'Çerkezköy Ulaşım Rehberi',
     description: "Çerkezköy hakkında bilmeniz gereken her şey. Ulaşım rehberi, OSB taksi, havalimanı transfer, gezilecek yerler ve daha fazlası.",
     alternates: { canonical: '/blog' },
 };

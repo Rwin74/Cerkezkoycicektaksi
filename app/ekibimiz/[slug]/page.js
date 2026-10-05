@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { User } from 'lucide-react';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }) {
     if (!personel) return { title: 'Sayfa Bulunamadı' };
 
     return {
-        title: `${personel.name} - Şoför Profili | Çiçek Taksi`,
+        title: searchTitleBase(`${personel.name} Taksi Şoförü`),
         description: personel.description,
         alternates: { canonical: `/ekibimiz/${personel.slug}` },
     };
@@ -37,6 +38,7 @@ export default async function EkipDetay({ params }) {
         "jobTitle": "Profesyonel Şoför",
         "worksFor": {
             "@type": "Organization",
+            "@id": "https://www.cerkezkoycicektaksi.com/#organization",
             "name": "Çiçek Taksi Çerkezköy"
         },
         "description": personel.bio,
@@ -47,7 +49,7 @@ export default async function EkipDetay({ params }) {
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema).replace(/</g, "\\u003c") }}
             />
             <header className="page-hero">
                 <div className="page-hero__bg"></div>

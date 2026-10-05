@@ -1,6 +1,7 @@
 import hizmetlerData from '@/data/hizmetler.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }) {
   if (!hizmet) return { title: 'Hizmet bulunamadı', robots: { index: false } };
 
   return {
-    title: `${hizmet.title} | Çiçek Taksi Çerkezköy`,
+    title: searchTitleBase(hizmet.title),
     description: `${hizmet.title} için araç uygunluğunu, yolculuk ayrıntılarını ve ücret hesabını telefonla teyit edin.`,
     alternates: { canonical: `/hizmetler/${hizmet.slug}` },
     robots: { index: false, follow: true },

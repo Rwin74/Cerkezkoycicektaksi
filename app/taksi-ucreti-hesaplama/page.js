@@ -2,7 +2,7 @@ import Link from "next/link";
 import FareCalculator from "@/components/FareCalculator";
 
 export const metadata = {
-  title: "Çerkezköy Taksi Ücreti Hesaplama 2026 | Yol Parası Hesapla",
+  title: "Taksi Ücreti Hesapla 2026",
   description: "Çerkezköy taksi ücreti hesaplama aracıyla nereden nereye gideceğinizi seçin, rota mesafesini ve tahmini taksi fiyatını ücretsiz öğrenin.",
   keywords: [
     "Çerkezköy taksi ücreti hesaplama",
@@ -13,7 +13,7 @@ export const metadata = {
   ],
   alternates: { canonical: "/taksi-ucreti-hesaplama" },
   openGraph: {
-    title: "Çerkezköy Taksi Ücreti Hesaplama | Çiçek Taksi",
+    title: "Çerkezköy Taksi Ücreti Hesapla",
     description: "Başlangıç ve varış konumunu seç, rota mesafesine göre tahmini taksi ücretini anında gör.",
     url: "/taksi-ucreti-hesaplama",
     type: "website",
@@ -30,8 +30,8 @@ const faqs = [
     a: "Hayır. Gösterilen sonuç tahminidir. Trafik, bekleme, yol çalışması, güzergâh değişikliği ve güncel tarife gerçek taksimetre tutarını etkileyebilir.",
   },
   {
-    q: "Kızılpınar için de rota hesaplayabilir miyim?",
-    a: "Evet. Başlangıç ve varış noktasını yazarak Çerkezköy, Kızılpınar, Veliköy ve çevresi için rota mesafesini hesaplayabilirsiniz.",
+    q: "Çerkezköy çevresindeki bir adres için hesaplama yapabilir miyim?",
+    a: "Evet. Başlangıç ve varış adreslerini yazarak araç rotasına göre yaklaşık mesafeyi ve tahmini ücreti hesaplayabilirsiniz. Hizmet uygunluğunu yolculuk öncesinde telefonla teyit edin.",
   },
 ];
 
@@ -79,6 +79,11 @@ export default function TaxiFareCalculatorPage() {
         </div>
       </header>
 
+      <section aria-label="Hesaplama güncelleme bilgisi" className="container container--sm" style={{ paddingTop: "24px", paddingBottom: "0" }}>
+        <p style={{ margin: 0, color: "var(--text-muted)", fontSize: "0.9rem" }}>
+          Son güncelleme: 01.10.2026
+        </p>
+      </section>
       <FareCalculator />
 
       <section className="section section--gray">

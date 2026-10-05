@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import landingPages from '@/data/landingPages.json';
 import Link from 'next/link';
+import { searchTitleBase } from '@/lib/seo';
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }) {
   if (!page) return {};
   
   return {
-    title: `${page.title} | Çiçek Taksi`,
+    title: searchTitleBase(page.title),
     description: page.description,
     alternates: {
       canonical: `/${page.slug}`,

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About Cicek Taxi | Cerkezkoy',
+  title: 'About Cicek Taxi',
   description: 'Contact Cicek Taxi in Cerkezkoy to confirm pickup availability, estimated arrival time, fare calculation, and payment options.',
   alternates: { canonical: '/en/about-us' },
 };

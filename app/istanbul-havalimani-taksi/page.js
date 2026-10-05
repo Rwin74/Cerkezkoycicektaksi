@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AreaRideGuide from '@/components/AreaRideGuide';
 
 export const metadata = {
-  title: "İstanbul Havalimanı Taksi | Çiçek Taksi",
+  title: "İstanbul Havalimanı Taksi",
   description: "Çerkezköy'den İstanbul Havalimanı yönüne yolculuk için adres, araç uygunluğu ve ücret bilgisini telefonla teyit edin.",
   robots: { index: false, follow: true },
   alternates: {
