@@ -9,6 +9,8 @@ import FareCalculator from '@/components/FareCalculator';
 import subelerData from '@/data/subeler.json';
 
 export const metadata = {
+  title: "Çerkezköy Taksi 7/24 · Kartta %0 Komisyon",
+  description: "Çerkezköy taksi için 7/24 arayın: Bağlık 0546 401 47 51, Gazi MKP 0530 401 47 51. Kartla ödemede komisyon yok; araç uygunluğunu ve ücreti telefonda teyit edin.",
   alternates: {
     canonical: "/",
     languages: { tr: "/", en: "/en", "x-default": "/" },
@@ -170,6 +172,29 @@ export default function Home() {
 
       <Branches />
 
+      <section className="section section--gray" aria-label="Çerkezköy taksi iletişim ve yolculuk noktaları">
+        <div className="container">
+          <div className="sh sh--center">
+            <span className="sh__overtitle">Çerkezköy’de taksi</span>
+            <h2 className="sh__title">Aradığınız <em>bilgiye</em> hızlı ulaşın</h2>
+          </div>
+          <div className="grid grid--3">
+            <Link className="card card--service" href="/cerkezkoy-taksi-numarasi">
+              <h3 className="card__title">Çerkezköy Taksi Numaraları</h3>
+              <p className="card__text">Gazi MKP ve Bağlık şubelerinin telefonlarını ve harita bağlantılarını görün.</p>
+            </Link>
+            <Link className="card card--service" href="/noktalar/cerkezkoy-devlet-hastanesi">
+              <h3 className="card__title">Devlet Hastanesi Taksi</h3>
+              <p className="card__text">Hastane girişiniz için taksi talep ederken alınış noktasını paylaşın.</p>
+            </Link>
+            <Link className="card card--service" href="/noktalar/cerkezkoy-otogar">
+              <h3 className="card__title">Otogar Taksi</h3>
+              <p className="card__text">Otogardaki konumunuzu şubeye iletip araç uygunluğunu teyit edin.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
             <div className="sh sh--center reveal">
@@ -282,13 +307,13 @@ export default function Home() {
         <div className="container">
           <div className="sh sh--center reveal">
               <span className="sh__overtitle">Müşteri Değerlendirmeleri</span>
-              <h2 className="sh__title">Yorumları <em>Google Haritalar'da</em> Görün</h2>
+              <h2 className="sh__title">Yorumları <em>Google Haritalar’da</em> Görün</h2>
           </div>
           <div style={{marginTop: '24px', textAlign: 'center'}}>
             <p>Gerçek müşteri değerlendirmelerini işletme profilimizde okuyun; yolculuk sonrası kendi deneyiminizi paylaşabilirsiniz.</p>
-            <a className="btn btn--dark btn--lg" href="https://www.google.com/maps/search/?api=1&query=%C3%87i%C3%A7ek%20Taksi%20%C3%87erkezk%C3%B6y" target="_blank" rel="noopener noreferrer">
-              Google Haritalar'da yorumları aç
-            </a>
+            <Link className="btn btn--dark btn--lg" href="/yorumlar">
+              Şube yorumlarını görüntüle
+            </Link>
           </div>
         </div>
       </section>

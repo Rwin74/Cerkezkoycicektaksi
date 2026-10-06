@@ -8,13 +8,13 @@ import subelerData from "@/data/subeler.json";
 
 export const metadata = {
   title: {
-    default: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
-    template: "%s | Komisyonsuz Kartla Ödeme",
+    default: "Çerkezköy Taksi 7/24 · Kartta %0 Komisyon",
+    template: "%s · Kartta %0 Komisyon",
   },
   description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
-    title: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
+    title: "Çerkezköy Taksi 7/24 · Kartta %0 Komisyon",
     description: "Çerkezköy taksi numarası mı lazım? 7/24 en yakın taksi durağı Çiçek Taksi kapınızda. Hastane, otogar ve şehir içi yolculuklar için hemen arayın: 0546 401 47 51.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
@@ -23,7 +23,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi 7/24 | Komisyonsuz Kartla Ödeme",
+    title: "Çerkezköy Taksi 7/24 · Kartta %0 Komisyon",
     description: "Çerkezköy taksi numarası, otogar ve hastane taksi ulaşımlarınız için en yakın durak Çiçek Taksi. Hemen arayın: 0546 401 47 51.",
   },
   other: {

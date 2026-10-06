@@ -7,6 +7,31 @@ import { searchTitleBase } from '@/lib/seo';
 import { MapPin } from 'lucide-react';
 import SpiderWeb from '@/components/SpiderWeb';
 
+const focusedDestinationContent = {
+    'cerkezkoy-devlet-hastanesi': {
+        description: 'Çerkezköy Devlet Hastanesi için taksi çağırma, şube telefonları ve yolculuk öncesi ücret bilgisi.',
+        content: `<h2>Çerkezköy Devlet Hastanesi’ne taksi</h2>
+            <p>Hastaneye giderken veya hastaneden dönerken Çiçek Taksi’nin Gazi MKP ya da Bağlık şubesini arayabilirsiniz. Aramada hastanenin ana girişinde, poliklinik girişinde veya acil girişinde olduğunuzu belirtin; araç uygunluğunu ve tahmini bekleme süresini telefonda teyit edin.</p>
+            <p>Yolculuk ücretini önceden yaklaşık görmek için <a href="/taksi-ucreti-hesaplama">taksi ücreti hesaplama aracını</a> kullanın. Hesaplanan tutar rota mesafesine dayalı tahmindir; geçerli tarife ve yol koşulları son ücreti etkileyebilir.</p>`,
+        faqs: [
+            { q: 'Hastaneye taksi çağırmak için hangi numarayı aramalıyım?', a: 'Gazi MKP şubesi 0530 401 47 51, Bağlık şubesi 0546 401 47 51 numarasından aranabilir. Araç uygunluğunu görüşmede teyit edin.' },
+            { q: 'Taksi ne kadar sürede gelir?', a: 'Varış süresi konum, trafik ve o andaki araç uygunluğuna göre değişir. Ararken tahmini süreyi duraktan öğrenin.' },
+            { q: 'Hastaneden dönüş için taksi isteyebilir miyim?', a: 'Evet. Hastane girişini ve alınış noktanızı paylaşarak taksi talep edebilirsiniz; araç yönlendirmesini telefonla teyit edin.' },
+        ],
+    },
+    'cerkezkoy-otogar': {
+        description: 'Çerkezköy Otogarı için taksi çağırma, şube telefonları ve tahmini yolculuk ücreti bilgisi.',
+        content: `<h2>Çerkezköy Otogarı’na taksi</h2>
+            <p>Otogara gidiş veya otogardan dönüş için Çiçek Taksi’nin Gazi MKP ya da Bağlık şubesini arayın. Otogarda hangi girişte veya belirlenmiş hangi noktada olduğunuzu paylaşın; araç uygunluğunu ve tahmini bekleme süresini duraktan teyit edin.</p>
+            <p>Yaklaşık rota ücreti için <a href="/taksi-ucreti-hesaplama">taksi ücreti hesaplama aracına</a> başlangıç ve varış noktanızı yazabilirsiniz. Son tutar geçerli tarife ve yol koşullarına göre değişebilir.</p>`,
+        faqs: [
+            { q: 'Otogardan taksi çağırabilir miyim?', a: 'Evet. Gazi MKP 0530 401 47 51 veya Bağlık 0546 401 47 51 numarasını arayıp otogardaki alınış noktanızı paylaşın.' },
+            { q: 'Gece otogara geldiğimde taksi bulabilir miyim?', a: 'Şubeler telefonla 7/24 taksi talebi alır. Gece yolculuğu için arayıp araç uygunluğunu ve tahmini bekleme süresini teyit edin.' },
+            { q: 'Otogar yolculuğunun ücretini nasıl öğrenirim?', a: 'Sitedeki hesaplama aracı yaklaşık rota tutarını gösterir. Güncel tarife ve varsa yol koşullarını durakla teyit edin.' },
+        ],
+    },
+};
+
 export async function generateMetadata({ params }) {
     const { slug } = await params;
     const nokta = noktalarData.find(n => n.slug === slug);
@@ -14,7 +39,7 @@ export async function generateMetadata({ params }) {
 
     return {
         title: searchTitleBase(`${nokta.title} Taksi 7/24`),
-        description: `${nokta.title} için anında taksi hizmeti. Kredi kartı geçerli, hızlı ulaşım. Hemen arayın, beklemeyin!`,
+        description: focusedDestinationContent[slug]?.description ?? `${nokta.title} için taksi çağırma bilgileri ve şube telefonları. Araç uygunluğunu ve tahmini varış süresini ararken teyit edin.`,
         alternates: { canonical: `/noktalar/${nokta.slug}` },
         openGraph: {
             title: `${nokta.title} | Çiçek Taksi Çerkezköy`,
@@ -38,10 +63,14 @@ export default async function NoktaDetay({ params }) {
         notFound();
     }
 
+    const destination = focusedDestinationContent[slug];
+    const pageContent = destination?.content ?? nokta.content;
+    const pageFaqs = destination?.faqs ?? nokta.faqs.slice(0, 5);
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": nokta.faqs.map(faq => ({
+        "mainEntity": pageFaqs.map(faq => ({
             "@type": "Question",
             "name": faq.q,
             "acceptedAnswer": {
@@ -82,12 +111,12 @@ export default async function NoktaDetay({ params }) {
                 <div className="container container--sm">
                     <div
                         className="rich-content reveal"
-                        dangerouslySetInnerHTML={{ __html: nokta.content }}
+                        dangerouslySetInnerHTML={{ __html: pageContent }}
                     />
 
                     <div className="cta-box reveal" style={{background: 'var(--taxi-yellow)', padding: '40px', borderRadius: '16px', textAlign: 'center', marginTop: '48px'}}>
-                        <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>Bölgede En Yakın Taksiniz!</h3>
-                        <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>Kredi kartı geçerli, 7/24 hizmetinizdeyiz!</p>
+                        <h3 style={{marginBottom: '15px', color: 'var(--dark-base)', fontSize: '1.5rem'}}>{nokta.title} için taksi talep edin</h3>
+                        <p style={{marginBottom: '20px', color: 'var(--dark-base)', opacity: 0.8}}>Kartla ödemede komisyon yok. Araç uygunluğunu ararken teyit edin.</p>
                         <div style={{display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap'}}>
                             <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 0546 401 47 51</a>
                             <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
@@ -98,7 +127,7 @@ export default async function NoktaDetay({ params }) {
                     <div style={{marginTop: '60px'}}>
                         <h2 className="sh__title reveal" style={{fontSize: '2rem', marginBottom: '30px', textAlign: 'center'}}>Sıkça Sorulan Sorular</h2>
                         <div className="faq-list">
-                            {nokta.faqs.slice(0, 5).map((f, i) => (
+                            {pageFaqs.map((f, i) => (
                                 <details key={i} className="faq-item reveal" data-delay={i*50}>
                                     <summary className="faq-question">{f.q}</summary>
                                     <div className="faq-answer"><p>{f.a}</p></div>
@@ -107,15 +136,6 @@ export default async function NoktaDetay({ params }) {
                         </div>
                     </div>
 
-                    {/* Kullanıcıların hızlı karar vermesi için özet */}
-                    <div className="ai-summary-block reveal" style={{marginTop: '40px', padding: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', borderLeft: '4px solid var(--taxi-yellow)'}}>
-                        <h3 style={{fontSize: '1.2rem', marginBottom: '12px'}}>Hızlı Özet</h3>
-                        <ul style={{paddingLeft: '20px', margin: 0, color: 'var(--text-muted)'}}>
-                            <li style={{marginBottom: '8px'}}>Bu sayfa <strong>{nokta.title}</strong> bölgesi için 7/24 resmi taksi hizmetlerini tanıtır.</li>
-                            <li style={{marginBottom: '8px'}}>Araçlarda kredi kartı geçerlidir.</li>
-                            <li>Çağrı numarası: 0546 401 47 51.</li>
-                        </ul>
-                    </div>
                     {/* Harita Bloğu */}
                     <div className="reveal" style={{marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(255,255,255,0.1)'}}>
                         <h3 style={{padding: '20px', background: 'rgba(255,255,255,0.05)', margin: 0, textAlign: 'center'}}>Harita Konumu</h3>
