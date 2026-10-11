@@ -9,8 +9,8 @@ import FareCalculator from '@/components/FareCalculator';
 import subelerData from '@/data/subeler.json';
 
 export const metadata = {
-  title: "Çerkezköy Taksi 7/24 · Kartta %0 Komisyon",
-  description: "Çerkezköy taksi için 7/24 arayın: Bağlık 0546 401 47 51, Gazi MKP 0530 401 47 51. Kartla ödemede komisyon yok; araç uygunluğunu ve ücreti telefonda teyit edin.",
+  title: { absolute: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Komisyonsuz Kart" },
+  description: "Çerkezköy’de 7/24 taksi için Çiçek Taksi’yi arayın. Kartla ödemede komisyon yok. Bağlık: 0546 401 47 51, Gazi MKP: 0530 401 47 51.",
   alternates: {
     canonical: "/",
     languages: { tr: "/", en: "/en", "x-default": "/" },
@@ -113,11 +113,11 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    <span>Çerkezköy Taksi</span> Durağı
+                    <span>Çiçek Taksi</span> Çerkezköy
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
-                    Gideceğin yere geç kalma! <strong>Çerkezköy taksi</strong> arayanlar için en güvenilir durak olan Çiçek Taksi ile 7/24 konforlu bir yolculuk seni bekliyor. Kredi kartıyla ödeme seçeneğini arama sırasında şubemizden öğrenebilirsiniz. 💳✨
+                    <strong>Çerkezköy taksi</strong> çağırmak için Çiçek Taksi’yi 7/24 arayın. Kartla ödemede komisyon yok; araç uygunluğunu, tahmini varış süresini ve yolculuk ücretini telefonda teyit edin.
                 </p>
                 
                 <div className="home-hero__actions reveal" data-delay="300">
@@ -125,16 +125,6 @@ export default function Home() {
                     <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp üzerinden Çağır</a>
                 </div>
                 
-                <div className="home-hero__stats reveal stagger" data-delay="400">
-                    <div className="stat-box">
-                        <span className="stat-num" data-count="10000">10.000+</span>
-                        <span className="stat-label">Mutlu Yolcu</span>
-                    </div>
-                    <div className="stat-box">
-                        <span className="stat-num" data-count="10">10+</span>
-                        <span className="stat-label">Araç Filosu</span>
-                    </div>
-                </div>
             </div>
             
             <div className="home-hero__visual reveal reveal--right" data-delay="500">
