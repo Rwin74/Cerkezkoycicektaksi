@@ -113,7 +113,7 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    <span>Çiçek Taksi</span> Çerkezköy
+                    Çerkezköy Taksi <span className="home-hero__brand">Çiçek Taksi</span>
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
@@ -166,8 +166,11 @@ export default function Home() {
         <div className="container">
           <div className="sh sh--center">
             <span className="sh__overtitle">Çerkezköy’de taksi</span>
-            <h2 className="sh__title">Aradığınız <em>bilgiye</em> hızlı ulaşın</h2>
+            <h2 className="sh__title">Çerkezköy taksi durağına <em>ulaşın</em></h2>
           </div>
+          <p style={{ maxWidth: 760, margin: '0 auto 28px', textAlign: 'center', color: 'var(--text-muted)' }}>
+            Çiçek Taksi’nin Bağlık ve Gazi Mustafa Kemalpaşa şubeleri Çerkezköy’den taksi taleplerinizi alır. Bağlık için <a href="tel:+905464014751">0546 401 47 51</a>, Gazi MKP için <a href="tel:+905304014751">0530 401 47 51</a> numarasını arayın. Alınış konumunuzu ve varış yerinizi paylaşarak araç uygunluğunu, tahmini geliş süresini ve ücret bilgisini teyit edin.
+          </p>
           <div className="grid grid--3">
             <Link className="card card--service" href="/cerkezkoy-taksi-numarasi">
               <h3 className="card__title">Çerkezköy Taksi Numaraları</h3>

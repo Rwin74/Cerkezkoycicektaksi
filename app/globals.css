@@ -427,6 +427,7 @@ em { font-style: normal; color: var(--taxi-yellow); }
     color: var(--dark-base);
 }
 .home-hero__title span { color: var(--taxi-yellow); text-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
+.home-hero__title .home-hero__brand { color: #fff; text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35); }
 
 .home-hero__desc {
     font-size: 1.25rem;
