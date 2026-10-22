@@ -8,14 +8,14 @@ import subelerData from "@/data/subeler.json";
 
 export const metadata = {
   title: {
-    default: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Komisyonsuz Kart",
+    default: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
     template: "%s | Çiçek Taksi",
   },
-  description: "Çerkezköy’de 7/24 taksi için Çiçek Taksi’yi arayın. Kartla ödemede komisyon yok. Bağlık: 0546 401 47 51, Gazi MKP: 0530 401 47 51.",
+  description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
-    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Komisyonsuz Kart",
-    description: "Çerkezköy’de 7/24 taksi için Çiçek Taksi’yi arayın. Kartla ödemede komisyon yok. Bağlık: 0546 401 47 51, Gazi MKP: 0530 401 47 51.",
+    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
+    description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
     locale: "tr_TR",
@@ -23,8 +23,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Komisyonsuz Kart",
-    description: "Çerkezköy’de 7/24 taksi için Çiçek Taksi’yi arayın. Kartla ödemede komisyon yok. Bağlık: 0546 401 47 51, Gazi MKP: 0530 401 47 51.",
+    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
+    description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   },
   other: {
     "theme-color": "#FFCC00",

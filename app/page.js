@@ -9,8 +9,8 @@ import FareCalculator from '@/components/FareCalculator';
 import subelerData from '@/data/subeler.json';
 
 export const metadata = {
-  title: { absolute: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Komisyonsuz Kart" },
-  description: "Çerkezköy’de 7/24 taksi için Çiçek Taksi’yi arayın. Kartla ödemede komisyon yok. Bağlık: 0546 401 47 51, Gazi MKP: 0530 401 47 51.",
+  title: { absolute: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon" },
+  description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   alternates: {
     canonical: "/",
     languages: { tr: "/", en: "/en", "x-default": "/" },
@@ -113,7 +113,7 @@ export default function Home() {
                 </div>
                 
                 <h1 className="home-hero__title reveal" data-delay="100">
-                    Çerkezköy Taksi <span className="home-hero__brand">Çiçek Taksi</span>
+                    Çerkezköy Taksi Çağırın: <span className="home-hero__brand">Çiçek Taksi 7/24</span>
                 </h1>
                 
                 <p className="home-hero__desc reveal" data-delay="200">
