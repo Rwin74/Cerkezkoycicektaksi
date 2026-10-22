@@ -2,8 +2,8 @@ import Link from "next/link";
 import FareCalculator from "@/components/FareCalculator";
 
 export const metadata = {
-  title: "Taksi Ücreti Hesapla 2026",
-  description: "Çerkezköy taksi ücreti hesaplama aracıyla nereden nereye gideceğinizi seçin, rota mesafesini ve tahmini taksi fiyatını ücretsiz öğrenin.",
+  title: "Çerkezköy Taksi Ücreti Hesaplama | Ücretsiz Tahmin",
+  description: "Çerkezköy taksi ücreti hesaplama aracıyla başlangıç ve varış noktanızı seçin. Araç rotasının mesafesini ve tahmini taksi ücretini ücretsiz görün.",
   keywords: [
     "Çerkezköy taksi ücreti hesaplama",
     "taksi fiyat hesaplama",
@@ -13,8 +13,8 @@ export const metadata = {
   ],
   alternates: { canonical: "/taksi-ucreti-hesaplama" },
   openGraph: {
-    title: "Çerkezköy Taksi Ücreti Hesapla",
-    description: "Başlangıç ve varış konumunu seç, rota mesafesine göre tahmini taksi ücretini anında gör.",
+    title: "Çerkezköy Taksi Ücreti Hesaplama",
+    description: "Çerkezköy’de başlangıç ve varış konumunu seçin; rota mesafesine göre tahmini taksi ücretini ücretsiz hesaplayın.",
     url: "/taksi-ucreti-hesaplama",
     type: "website",
   },
@@ -23,7 +23,7 @@ export const metadata = {
 const faqs = [
   {
     q: "Çerkezköy taksi ücreti nasıl hesaplanır?",
-    a: "Hesaplayıcı seçtiğiniz iki konum arasındaki araç rotasını bulur ve yol mesafesine güncel ücretlendirmeyi uygulayarak tahmini toplamı gösterir.",
+    a: "Başlangıç ve varış konumunu seçtiğinizde araç rotasının yaklaşık mesafesi bulunur ve hesaplayıcının ücret formülüne göre tahmini tutar gösterilir. Bu sonuç taksimetre garantisi veya sabit fiyat teklifi değildir.",
   },
   {
     q: "Hesaplanan taksi fiyatı kesin mi?",
@@ -75,33 +75,30 @@ export default function TaxiFareCalculatorPage() {
             <Link href="/">Ana Sayfa</Link><span>›</span><span>Taksi Ücreti Hesaplama</span>
           </div>
           <h1 className="page-hero__title">Çerkezköy Taksi Ücreti <em>Hesaplama</em></h1>
-          <p className="page-hero__desc">Nereden nereye gideceğinizi seçin; rota mesafesini ve tahmini yol ücretini saniyeler içinde öğrenin.</p>
+          <p className="page-hero__desc">Çerkezköy’de taksi yol ücretini hesaplayın: başlangıç ve varış noktanızı seçin, araç rotasının mesafesine göre tahmini tutarı görün.</p>
         </div>
       </header>
-
-      <section aria-label="Hesaplama güncelleme bilgisi" className="container container--sm" style={{ paddingTop: "24px", paddingBottom: "0" }}>
-        <p style={{ margin: 0, color: "var(--text-muted)", fontSize: "0.9rem" }}>
-          Son güncelleme: 01.10.2026
-        </p>
-      </section>
       <FareCalculator />
 
       <section className="section section--gray">
         <div className="container container--sm rich-content fare-seo-content">
-          <span className="sh__overtitle">Güncel ücret rehberi</span>
-          <h2>Çerkezköy taksi fiyatı nasıl hesaplanıyor?</h2>
+          <span className="sh__overtitle">Çerkezköy yolculuk rehberi</span>
+          <h2>Çerkezköy taksi ücreti nasıl hesaplanır?</h2>
           <p>
-            Çiçek Taksi yol ücreti hesaplama aracı, seçtiğiniz iki adres arasındaki araç rotasını bulur ve mesafeye güncel ücretlendirmeyi uygulayarak tahmini toplamı gösterir.
+            Çerkezköy taksi ücreti hesaplama aracında alınış ve varış noktalarını seçtiğinizde araç rotasının yaklaşık mesafesi hesaplanır. Sonuç, mesafeye dayalı bir yol ücreti tahminidir; sabit fiyat teklifi veya taksimetre garantisi değildir.
           </p>
-          <h2>Çerkezköy ve çevresinde ücretsiz rota hesabı</h2>
+          <h2>Çerkezköy içinde taksi fiyatı ve yol parası hesaplama</h2>
           <p>
-            Araç; Çerkezköy merkez, Bağlık, Kızılpınar, Veliköy ve Tekirdağ çevresindeki yolculuklar için rota tahmini sunar. Adresinizi yazabilir veya telefonunuzdan mevcut konumunuzu paylaşabilirsiniz. Konum izni vermek istemiyorsanız manuel adres girişi yeterlidir.
+            Çerkezköy merkezindeki yolculuğunuz için adresleri yazarak veya konum izni vererek başlangıç noktasını seçebilirsiniz. Bağlık ve Kızılpınar gibi Çerkezköy mahallelerindeki adresleri de aratabilir; favori varış noktalarından birini seçerek hesabı başlatabilirsiniz. Konum izni vermek istemiyorsanız adresi elle yazmanız yeterlidir.
           </p>
           <p>
-            Sonuç yaklaşık bilgi verir. Yolculuk sırasındaki trafik, bekleme süresi, yol çalışmaları ve sürücünün kullanmak zorunda kaldığı farklı güzergâhlar taksimetre tutarını değiştirebilir. Havalimanı ve şehirler arası sabit fiyatlar için <Link href="/fiyatlar">taksi fiyatları sayfamızı</Link> inceleyebilir veya bizi arayabilirsiniz.
+            Taksi fiyatı hesaplama sonucu yaklaşık bilgi verir. Trafik, bekleme süresi, yol çalışmaları, seçilen güzergâh ve geçerli tarife gerçek yol ücretini değiştirebilir. Havalimanı ve şehirler arası transferler için <Link href="/fiyatlar">Çerkezköy çıkışlı transfer fiyatlarını</Link> inceleyin; şehir içi yolculuk için bu sayfadaki hesaplayıcıyı kullanın.
           </p>
           <p>
             Yolculuğunuzun günü ve saati belliyse <Link href="/cerkezkoy-taksi-randevu">Çerkezköy taksi randevu sayfamızdan</Link> alınış ve varış yerini, planladığınız saati ve notunuzu ekleyip talebinizi WhatsApp üzerinden durağa iletebilirsiniz. Randevu, araç uygunluğu durak tarafından onaylandığında kesinleşir.
+          </p>
+          <p>
+            Çerkezköy taksi fiyatları hakkında belirli bir rota için bilgi almak isterseniz tahmini hesabınızla birlikte <Link href="tel:+905464014751">Çiçek Taksi’yi arayıp</Link> araç uygunluğunu ve güncel ücret bilgisini teyit edebilirsiniz.
           </p>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import routesData from '@/data/routes.json';
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function Fiyatlar() {
                 <div className="page-hero__bg"></div>
                 <div className="container relative z-10">
                     <div className="page-hero__breadcrumb reveal">
-                        <a href="/">Ana Sayfa</a> / Fiyatlar
+                        <Link href="/">Ana Sayfa</Link> / Fiyatlar
                     </div>
                     <h1 className="page-hero__title reveal" data-delay="100">
                         Transfer <em>Fiyatları</em> 🏷️
@@ -61,6 +62,9 @@ export default function Fiyatlar() {
                     <p className="reveal" style={{textAlign: 'center', marginTop: '40px', fontWeight: '500', color: 'var(--text-muted)', background: 'var(--bg-gray)', padding: '15px', borderRadius: '12px'}}>
                         💡 Güncel ve net fiyat bilgisi için lütfen bizi arayın. Fiyatlarımız tüm yol (otoyol, köprü vb.) masraflarını içermektedir.
                     </p>
+                    <p className="reveal" style={{textAlign: 'center', marginTop: '18px'}}>
+                        Çerkezköy içindeki bir yolculuk için <Link href="/taksi-ucreti-hesaplama">taksi ücreti hesaplama aracımızla</Link> rota mesafesine göre tahmini tutarı görün.
+                    </p>
                 </div>
             </section>
 
@@ -69,7 +73,7 @@ export default function Fiyatlar() {
                     <h2 className="sh__title reveal" style={{marginBottom: '30px'}}>Fiyat mı <em>Alacaksın?</em> 💬</h2>
                     <div className="home-hero__actions reveal" style={{justifyContent: 'center', marginBottom: '0'}} data-delay="100">
                         <a href="tel:+905464014751" className="btn btn--dark btn--lg">📞 Hemen Ara</a>
-                        <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp'tan Sor</a>
+                        <a href="https://wa.me/905464014751" className="btn btn--whatsapp btn--lg">💬 WhatsApp&apos;tan Sor</a>
                     </div>
                 </div>
             </section>
