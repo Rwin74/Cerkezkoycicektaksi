@@ -8,13 +8,13 @@ import subelerData from "@/data/subeler.json";
 
 export const metadata = {
   title: {
-    default: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
+    default: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Kartta %0 Komisyon",
     template: "%s | Çiçek Taksi",
   },
   description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
   openGraph: {
-    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
+    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Kartta %0 Komisyon",
     description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
     url: "https://www.cerkezkoycicektaksi.com",
     siteName: "Çiçek Taksi",
@@ -23,7 +23,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon",
+    title: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Kartta %0 Komisyon",
     description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   },
   other: {

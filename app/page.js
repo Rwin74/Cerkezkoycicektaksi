@@ -9,7 +9,7 @@ import FareCalculator from '@/components/FareCalculator';
 import subelerData from '@/data/subeler.json';
 
 export const metadata = {
-  title: { absolute: "Çerkezköy Taksi | 7/24 Çiçek Taksi – %0 Komisyon" },
+  title: { absolute: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Kartta %0 Komisyon" },
   description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   alternates: {
     canonical: "/",
