@@ -13,6 +13,10 @@ export const metadata = {
   },
   description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
   metadataBase: new URL("https://www.cerkezkoycicektaksi.com"),
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/favicon.png", type: "image/png", sizes: "512x512" }],
+  },
   openGraph: {
     title: "Çerkezköy Taksi | 7/24 Çiçek Taksi, Kartta %0 Komisyon",
     description: "Çerkezköy’de taksi mi arıyorsunuz? Çiçek Taksi’ni 7/24 arayın, araç uygunluğunu sorun. Kredi kartıyla ödemede %0 komisyon. Hemen ulaşın.",
@@ -54,7 +58,7 @@ export default function RootLayout({ children }) {
         "description": "Çerkezköy’de Gazi Mustafa Kemal Paşa ve Bağlık şubeleriyle hizmet veren taksi durağı.",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.cerkezkoycicektaksi.com/icon.svg"
+          "url": "https://www.cerkezkoycicektaksi.com/favicon.png"
         },
         "address": subelerData.map((sube) => ({
           "@type": "PostalAddress",
