@@ -39,7 +39,7 @@ export default async function BolgeDetay({ params }) {
           </div>
           <h1 className="page-hero__title reveal"><em>{bolge.neighborhood}</em> için taksi bilgisi</h1>
           <p className="page-hero__desc reveal" data-delay="100">
-            Taksi talebi için telefonla ulaşın veya WhatsApp üzerinden alınış konumunuzu paylaşın.
+            Çerkezköy {bolge.neighborhood} mahallesinden taksi talebi için adresinizi telefonla bildirin veya WhatsApp üzerinden konum gönderin.
           </p>
         </div>
       </header>
@@ -47,14 +47,16 @@ export default async function BolgeDetay({ params }) {
       <section className="section">
         <div className="container container--sm">
           <div className="rich-content">
-            <h2>Çağrı sırasında paylaşın</h2>
+            <h2>{bolge.neighborhood} mahallesinden taksi çağırma</h2>
+            <p>{bolge.neighborhood} mahallesinden yolculuk talebi oluştururken bulunduğunuz caddeyi, bina numarasını veya harita konumunu paylaşın. Yakındaki bilinen bir noktayı belirtmek, alınış yerinin doğru anlaşılmasına yardımcı olur.</p>
+            <h3>Gideceğiniz yeri ve yolculuk ayrıntılarını bildirin</h3>
             <ul>
-              <li>Alınış adresi veya harita konumu</li>
-              <li>Gideceğiniz yer ve istediğiniz saat</li>
-              <li>Yolcu sayısı ve büyük bagaj bilgisi</li>
+              <li>Varış adresi ve varsa tercih ettiğiniz saat</li>
+              <li>Yolcu sayısı ile büyük bagaj gibi ihtiyaçlar</li>
+              <li>İletişim için kullanacağınız telefon numarası</li>
             </ul>
-            <p>Araç uygunluğu ve tahmini varış süresi konuma, trafiğe ve mevcut talebe göre değişir. Ücretin nasıl hesaplanacağını ve ödeme seçeneklerini yolculuktan önce telefonda teyit edin.</p>
-            <p>Ücret için sitemizdeki <Link href="/taksi-ucreti-hesaplama">taksi ücreti hesaplama aracını</Link> kullanabilirsiniz. Son tutar güzergâh ve geçerli tarifeye göre değişebilir.</p>
+            <h3>Ücret ve araç uygunluğunu teyit edin</h3>
+            <p>Araç uygunluğu ve tahmini varış süresi konuma, trafiğe ve o anki talebe göre değişebilir; çağrı sırasında teyit edin. Yolculuk öncesi yaklaşık tutarı görmek için <Link href="/taksi-ucreti-hesaplama">taksi ücreti hesaplama aracını</Link> kullanın. Hesaplanan tutar tahminidir; geçerli tarife ve güzergâha göre son ücreti duraktan doğrulayın.</p>
           </div>
           <div className="cta-box" style={{background: 'var(--taxi-yellow)', padding: '32px', borderRadius: '16px', textAlign: 'center', marginTop: '32px'}}>
             <h2 style={{color: 'var(--dark-base)'}}>{bolge.neighborhood} için taksi çağırın</h2>

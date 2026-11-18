@@ -63,7 +63,7 @@ const services = hizmetList.map((h, i) => {
     };
 });
 
-// --- BÖLGELER (Mahalleler) - Expanded to ~2000 words logic ---
+// --- BÖLGELER (Mahalleler) ---
 const bolgeList = [
     "Merkez", "Gazi Mustafa Kemal Paşa", "Gazi Osman Paşa", "Fevzipaşa", 
     "Bağlık", "Yıldırım Beyazıt", "İstasyon", "Kızılpınar", "Veliköy", 
@@ -72,24 +72,19 @@ const bolgeList = [
 
 const bolgeler = bolgeList.map((m, i) => {
     const s = m.toLowerCase().replace(/ /g, '-').replace(/[çÇ]/g, 'c').replace(/[ğĞ]/g, 'g').replace(/[ıİ]/g, 'i').replace(/[öÖ]/g, 'o').replace(/[şŞ]/g, 's').replace(/[üÜ]/g, 'u').replace(/[^a-z0-9-]/g, '');
-    
-    // Yüksek kelime sayısı simülasyonu için yoğun ve semantik bir içerik bloğu
-    let longContent = `<h2>${m} Taksi Hizmeti: Bölgesel Rehber</h2>`;
-    for(let j=0; j<15; j++) {
-        longContent += `
-        <p>${m} bölgesi için profesyonel taksi hizmeti arıyorsanız doğru yerdesiniz. <strong>${getRandomKeywords()}</strong> standartlarına sahip araçlarımızla günün her saati size ulaşıyoruz. Çerkezköy'ün en hızlı gelişen ve nüfus yoğunluğu artan ${m} mahallesinde, trafiğin yoğun olduğu saatlerde bile alternatif rotalar kullanarak sizi gideceğiniz yere zamanında ulaştırıyoruz.</p>
-        <h3>${m} Trafik ve Ulaşım Avantajları ${j+1}</h3>
-        <p>Bölgedeki ${getRandomKeywords()} ihtiyaçlarına en hızlı yanıt veren durak olarak, ${m} sakinlerinin vazgeçilmez ulaşım partneriyiz. Modern şehir yaşantısında zamanın ne kadar değerli olduğunun farkındayız. Araçlarımız düzenli bakımdan geçer ve şoförlerimiz ileri sürüş teknikleri eğitimi almıştır.</p>
-        `;
-    }
 
     return {
         id: i + 1,
         neighborhood: m,
         slug: s,
-        description: `${m} mahallesi en yakın taksi durağı. Kredi kartı geçerli, 7/24 kesintisiz hizmet.`,
-        content: longContent,
-        faqs: generateFAQs(m),
+        description: `Çerkezköy ${m} mahallesinden taksi talebi için adresinizi paylaşın; araç uygunluğunu ve tahmini varış süresini ararken teyit edin.`,
+        content: `<h2>${m} mahallesinden taksi çağırma</h2>
+        <p>Taksi talebi oluştururken bulunduğunuz caddeyi, bina numarasını veya harita konumunu paylaşın. Yakındaki bilinen bir noktayı belirtmek, alınış yerinin doğru anlaşılmasına yardımcı olur.</p>
+        <h3>Yolculuk bilgilerini paylaşın</h3>
+        <p>Varış adresini, tercih ettiğiniz saati, yolcu sayısını ve büyük bagaj gibi ihtiyaçları çağrı sırasında bildirin. Araç uygunluğu ve tahmini varış süresi konuma, trafiğe ve o anki talebe göre değişebilir; duraktan teyit edin.</p>
+        <h3>Tahmini ücreti kontrol edin</h3>
+        <p>Sitedeki taksi ücreti hesaplama aracı güzergâha göre yaklaşık tutar verir. Son ücret geçerli tarife ve yolculuk ayrıntılarına göre değişebileceğinden, yolculuk öncesi duraktan doğrulayın.</p>`,
+        faqs: [],
         lat: 41.2858 + (Math.random() * 0.05),
         lng: 28.0003 + (Math.random() * 0.05)
     };
